@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.2 (October 20, 2026)
+- New references/booking-apps.md for messages from a booking or delivery app: draft for the app's own chat, follow its messaging rules (no phone numbers, outside links or payment outside the app unless allowed), quick replies for pickup time, meeting point and what to bring, and the owner's own activity list only where the app allows it and the customer asked.
+- A message asking to pay outside the app or move to another chat goes in Needs you. SKILL.md links the page from Steps and the sorting rules.
+
 ## v1.0.1 (October 19, 2026)
 - Rules tightened after the first live run.
 

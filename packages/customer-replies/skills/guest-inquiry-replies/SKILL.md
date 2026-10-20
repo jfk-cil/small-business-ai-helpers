@@ -20,6 +20,7 @@ The owner says things like:
 - "Make WhatsApp quick replies for my homestay."
 - "Guests keep asking the same things." / "I need FAQ answers."
 - "Reply to this booking inquiry in Hindi."
+- "A guest asked in a booking app: what's the pickup time?"
 
 ## Not for
 - Replying to Google or other online reviews: use **review-replies**.
@@ -47,6 +48,7 @@ Only ask what is missing. If the owner already pasted the guest's message or lis
 5. Give each message a shortcut: one or two lowercase words joined by a hyphen, like `price` or `check-in`. No spaces, 25 characters or fewer, no two the same.
 6. Check each message: 500 characters or fewer (WhatsApp's limit), and aim for 50 words or fewer. Cut words until it fits. If it still doesn't fit, split it into two quick replies.
 7. Finish with the "Fill in before saving" list and the "How to save" lines (see Output).
+8. Message came through a booking or delivery app? Follow `references/booking-apps.md`: reply in the app's own chat, follow the app's messaging rules, and use its pickup, meeting point and what-to-bring replies.
 
 ## Output
 For each quick reply, exactly this, one after another:
@@ -86,6 +88,7 @@ Put each message in its own copy box (as above) so the owner can tap Copy. Nothi
 - Never say a room or date is free, or a booking is confirmed, unless the owner says so. Otherwise write: "Let me check and confirm shortly."
 - Never write a message asking a guest to send a passport, Aadhaar or other ID photo on WhatsApp. If the owner asks, say: "I left out the ID request. Rules for guest ID and Form C vary, so check with a qualified person how to collect them safely." Offer instead: "Please bring your passport and visa (guests from outside India) or a government photo ID (Indian guests) to check-in."
 - No pressure lines ("only 1 room left!") unless the owner says it is true. No emojis unless the owner asks.
+- Booking and delivery apps: many don't allow phone numbers, outside links or payment outside the app in their chat, so leave these out unless the owner says the app allows them ("check the app's current rules"). Send the owner's own activity list or link only where the app allows it and the customer asked. Never name an app; say "a booking app" or "a delivery app".
 - If the guest wrote in another language and the owner wants to reply in it, do so and add the check line from the safety rules.
 
 ## Example

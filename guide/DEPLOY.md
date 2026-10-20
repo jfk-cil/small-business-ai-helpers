@@ -30,7 +30,7 @@ Each page must be published with the `sample` capability declared, `{"sample": {
 Steps, from a Claude Code session in the repo (or any Claude session that can publish pages from a file):
 
 1. Run `python3 scripts/build.py`.
-2. Publish `artifacts/hub.html`, then each of the ten package fragments (`start-here`, `customer-replies`, `booking-reminders`, `follow-ups`, `find-clients`, `one-page-shop`, `get-found-on-google`, `staff-checklists`, `hire-and-onboard`, `social-posts`). For each, ask Claude for exactly this: "Publish `artifacts/<page>.html` as a Claude page with capabilities `{"sample": {}}`." The page title comes from the fragment's own `<title>`.
+2. Publish `artifacts/hub.html`, then each of the twelve package fragments (`start-here`, `customer-replies`, `booking-reminders`, `follow-ups`, `find-clients`, `one-page-shop`, `get-found-on-google`, `staff-checklists`, `stock-and-returns`, `hire-and-onboard`, `social-posts`, `sales-plan`). For each, ask Claude for exactly this: "Publish `artifacts/<page>.html` as a Claude page with capabilities `{"sample": {}}`." The page title comes from the fragment's own `<title>`.
 3. Write each page's link into `artifacts/urls.json`. Keys are `hub` and the package ids:
 
    ```json
@@ -44,8 +44,10 @@ Steps, from a Claude Code session in the repo (or any Claude session that can pu
      "one-page-shop": "https://claude.ai/...",
      "get-found-on-google": "https://claude.ai/...",
      "staff-checklists": "https://claude.ai/...",
+     "stock-and-returns": "https://claude.ai/...",
      "hire-and-onboard": "https://claude.ai/...",
-     "social-posts": "https://claude.ai/..."
+     "social-posts": "https://claude.ai/...",
+     "sales-plan": "https://claude.ai/..."
    }
    ```
 
@@ -129,7 +131,7 @@ A group that runs table sessions with owners can use the GitHub Pages links as t
 Publishing your own Claude pages:
 
 1. Clone the repo and run `python3 scripts/build.py`.
-2. From your group's own Claude account, follow path (b): publish the hub and the ten package fragments with `{"sample": {}}`, put the links in `artifacts/urls.json`, rebuild, and republish to the same links. Replace every link in `artifacts/urls.json` with your own, or delete any you do not republish. The shipped file holds the publisher's own Claude page links; any id you delete falls back to its GitHub Pages address.
+2. From your group's own Claude account, follow path (b): publish the hub and the twelve package fragments with `{"sample": {}}`, put the links in `artifacts/urls.json`, rebuild, and republish to the same links. Replace every link in `artifacts/urls.json` with your own, or delete any you do not republish. The shipped file holds the publisher's own Claude page links; any id you delete falls back to its GitHub Pages address.
 3. Share the pages by link. Try it here still runs on each viewer's own Claude account, never on the group's.
 4. If your sessions should send owners to your Claude pages instead of GitHub Pages, change the links in `packages/<id>/PLAYBOOK.md` and `packages/<id>/BUILDER-NOTES.md` (they name the GitHub Pages address), and reprint any handouts that carry the old links.
 

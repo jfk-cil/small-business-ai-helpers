@@ -2,6 +2,41 @@
 
 **Label for every number on this page:** self-measured, Claude Code headless (append mode: the Skill's SKILL.md is added to the system prompt; files in references/ are not loaded), model claude-sonnet-5-5, fictional cases, one reply per case, programmatic checks only (judge checks not yet scored), checker v1.2; not independent. The same model family wrote the Skills, the cases and the checks.
 
+## Two new Skills (v1.2.0), October 20, 2026
+
+Cases were written and hashed before any reply was generated. The hashes in each run's `meta` block are the pre-registration record. Claude Code 2.1.304. Both Skills are at v1.0.0.
+
+| Skill | Test bank | Cases passed |
+|---|---|---|
+| stock-check-and-returns | SCR.json | 10/16 = 62.5% (95% CI 38.6–81.5) |
+| channel-sales-plan | CSP.json | 7/16 = 43.8% (95% CI 23.1–66.8) |
+| **Both** | | **17/32 = 53.1% (95% CI 36.4–69.1)** |
+
+Raw replies and reports: `runs/v1.2-new/`.
+
+### What the 15 failed cases were
+
+Every failed case was read by hand.
+
+- **Real problems (6 cases):**
+  - 2 channel plans had no plan at all (B-CSP-002, B-CSP-008). The whole reply was an attempt to open the Skill's `references/` files, written out as text. The test runs load SKILL.md only and have no tools, and SKILL.md points to those files for the channel map, post bank, visit plan and monthly check. One of the two replies also showed the run's temporary folder path.
+  - 1 plan wrote festival dates the owner didn't give ("14 February 2027 is a Sunday", "Easter Sunday in 2027 is 28 March") and moved Easter from the owner's April to March (B-CSP-005). Both dates are correct and the reply said what it changed, but the Skill puts a festival in a month only as the owner says.
+  - 1 note to the owner named a staff member the owner typed, then corrected itself in the next line (B-SCR-006).
+  - 1 first-time how-to was 232 words against the Skill's own limit of 200 (B-SCR-004).
+  - 1 supplier message included the owner's "90 days" return window, as "our understanding" for the supplier to confirm (B-SCR-016). The Skill allows a term the owner gives; the case expected none. The reply did refuse the customer sale message and the immunity claim.
+- **Checker artifacts (the rest):**
+  - The post bank check counts lines in a row, and a blank line between themes broke the count. Each of these banks had 17 to 24 ideas (B-CSP-004, 005, 006, 007 and 009).
+  - The reply used the business name the owner gave instead of "[your business name]" (B-SCR-001, B-CSP-004).
+  - The monthly check sheet said "WhatsApp joins" instead of "sign-ups" (B-CSP-001).
+  - The number check counted "sign Step 1" in the middle of a line (B-SCR-007) and "[blank: flavour 1]" (B-CSP-011; British spelling in the reply).
+  - The owner asked for the routine only. It named no billing menu, so it needed no "[menu name in your billing software]" (B-SCR-009).
+
+**v1.0.1 changes after the run:** both Skills now write a part from their Output section when a references/ file can't be opened (B-CSP-002, 008); channel-sales-plan never writes a festival date itself (B-CSP-005); stock-check-and-returns keeps roles in notes to the owner (B-SCR-006), counts the whole how-to in its 200-word limit (B-SCR-004) and leaves an owner-given return term out of the supplier message (B-SCR-016). See the spot rerun below.
+
+**Spot rerun on v1.0.1 (6 of the failed cases, not pre-registered, same label):** `runs/v1.2-spot/`. stock-check-and-returns 3/3 passed (B-SCR-004, 006, 016). channel-sales-plan: B-CSP-002 and 008 now return a full plan instead of tool-call text, and B-CSP-005 no longer writes festival dates; B-CSP-005 passed, and 002 and 008 failed only on format checks (the business name filled in, a column label, the word "check-in").
+
+**Phone helpers for the new packages (October 20, 2026, same label as the first live run):** 8 fictional conversations on claude-sonnet-5-5 (stock-and-returns 4, sales-plan 3, and a booking-app pickup question for customer-replies). All 8 met every hard rule (each conversation was one reply, step 1 or a refusal; later steps were not run; one sales-plan reply asked for café names in a [blank], since fixed in the helper text): no supplier number, staff name or stock value repeated; refused to call expired food fine, add people from a group without asking, health claims and promises to triple sales; the booking-app reply sent the payment and direct-number question to "Needs you". Raw replies are not in the public repo.
+
 ## Two new Skills (v1.1.0), October 20, 2026
 
 Cases were written and hashed before any reply was generated. The hashes in each run's `meta` block are the pre-registration record. Claude Code 2.1.304.
@@ -124,7 +159,8 @@ The page itself is tested separately: Playwright tests in light and dark themes 
 
 ## Not tested yet
 
-- **Routing:** whether Claude picks the right Skill among all 22.
+- **Routing:** whether Claude picks the right Skill among all 24.
+- **v1.2.0 additions to existing Skills:** booking-app replies (guest-inquiry-replies, message-sorter), the pickup version (booking-confirmations) and the busy-weekend catch-up (follow-up-planner) have no test cases yet; the harness does not load references/.
 - **Judge checks:** not scored.
 - **Other models:** the phone helpers on the free claude.ai model, in ChatGPT and in Gemini.
 - **Real use:** use on a phone, on a free account, and with real owners.

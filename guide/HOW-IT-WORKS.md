@@ -63,7 +63,7 @@ This table is copied from the docstring of `scripts/build.py`.
 
 ### Why Skills live once in `skills/` and are copied into `packages/`
 
-- **One fix, everywhere.** Several packages share a Skill: `tracker-sheet-builder` is in three packages and `sop-and-checklist-writer` is in two. Each Skill is written once in `skills/`, so a safety fix lands in one place and reaches every package on the next build.
+- **One fix, everywhere.** Several packages share a Skill: `tracker-sheet-builder` is in four packages and `sop-and-checklist-writer` is in three. Each Skill is written once in `skills/`, so a safety fix lands in one place and reaches every package on the next build.
 - **Plugins must be self-contained.** Claude Code and Cowork install a package from its own folder (`./packages/<id>`), and an installed plugin cannot reach files outside that folder. So each package needs real copies of its Skills, not links.
 - **Copies cannot drift.** The build deletes and recopies every `packages/<id>/skills/` folder, and `build.py --check` fails if a copy was edited by hand or left stale.
 - **Tests stay in the repo.** Each Skill's `evals/` folder is left out of package copies and zips, so owners install only what the Skill needs.
@@ -73,7 +73,7 @@ This table is copied from the docstring of `scripts/build.py`.
 
 A package is one owner problem, answered end to end. Each entry in `catalog/packages.json` holds:
 
-- `cards`: the owner problems it answers, by id (C1 to C10 in [catalog/problems.md](../catalog/problems.md)).
+- `cards`: the owner problems it answers, by id (C1 to C13 in [catalog/problems.md](../catalog/problems.md)).
 - `text.problem` and `text.outcome`: the problem in the owner's own terms and what they get.
 - `questions`: the few facts the helper needs from the owner. Each question id is a `{{slot}}` in `helper`; `check.py` fails if they don't match.
 - `helper`: the short phone version, plain text written for any chat AI.
@@ -83,21 +83,23 @@ A package is one owner problem, answered end to end. Each entry in `catalog/pack
 | Package | Owner problems | Skills |
 |---|---|---|
 | start-here | none directly; for owners not sure which job to start with | first-task-finder |
-| customer-replies | C3, C4 | message-sorter, guest-inquiry-replies, quote-and-proposal-writer |
-| booking-reminders | C1 | booking-confirmations, tracker-sheet-builder |
+| customer-replies | C3, C4, C12 | message-sorter, guest-inquiry-replies, quote-and-proposal-writer |
+| booking-reminders | C1, C12 | booking-confirmations, tracker-sheet-builder |
 | follow-ups | C8 | follow-up-planner, lead-reply-and-follow-up, tracker-sheet-builder, customer-message-writer |
 | find-clients | C2 | target-customer-finder, outreach-email-writer, lead-qualifier, client-onboarding-writer |
 | one-page-shop | C9 | storefront-page-builder, listing-and-catalog-writer, target-customer-finder |
 | get-found-on-google | C6 | google-profile-builder, listing-and-catalog-writer, review-replies |
 | staff-checklists | C5 | sop-and-checklist-writer, tracker-sheet-builder |
+| stock-and-returns | C11 | stock-check-and-returns, sop-and-checklist-writer, tracker-sheet-builder |
 | hire-and-onboard | C7 | staff-hiring-and-onboarding, sop-and-checklist-writer |
 | social-posts | C10 | social-content-planner, followers-to-customers, simple-marketing-plan |
+| sales-plan | C13 | channel-sales-plan, social-content-planner, customer-message-writer, outreach-email-writer |
 
 The phone helper and the Skills answer the same problem at two depths. The helper gets an owner started in two minutes in Claude or another chat AI. The Skills add the longer rules, references, output formats and refusals, and are what the test banks measure.
 
 ## Versioning
 
-- **Catalog version.** `version` and `date` in `catalog/packages.json` (now 1.1.1, October 20, 2026) are the release version of the whole collection. The build writes it into `.claude-plugin/marketplace.json`, every `packages/<id>/.claude-plugin/plugin.json`, and the footer line of every page ("v1.1.1 · github.com/jfk-cil/small-business-ai-helpers"). Bump it on every release that changes anything people install or open, so installed plugins can see an update:
+- **Catalog version.** `version` and `date` in `catalog/packages.json` (now 1.2.0, October 20, 2026) are the release version of the whole collection. The build writes it into `.claude-plugin/marketplace.json`, every `packages/<id>/.claude-plugin/plugin.json`, and the footer line of every page ("v1.2.0 · github.com/jfk-cil/small-business-ai-helpers"). Bump it on every release that changes anything people install or open, so installed plugins can see an update:
   - patch (1.0.1): wording fixes, translation fixes, a Skill rule tightened;
   - minor (1.1.0): a new Skill, package, question or language;
   - major (2.0.0): a package removed or renamed, or a Skill renamed (install commands change).

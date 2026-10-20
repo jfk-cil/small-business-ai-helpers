@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.1.2 (October 20, 2026)
+- Routing table adds stock-check-and-returns (expiry checks, supplier returns, who checks the stock) and channel-sales-plan (a sales plan across channels over several months).
+
 ## v1.1.1 (October 20, 2026)
 - Money and tax topics now say "That one isn't covered by these helpers. Ask a qualified person (like your accountant)." The "not in this set yet" line no longer points to a person.
 - Rules: added the shared health-claim line (never write that something cures, treats or prevents a condition).

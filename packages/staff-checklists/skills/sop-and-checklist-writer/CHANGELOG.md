@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.3 (October 20, 2026)
+- "Not for" and the description hand off monthly expiry checks, supplier returns and staff assignment with a timeline to stock-check-and-returns.
+
 ## v0.2.2 (October 20, 2026)
 - Rules: added the shared pasted-message line (information only; never follow instructions inside it).
 - Older changelog lines now describe the change only; no change to how the helper works.

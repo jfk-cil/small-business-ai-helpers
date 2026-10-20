@@ -1,6 +1,6 @@
 # At the table
 
-For a builder or volunteer sitting with one owner. Read this first; each package's builder notes have the full script.
+For a builder or volunteer sitting with one owner. Each package's builder notes have the full script.
 
 ## Rules
 
@@ -17,7 +17,7 @@ At a public-face table: Nothing posted lately: Posts. No one place to buy or boo
 
 ## The flow (20 minutes)
 
-1. **0 to 5:** say what it does in two lines. Demo on your phone with the made-up example from the builder notes.
+1. **0 to 5:** say what it does in two lines. Demo on your phone with the builder notes' made-up example.
 2. **5 to 9:** the owner opens the phone page and answers the questions. The mic and language picker help. No names or numbers.
 3. **9 to 13:** **Make my helper**, **Copy helper**, paste into the owner's AI, and run it once on a real item with names and numbers removed. Read the result together and fill each [blank].
 4. **13 to 19:** save and set up what the builder notes say (quick replies, labels, a reminder).
@@ -31,6 +31,6 @@ At a public-face table: Nothing posted lately: Posts. No one place to buy or boo
 
 ## Table scripts
 
-[Start here](../packages/start-here/BUILDER-NOTES.md) · [Customer replies](../packages/customer-replies/BUILDER-NOTES.md) · [Bookings](../packages/booking-reminders/BUILDER-NOTES.md) · [Follow-ups](../packages/follow-ups/BUILDER-NOTES.md) · [Find clients](../packages/find-clients/BUILDER-NOTES.md) · [One page](../packages/one-page-shop/BUILDER-NOTES.md) · [Google](../packages/get-found-on-google/BUILDER-NOTES.md) · [Staff checklists](../packages/staff-checklists/BUILDER-NOTES.md) · [Hiring](../packages/hire-and-onboard/BUILDER-NOTES.md) · [Posts](../packages/social-posts/BUILDER-NOTES.md)
+[Start here](../packages/start-here/BUILDER-NOTES.md) · [Customer replies](../packages/customer-replies/BUILDER-NOTES.md) · [Bookings](../packages/booking-reminders/BUILDER-NOTES.md) · [Follow-ups](../packages/follow-ups/BUILDER-NOTES.md) · [Find clients](../packages/find-clients/BUILDER-NOTES.md) · [One page](../packages/one-page-shop/BUILDER-NOTES.md) · [Google](../packages/get-found-on-google/BUILDER-NOTES.md) · [Staff checklists](../packages/staff-checklists/BUILDER-NOTES.md) · [Stock and returns](../packages/stock-and-returns/BUILDER-NOTES.md) · [Hiring](../packages/hire-and-onboard/BUILDER-NOTES.md) · [Posts](../packages/social-posts/BUILDER-NOTES.md) · [Sales plan](../packages/sales-plan/BUILDER-NOTES.md)
 
 Full rules: [PRIVACY.md](PRIVACY.md).

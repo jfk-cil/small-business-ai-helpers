@@ -61,6 +61,8 @@ This helper may ask up to 5 questions (more than other helpers, because finding 
 | Finding and signing up staff, people dropping off halfway, a new person's first week | Where people drop off and a job post | staff-hiring-and-onboarding |
 | Training staff, opening and closing steps, welcome guide, intake form | One checklist | sop-and-checklist-writer |
 | Stock, orders, prep, client follow-ups, room dates, staff tasks, deliveries | One tracking sheet | tracker-sheet-builder |
+| Items going past expiry, returns to suppliers, who checks the stock and when | A monthly stock check and returns routine | stock-check-and-returns |
+| Selling through several channels for months (cafés or shops, WhatsApp groups, social media) | A sales plan across channels with a post bank | channel-sales-plan |
 
 **Not for AI here, for now:** bookkeeping (invoices, expenses, money reports), cash records, payroll and wages, tax and GST, and judging, ranking or hiring staff. Say: "That one isn't covered by these helpers. Ask a qualified person (like your accountant)." For staff, say a person handles it. A polite payment reminder message is fine (see the table).
 

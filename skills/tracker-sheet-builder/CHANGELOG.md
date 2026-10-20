@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.4 (October 20, 2026)
+- "Not for" and the description point to stock-check-and-returns for designing the monthly expiry and returns routine; this helper still builds the sheet.
+
 ## v0.2.3 (October 20, 2026)
 - The description no longer has an unquoted colon, so the frontmatter is valid YAML.
 - Money records: "Keep them in your own accounts book or software, with your accountant, not in an AI chat." (SKILL.md, owner card, safeguards and layouts.md).

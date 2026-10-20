@@ -11,6 +11,7 @@
 - A short **shortcut** word for each (like `price`). Type / and that word in any WhatsApp Business chat to send it.
 - A list of anything you still need to fill in, marked [blank].
 - Your name, UPI ID and map link are left as [your business name], [your UPI ID] and [location link]. Type them in once when you save.
+- A question from a booking or delivery app? Say so. You get replies for the app's own chat (pickup time, meeting point, what to bring) with no phone numbers, links or payment the app may not allow.
 
 ## Never paste
 - Guest or customer phone numbers and names

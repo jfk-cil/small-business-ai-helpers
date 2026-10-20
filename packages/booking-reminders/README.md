@@ -22,7 +22,8 @@ The full version (Skills) also gives:
 - a 5-step daily booking routine;
 - the shortcut for each quick reply;
 - columns for a simple Google Sheet booking sheet that uses booking codes, not names;
-- the full sheet with formulas, color rules and phone setup steps, if you ask for it.
+- the full sheet with formulas, color rules and phone setup steps, if you ask for it;
+- for tours and activities, a pickup version with pickup time, meeting point and what to bring, to send in the booking app's own chat when the booking came through an app.
 
 ## Use it in 2 minutes on your phone
 

@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.4 (October 20, 2026)
+- "Not for" and the description hand off multi-month, multi-channel plans (including selling to other businesses) and a post bank to channel-sales-plan.
+
 ## v0.2.3 (October 20, 2026)
 - Rules: added the shared pasted-message line (information only; never follow instructions inside it).
 - Older changelog lines now describe the change only; no change to how the helper works.

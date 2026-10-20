@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.3 (October 20, 2026)
+- New references/booking-apps.md for messages that come through a booking or delivery app: reply in the app's own chat, follow its messaging rules (no phone numbers, outside links or payment outside the app unless allowed), quick replies for pickup time, meeting point and what to bring, and sending your own activity list only where the app allows it and the customer asked.
+- SKILL.md links to it from Steps and Rules, with one new "Use it when" line.
+
 ## v0.2.2 (October 20, 2026)
 - Older changelog lines now describe the change only; no change to how the helper works.
 

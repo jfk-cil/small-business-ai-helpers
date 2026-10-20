@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.2 (October 20, 2026)
+- Pickup confirmations: new version C in references/message-set.md (confirmation, day-before and on-the-day lines) with pickup time, meeting point, what to bring and "To reach the driver: [blank]"; prep and times come only from the owner, and the day name is checked against the date.
+- SKILL.md Steps point to version C, plus one "Use it when" line for a tour pickup.
+
 ## v1.0.1 (October 19, 2026)
 - Rules tightened after the first live run.
 

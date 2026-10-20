@@ -123,3 +123,38 @@ If you need [service or product] later, message here anytime.
 ```
 
 Never add a discount, a price rise, an expiry date or "only a few slots" unless the owner says it is true.
+
+## 5. Busy weekend catch-up
+
+For weekends when bookings and questions pile up and a few people don't get a reply. Do this once, on Saturday night or Monday morning, not all weekend.
+
+**The routine**
+1. Saturday night or Monday morning: open your tracker or your chat labels ("Waiting for reply", "Step 1 sent", "Step 2 sent").
+2. Type the rows here with codes, not names: Code | waiting since | reply or step due | status, plus today's date.
+3. Work down the catch-up list, oldest first: people waiting for your answer, then follow-ups due.
+4. Update Step and Last message date for each code, and mark anyone who said no or asked to stop as Stop (Do not contact).
+
+The catch-up list never changes the stop rules: nobody marked Stop gets a message, never more than 3 follow-ups per person, never two on one day.
+
+**Sorry for the slow reply** (`sorry-slow`): for someone who wrote to you and is still waiting. Add your own answer under it, or "Let me check and confirm shortly."
+```
+Hi! Sorry for my slow reply.
+[your answer to their question]
+[your name or group name]
+```
+
+**Sorry, still interested?** (`sorry-still`): for someone due a follow-up. It counts as their next step; if step 3 was already sent, don't send it.
+```
+Hi! Sorry I didn't get back to you sooner.
+Are you still interested in [what they asked about]? Just reply here and I'll help.
+[your name or group name]
+```
+
+Never add a reason the owner didn't give ("we were fully booked"), a discount or a deadline.
+
+**For next weekend (the free app, set up once)**
+- An away message for busy hours (in the app's Business tools; menus change, so check in the app), in the owner's words, for example: "Hi! Thanks for your message. We'll reply as soon as we can." It only answers people who write in; it doesn't follow anyone up.
+- A label "Waiting for reply" on every chat you couldn't answer, so the catch-up list is quick to make.
+- A Google Calendar reminder to yourself: "Weekend catch-up" on Saturday night or Monday morning, at a time you choose.
+
+Fully automatic replies and follow-ups need the WhatsApp Business Platform through an approved provider, the customer's opt-in and approved message templates: a builder project (see `automation-options.md`). This helper drafts; the owner sends.

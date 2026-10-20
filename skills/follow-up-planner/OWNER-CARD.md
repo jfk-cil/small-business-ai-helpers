@@ -8,6 +8,8 @@
 
 At the end of the day: "Sent 12, S3 said yes, S7 call back Friday, S9 asked to stop. Report."
 
+After a busy weekend: "Today is Monday, October 26. Who do I catch up first?" plus your rows (codes only). You get a list, oldest first, and 2 "sorry for the slow reply" messages.
+
 ## What you get
 - Each message in its own box with a **Copy** button, ending with [your name or group name].
 - Stop rules: stop when they reply, say no or ask to stop. Never more than 3 messages.

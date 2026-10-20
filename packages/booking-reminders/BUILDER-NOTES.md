@@ -50,6 +50,7 @@ Don't use a medical or testing example with made-up preparation steps in the dem
 - **The AI promises things** (a slot, "results in 2 days", "the water is safe"). The helper tells it not to. If a draft still does, the owner removes it before saving. Results meaning goes to a qualified person.
 - **The AI adds its own preparation steps.** It shouldn't. If it does, delete them and use the owner's words only.
 - **Dates look wrong in the sheet.** Set the sheet's locale to India in a browser (File > Settings > Locale) before pasting, so dates read day/month/year.
+- **Tours and pickups.** Ask the full version for the pickup version: pickup time, meeting point, what to bring, and "To reach the driver: [blank]" that the owner fills in when sending. Times come only from the owner. If the booking came through an app, the owner sends it in that app's own chat and follows its rules on phone numbers and links.
 - **Owner wants a second or third nudge.** The helper writes one. After that, a phone call or let it go.
 - **Credits or free messages run out.** The helper is plain text. Paste the same helper into ChatGPT or Gemini (free) and carry on. It should work there too, though so far it has been tested in Claude only. Only the Skills and Projects stay inside Claude.
 - **No "Try it here" box.** That box only appears when the page is opened inside Claude. Copying the helper always works.

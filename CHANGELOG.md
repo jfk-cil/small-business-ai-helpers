@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.2.0 (October 20, 2026)
+
+- New package **stock-and-returns** ("Stock checks and returns"): a monthly routine for expiry checks and supplier returns, with each step given to a role and a day. Skills: stock-check-and-returns, sop-and-checklist-writer and tracker-sheet-builder. Answers owner problem C11.
+- New package **sales-plan** ("A sales plan across channels"): a channel map, a 6-month plan with weekly steps that fit the owner's time, a bank of post ideas, a first message and tasting visit plan for cafés and shops, and a monthly check with counts only. Skills: channel-sales-plan, social-content-planner, customer-message-writer and outreach-email-writer. Answers owner problem C13.
+- New Skills **stock-check-and-returns** (test bank SCR) and **channel-sales-plan** (test bank CSP). The collection now has 12 packages and 24 Skills.
+- Owner problem C12 (inquiries from booking and delivery apps, pickup times, follow-ups missed on busy weekends) is answered by customer-replies and booking-reminders, with follow-ups as a related helper. guest-inquiry-replies and message-sorter draft for the app's own chat and its messaging rules, booking-confirmations adds a pickup version, and follow-up-planner adds a busy weekend catch-up.
+- Routing updated: first-task-finder points to the two new Skills; sop-and-checklist-writer and tracker-sheet-builder hand off monthly expiry and supplier-returns jobs to stock-check-and-returns; social-content-planner and simple-marketing-plan hand off multi-month, multi-channel plans to channel-sales-plan.
+- Owner problems C11, C12 and C13 added to catalog/problems.md. README, the guides and the package docs cover all twelve packages.
+
 ## v1.1.1 (October 20, 2026)
 
 An internal self-review written from four readers' points of view (session organizers, owners' associations, owners, volunteer builders) plus a technical, privacy and legal red team. No outside organization took part. Fixes only; no new packages or Skills.

@@ -19,6 +19,7 @@ Two jobs:
 - "Reminder calls don't work. What can I send instead?"
 - "Our cleaners reach the house and nobody is home."
 - "Remind guests about check-in the day before."
+- "Send the pickup time for tomorrow's tour: Saturday 24 October, 7 am, from the hotel gate."
 
 ## Not for
 - One message to many customers (an offer, new timings, a festival greeting): use **customer-message-writer**.
@@ -44,7 +45,7 @@ Optional: after the service, do you want a results-ready note, a thank-you, or a
 2. Decide the job: the full set, or one message. For one message, write only that box plus its shortcut and the "Fill in" line.
 3. Start from `references/message-set.md`. Use the owner's words. Start with "Hi!" (no name), one short idea per line, last line on its own: [your business name].
 4. Placeholders: [service], [day and date], [time], [location link], [your UPI ID] (only if the owner takes an advance), [review link]. Prep, timings, rules and results times come only from the owner; anything missing becomes [blank].
-5. Customer comes to you: "Where: [location link]". You go to them: "We'll come to you" and what to have ready, in the owner's words.
+5. Customer comes to you: "Where: [location link]". You go to them: "We'll come to you" and what to have ready, in the owner's words. You pick them up (tours, activities, transfers): version C, with "Pickup time:", "Meeting point:", "Please bring:" and "To reach the driver: [blank]"; check the day name against the date.
 6. Skip any message the owner says they don't use (for example, no on-the-day reminder).
 7. Keep each message to 500 characters or fewer (aim for 60 words).
 8. Add the daily routine, the quick-reply shortcuts, the booking sheet and the "Fill in before saving" list.

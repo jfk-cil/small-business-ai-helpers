@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.2 (October 20, 2026)
+- New job: busy weekend catch-up. On Saturday night or Monday morning, a short list of who is due (oldest first, same stop rules) and 2 quick-reply drafts, `sorry-slow` and `sorry-still`.
+- references/message-library.md section 5 holds the routine, the 2 drafts and free-app setup (away message, "Waiting for reply" label, a calendar reminder to the owner), and says plainly that automatic WhatsApp replies need the WhatsApp Business Platform through an approved provider (a builder project).
+- Description gains the trigger phrase "busy weekend, I forgot to reply".
+- Review fix: no set length for the routine, and the away-message menu note says menus change.
+
 ## v1.0.1 (October 19, 2026)
 - Rules tightened after the first live run.
 

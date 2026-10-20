@@ -1,6 +1,6 @@
 # Owner problems
 
-These problems are typical of small service businesses. They are general examples written from what owners described, not about any one business.
+These problems are typical of small businesses. They are general examples written from what owners described, not about any one business.
 
 Each package in `catalog/packages.json` lists the problems it answers in its `cards` field.
 
@@ -16,6 +16,9 @@ Each package in `catalog/packages.json` lists the problems it answers in its `ca
 | C8 | Nonprofit or membership group | Following up with past supporters | [follow-ups](../packages/follow-ups/) |
 | C9 | Maker with products and workshops | One place online to buy, book or ask | [one-page-shop](../packages/one-page-shop/) |
 | C10 | Workshop or class business | Posts that turn viewers into customers | [social-posts](../packages/social-posts/) |
+| C11 | Shop selling packaged goods | A monthly expiry check and supplier returns | [stock-and-returns](../packages/stock-and-returns/) |
+| C12 | Tours and rentals | Replying to inquiries from booking and delivery apps | [customer-replies](../packages/customer-replies/), [booking-reminders](../packages/booking-reminders/) |
+| C13 | Small food business | A sales plan across several channels | [sales-plan](../packages/sales-plan/) |
 
 ## C1. Appointment-based service
 
@@ -106,6 +109,33 @@ Each package in `catalog/packages.json` lists the problems it answers in its `ca
 - **What success looks like:** more engagement that leads to more sign-ups, so the owner can keep making new products and online workshops.
 - **Keep out of AI:** photos of people; bank, UPI and card details.
 - **Package:** [social-posts](../packages/social-posts/). Three weekly series (a tip, behind the scenes, what's on), an honest path from a post to a free small thing the owner makes, then to a WhatsApp list people choose to join, then to a workshop or product, a weekly rhythm that fits the owner's time and a short weekly count. Also a week of posts that convert with quick replies, and a launch plan for an online workshop with no fake urgency. The owner posts and sends everything.
+
+## C11. Shop selling packaged goods
+
+- **Business type:** a shop that sells packaged goods with expiry dates, such as pet supplies.
+- **The job:** assigning a monthly stock task to staff, with training and a timeline.
+- **What it costs them today:** every month, expired and near-expiry products have to be found and sent back to the supplier. The steps are checking the real stock, making a purchase return in the billing software, packing the products and following up with the supplier. Staff need hand-holding at each step. The owner uses a sheet to check the counts and the billing software for the return. It comes up every month.
+- **What success looks like:** each step has a role and a date, and staff can follow it without hand-holding.
+- **Keep out of AI:** the standard never-paste list.
+- **Package:** [stock-and-returns](../packages/stock-and-returns/). A monthly routine with a role, a day, "done when" and a sign-off for each step, a first-time how-to for new staff, tracker columns with quantities and dates only, and a return request to the supplier with one polite follow-up. It never says whether expired items are safe to sell and never invents supplier terms. The owner checks everything and sends the messages.
+
+## C12. Tours and rentals
+
+- **Business type:** a tours, activities or rentals business.
+- **The job:** replying to inquiries that come through booking and delivery apps.
+- **What it costs them today:** bookings come in every day. Guests call or message to ask the pickup time, and each one needs a reply. For online leads, the owner shares their own activity list and closes each booking by hand. On busy weekends there is no time to reply to everyone, and some follow-ups are forgotten. The owner wishes the routine replies were automatic. It happens every day.
+- **What success looks like:** routine replies such as pickup times are ready to send, and no follow-up is forgotten on a busy weekend.
+- **Keep out of AI:** the standard never-paste list.
+- **Package:** [customer-replies](../packages/customer-replies/), with [booking-reminders](../packages/booking-reminders/). Replies are drafted for the app's own chat and follow its messaging rules, with quick replies for pickup time, meeting point and what to bring. Booking-reminders writes the pickup confirmation and reminders. For a busy weekend, [follow-ups](../packages/follow-ups/) lists who to catch up first, with two "sorry for the slow reply" drafts. The helpers are honest that they can't reply inside any app on their own; the owner sends every reply.
+
+## C13. Small food business
+
+- **Business type:** a small food business, such as a bakery.
+- **The job:** a simple marketing plan across several ways of selling.
+- **What it costs them today:** the owner wants one plan for three channels: supplying cafés, selling direct to customers through WhatsApp, and posting on social media. Marketing hasn't started yet, mainly for lack of time. It comes up every day and matters a lot.
+- **What success looks like:** a 6-month sales plan and a bank of posts to reuse.
+- **Keep out of AI:** guest or customer names and phone numbers; Aadhaar or PAN numbers; bank, UPI and card details; and the rest of the standard never-paste list.
+- **Package:** [sales-plan](../packages/sales-plan/). A channel map, a 6-month plan with monthly themes from the owner's own seasons and weekly steps that fit their time, a bank of post ideas with a monthly refresh, a first message and tasting visit plan for cafés, and a monthly check with counts only. WhatsApp messages go only to people who chose to join. It never promises sales or invents prices or wholesale terms; the owner visits, posts and sends everything.
 
 ## Not tied to one problem
 

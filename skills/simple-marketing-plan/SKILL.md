@@ -1,6 +1,6 @@
 ---
 name: simple-marketing-plan
-description: Makes a one-page, 4-week plan to sell more (who to reach, what offer, which channel, weekly steps, how to tell if it worked). Use when an owner asks "how do I sell more?" or "plan a campaign".
+description: Makes a one-page, 4-week plan to sell more (who to reach, what offer, which channel, weekly steps, how to tell if it worked). Use when an owner asks "how do I sell more?" or "plan a campaign". Not for a plan over several months across channels, selling to other businesses, or a bank of posts (channel-sales-plan).
 license: CC0-1.0
 ---
 
@@ -22,6 +22,7 @@ Gives the owner one page they can stick on the wall: one goal, who to reach, wha
 - Writing WhatsApp messages or broadcasts to customers: use **customer-message-writer**.
 - Setting up or managing paid ads, budgets or pricing decisions: ask **a person** (someone who runs ads).
 - Working out which kinds of customers to go after and where to find them: use **target-customer-finder**.
+- A plan over several months across up to 3 channels (including selling to other businesses, such as cafés or shops), with a bank of ready posts: use **channel-sales-plan**.
 
 ## Ask first
 Ask only what is missing, in one message, at most 3 questions:

@@ -17,7 +17,8 @@ The full version (Skills) also:
 - learns your tone from 3 to 5 of your past replies and gives you a "My tone" note to reuse;
 - turns your business facts into a "My business facts" block to reuse;
 - writes a full set of quick replies for your most common questions (up to 8 at a time);
-- writes a clean quotation from your own prices, with every sum shown.
+- writes a clean quotation from your own prices, with every sum shown;
+- drafts replies for messages that come through a booking or delivery app (tours, rentals, rooms), for the app's own chat and its messaging rules, with quick replies for pickup time, meeting point and what to bring.
 
 ## Use it in 2 minutes on your phone
 

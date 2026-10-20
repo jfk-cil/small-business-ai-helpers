@@ -1,6 +1,6 @@
 # Small business AI helpers
 
-Free, ready-to-use AI helpers for small businesses: replying to customers, bookings and reminders, follow-ups, finding clients, a one-page shop, getting found on Google, posts, staff checklists and hiring. Written with owners in Goa, India, and usable anywhere.
+Free, ready-to-use AI helpers for small businesses: replying to customers, bookings and reminders, follow-ups, finding clients, a one-page shop, getting found on Google, posts, a sales plan across channels, staff checklists, stock checks and returns, and hiring. Written with owners in Goa, India, and usable anywhere.
 
 **On a phone? Open the helpers:** https://jfk-cil.github.io/small-business-ai-helpers/
 
@@ -8,20 +8,22 @@ Pick a job, answer a few short questions in English, Hindi, Marathi or Konkani, 
 
 ## The helpers
 
-Each package solves one problem that owners named in their own words.
+Each package solves a problem that owners named in their own words: 12 packages and 24 Skills, answering owner problems C1 to C13.
 
 | Package | The problem | Phone page | Skills inside |
 |---|---|---|---|
 | [Start here](packages/start-here/) | "I'm not sure which job to hand to AI first." | [open](https://jfk-cil.github.io/small-business-ai-helpers/start-here/) | first-task-finder |
-| [Reply to customer messages](packages/customer-replies/) | Dozens of WhatsApp messages a day, most asking the same things. | [open](https://jfk-cil.github.io/small-business-ai-helpers/customer-replies/) | message-sorter, guest-inquiry-replies, quote-and-proposal-writer |
+| [Reply to customer messages](packages/customer-replies/) | Dozens of messages a day on WhatsApp or booking apps, most asking the same things. | [open](https://jfk-cil.github.io/small-business-ai-helpers/customer-replies/) | message-sorter, guest-inquiry-replies, quote-and-proposal-writer |
 | [Bookings and reminders](packages/booking-reminders/) | Customers book, then forget what to bring or don't turn up. | [open](https://jfk-cil.github.io/small-business-ai-helpers/booking-reminders/) | booking-confirmations, tracker-sheet-builder |
 | [Follow-ups that get replies](packages/follow-ups/) | No time to follow up each call or unanswered message. | [open](https://jfk-cil.github.io/small-business-ai-helpers/follow-ups/) | follow-up-planner, lead-reply-and-follow-up, tracker-sheet-builder, customer-message-writer |
 | [Find new clients](packages/find-clients/) | Not sure who to look for or how to reach out. | [open](https://jfk-cil.github.io/small-business-ai-helpers/find-clients/) | target-customer-finder, outreach-email-writer, lead-qualifier, client-onboarding-writer |
 | [Your shop on one page](packages/one-page-shop/) | People find you online, but there's no single place to buy, book or ask. | [open](https://jfk-cil.github.io/small-business-ai-helpers/one-page-shop/) | storefront-page-builder, listing-and-catalog-writer, target-customer-finder |
 | [Get found on Google](packages/get-found-on-google/) | People search for what you sell nearby, and you don't show up. | [open](https://jfk-cil.github.io/small-business-ai-helpers/get-found-on-google/) | google-profile-builder, listing-and-catalog-writer, review-replies |
 | [Staff checklists](packages/staff-checklists/) | Things slip when you're not there. | [open](https://jfk-cil.github.io/small-business-ai-helpers/staff-checklists/) | sop-and-checklist-writer, tracker-sheet-builder |
+| [Stock checks and returns](packages/stock-and-returns/) | Expired stock has to be found, returned and chased every month, and staff need hand-holding. | [open](https://jfk-cil.github.io/small-business-ai-helpers/stock-and-returns/) | stock-check-and-returns, sop-and-checklist-writer, tracker-sheet-builder |
 | [Hire and welcome staff](packages/hire-and-onboard/) | Skilled people don't reach out, or stop halfway through signing up. | [open](https://jfk-cil.github.io/small-business-ai-helpers/hire-and-onboard/) | staff-hiring-and-onboarding, sop-and-checklist-writer |
 | [Posts that bring customers](packages/social-posts/) | No time to post, and views that don't turn into customers. | [open](https://jfk-cil.github.io/small-business-ai-helpers/social-posts/) | social-content-planner, followers-to-customers, simple-marketing-plan |
+| [A sales plan across channels](packages/sales-plan/) | Selling to cafés or shops, on WhatsApp and through posts, with no plan that ties them together. | [open](https://jfk-cil.github.io/small-business-ai-helpers/sales-plan/) | channel-sales-plan, social-content-planner, customer-message-writer, outreach-email-writer |
 
 ## Three ways to use them
 
@@ -74,7 +76,7 @@ python3 scripts/build.py --check  # fail if generated files are stale
 - No organization, program or government body endorses or reviews these helpers.
 - Provided as is, with no warranty of any kind (see [LICENSE](LICENSE)).
 - Releases are tagged. The pages change when the main branch changes, so fork the repo if you need to control your own copy (see [DEPLOY.md](guide/DEPLOY.md), path g).
-- WhatsApp, Instagram, Google, Claude, ChatGPT and Gemini are trademarks of their owners. This project is not affiliated with or endorsed by them.
+- WhatsApp, Instagram, Facebook, Google, Claude, ChatGPT and Gemini are trademarks of their owners. This project is not affiliated with or endorsed by them.
 
 ## License
 
