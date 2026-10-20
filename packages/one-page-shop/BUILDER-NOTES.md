@@ -14,13 +14,13 @@ For a volunteer sitting with an owner at a table. Aim: the owner leaves with an 
 
 | Time | What you do |
 |---|---|
-| 0:00 to 2:00 | Say what it is: "It brings everything you offer onto one page with one button each, so people find their own way to buy, book or ask. You check every word and publish it yourself." Ask what they offer and where people find them now. If you want to take notes or record, say so out loud and ask first. Only go ahead on a clear yes. |
+| 0:00 to 2:00 | Say what it is: "It brings everything you offer onto one page with one button each, so people find their own way to buy, book or ask. You check every word and publish it yourself." Ask what they offer and where people find them now. If you want to take notes, ask out loud first: paper only, with no names or numbers. No photos or recordings. |
 | 2:00 to 4:00 | Demo on your phone with the made-up example below. Show the offer map and one page block with its button. |
 | 4:00 to 7:00 | The owner opens the page and answers the 4 questions. "List each offer" is the key answer. For tools, names only ("a shop app, WhatsApp"), no links or account details. |
 | 7:00 to 10:00 | Owner copies the helper, opens their AI, pastes, sends, types "go". Read the offer map together. Is the one action right for each offer? Could a stranger tell what to tap? Ask for changes if not. Copy the checklist into a phone note. |
 | 10:00 to 14:00 | Type "ok" for the page words. Make the headline sound like the owner. Fill each [blank] with a fact they are sure of, or "ask me". |
 | 14:00 to 18:00 | Put it online if there is time (see below): Google Sites or a link-in-bio service on a phone, using the page words. If not, agree who does it and when. The owner types one real link and tests that button on mobile data. |
-| 18:00 to 20:00 | Agree one move for this week (for example: the page link in the Instagram bio by Friday, every button tested). Check the AI chat has no names, numbers or passwords; if it does, delete that chat together. Hand over the playbook. |
+| 18:00 to 20:00 | Agree one move for this week (for example: the page link in the Instagram bio by Friday, every button tested). Save the helper in "Message yourself" if it isn't there yet. Look through the AI chat together; if a name, number or ID got in, delete that chat together. Hand over the playbook. |
 
 ## Demo with a made-up example
 
@@ -50,7 +50,7 @@ What to point out:
 - **A placeholder is still on the page.** In the page file, links that still hold a placeholder show a dashed red outline. Go through every one before sharing the link.
 - **Too many offers.** The map keeps up to 6 rows and groups the rest. Suggest leading with the 3 that matter most this season.
 - **Refund or returns wording.** It leaves these as [blank]. A qualified person checks the wording, especially if the payment provider asks the page to show policies.
-- **Credits or free messages run out.** The helper is plain text. Paste the same helper into ChatGPT or Gemini (free) and carry on. Only the Skills and Projects stay inside Claude.
+- **Credits or free messages run out.** The helper is plain text. Paste the same helper into ChatGPT or Gemini (free) and carry on. It should work there too, though so far it has been tested in Claude only. Only the Skills and Projects stay inside Claude.
 - **No "Try it here" box.** That box only appears when the page is opened inside Claude. Copying the helper always works.
 
 ## How to put the page on a free builder
@@ -75,9 +75,10 @@ To make a Skill that already knows the owner's offers:
    ```
    ---
    name: my-shop-page
-   description: Keeps my one-page shop up to date for my candle studio: candles to buy, a Saturday class to book, custom candles to ask about. Use when I add an offer, change a price or date, or need a reply for someone who tapped a button.
+   description: Keeps my one-page shop up to date for my candle studio, with candles to buy, a Saturday class to book and custom candles to ask about. Use when I add an offer, change a price or date, or need a reply for someone who tapped a button.
    ---
    ```
+   Avoid a colon in the description, or wrap it in double quotes.
 3. Under that, paste the helper text from the phone page, the offer map the owner agreed on, and the true facts they want repeated (what each offer includes, the reply promise). No customer names, phone numbers, links with private details, passwords or payment keys.
 4. Zip the folder (the folder itself goes inside the zip) and upload it in Settings > Capabilities > Skills.
 5. Test it in a new chat by typing "go".
@@ -103,6 +104,7 @@ Be clear with the owner about size and cost before you start any of these.
 - Publish the page from your own accounts or under your name. It lives in the owner's accounts.
 - Ask for or touch the owner's passwords, OTPs, payment keys or logins. They log in themselves.
 - Write refund, returns, delivery or GST terms for the owner. A qualified person checks those.
-- Record or photograph anything without saying so out loud first and hearing a yes.
-- Post the owner's name, business, page link, screenshots or customer details anywhere public, including GitHub issues and social media.
+- Record audio, video or screens, or photograph or screenshot owners, customers, staff, screens or chats, even with a yes. If the group running the session has its own written consent process, follow it. Notes on paper only, with no names or numbers.
+- Post the owner's name, business, page link or customer details anywhere public, including GitHub issues and social media.
 - Promise sales or results.
+- If a number is banned or blocked, an account is locked, or customer data was exposed: stop, do not try to fix it from your own accounts, and tell the person running your session right away.

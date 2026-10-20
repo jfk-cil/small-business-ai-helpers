@@ -24,7 +24,7 @@
 
 If you paste one by mistake, stop, delete that chat, and type it again with a [blank].
 
-You don't need to paste your sales or money records either. Keep those on paper.
+You don't need to paste your sales or money records either. Keep them in your own accounts book or software, with your accountant, not in an AI chat.
 
 ## It won't
 - Promise you a number of customers or bookings. No one honestly can.

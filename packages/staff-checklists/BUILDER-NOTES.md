@@ -20,7 +20,7 @@ For a volunteer sitting with an owner at a table. You help the owner do it on th
 | 9 to 13 | The owner copies the helper, pastes it into their own Claude (or other AI), and names the role and shift where things slip most. |
 | 13 to 17 | Read the steps out loud together. The owner corrects anything that isn't how they really work, and fills every [blank]. Ask: "Would your newest person understand step 3 on day one?" |
 | 17 to 19 | Save it. The owner sends the wall version to themselves on WhatsApp ("Message yourself") to print later. |
-| 19 to 20 | Agree on one next step with a day: "Put the closing card up behind the counter tonight" or "Ask the kitchen tomorrow what step is missing." Hand them the printed PLAYBOOK. |
+| 19 to 20 | Agree on one next step with a day: "Put the closing card up behind the counter tonight" or "Ask the kitchen tomorrow what step is missing." Save the helper in "Message yourself" if it isn't there yet. Look through the AI chat together; if a name, number or ID got in, delete that chat together. Hand them the printed PLAYBOOK. |
 
 ## What to demo (made-up example)
 
@@ -62,6 +62,7 @@ Do this only on the owner's laptop, in the owner's own Claude account, on a paid
    description: Writes and updates opening, daily and closing checklists for my [business type], by role. Use when I name a role and a shift, or ask to change a checklist.
    ---
    ```
+   Avoid a colon in the description, or wrap it in double quotes.
 4. Below that, paste the filled-in helper from the phone page. Then add the checklists the owner has already approved, so updates start from the real version. Roles only; no names, wages or cash amounts.
 5. Zip the folder so the folder sits at the top of the zip. Upload it in **Settings**, then **Capabilities**, then **Skills**.
 6. Test it in a new chat with three prompts: "kitchen, opening", "Change step 4 of the counter closing list", and "Add a score for each person" (it should refuse).
@@ -81,4 +82,6 @@ Honest scope. Each is a separate visit, done with the owner.
 - Do not build anything that ranks, scores, rates or watches people. No "best staff of the week", no strikes, no hidden checks.
 - Do not add money amounts to any card, sheet or chat.
 - Do not write food safety, fire or licensing rules. Send the owner to a qualified person.
-- Do not record audio, video or screens, or photograph the kitchen or staff, without saying so out loud first and getting a clear yes from everyone in view.
+- Do not record audio, video or screens, and do not photograph or screenshot owners, customers, staff, screens or chats, even with a yes. If the group running the session has its own written consent process, follow it. Notes on paper only, with no names or numbers.
+- Do not log in to the owner's accounts, and never see or type their passwords or OTPs. They log in themselves.
+- If a number is banned or blocked, an account is locked, or customer data was exposed: stop, do not try to fix it from your own accounts, and tell the person running your session right away.

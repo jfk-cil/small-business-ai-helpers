@@ -101,7 +101,7 @@ Rules for outreach:
 - **Short.** Email 1: 120 words or fewer. Follow-ups: 60 words or fewer.
 
 ## Example
-Owner: "Sample Bakery. Want to supply croissants to a cafe on the beach road in Mandrem. They do big breakfasts. Rs 60 each, minimum 20."
+Owner: "Sample Bakery. Want to supply croissants to a cafe on the beach road in Candolim. They do big breakfasts. Rs 60 each, minimum 20."
 
 **Email 1 (send first)**
 Subject: Croissants for your breakfast menu
@@ -120,5 +120,5 @@ Want follow-ups too? Say 'follow-ups'.
 
 ## Test prompts
 1. "I run Sample Studio, a yoga studio in Assagao. Email a boutique hotel in Panjim about morning yoga for guests. They have a rooftop and lots of wellness travelers. Rs 1,500 per group class, up to 12 people."
-2. "Write a cold email from Sample Bakery to cafes in Mandrem offering our sourdough wholesale. Make it sound good."
+2. "Write a cold email from Sample Bakery to cafes in Candolim offering our sourdough wholesale. Make it sound good."
 3. "Here are emails and numbers I scraped from Instagram. Write one email to blast to all of them and say the offer ends tonight."

@@ -1,24 +1,22 @@
 <title>{{TITLE}}</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Mukta:wght@400;600&display=swap">
 <style>
 /* Layout: one narrow column, phone first. Steps stack top to bottom; the helper box is the one heavy object. */
 :root{
   --paper:#f5f7f3; --card:#ffffff; --ink:#15211c; --muted:#56635d; --line:#d6ded8;
   --accent:#0d6a58; --accent-ink:#ffffff; --accent-soft:#e2f0eb;
   --warn:#9c3f17; --warn-bg:#fbede5; --ok:#1f6b33;
-  --display:"Baloo 2","Mukta",system-ui,sans-serif;
-  --body:"Mukta",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --field:#76837c;
+  --display:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari",sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari",sans-serif;
   --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --paper:#101714; --card:#17201c; --ink:#e5ede8; --muted:#9caaa3; --line:#2b3732;
+  --paper:#101714; --card:#17201c; --ink:#e5ede8; --muted:#9caaa3; --line:#2b3732; --field:#6b7a73;
   --accent:#53c4a8; --accent-ink:#062019; --accent-soft:#183129;
   --warn:#f2a882; --warn-bg:#2c1b12; --ok:#7fd193; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --paper:#101714; --card:#17201c; --ink:#e5ede8; --muted:#9caaa3; --line:#2b3732;
+  --paper:#101714; --card:#17201c; --ink:#e5ede8; --muted:#9caaa3; --line:#2b3732; --field:#6b7a73;
   --accent:#53c4a8; --accent-ink:#062019; --accent-soft:#183129;
   --warn:#f2a882; --warn-bg:#2c1b12; --ok:#7fd193; color-scheme:dark}
 *{box-sizing:border-box}
@@ -26,11 +24,11 @@
 body{background:var(--paper);color:var(--ink);font:17px/1.55 var(--body);margin:0}
 .wrap{max-width:640px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:22px}
 header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
-.crumb{color:var(--accent);text-decoration:none;font-weight:600;font-size:15px}
+.crumb{color:var(--accent);text-decoration:none;font-weight:600;font-size:15px;display:inline-flex;align-items:center;min-height:44px}
 .crumb:hover{text-decoration:underline}
 .lang{display:flex;align-items:center;gap:8px;font-size:15px;color:var(--muted)}
 select,input,textarea,button{font:inherit;color:inherit}
-select{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 10px}
+select{background:var(--card);border:1px solid var(--field);border-radius:10px;padding:6px 10px;min-height:44px}
 h1{font:700 clamp(28px,7vw,38px)/1.15 var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em}
 h2{font:700 22px/1.25 var(--display);margin:0;text-wrap:balance}
 .lede{margin:0;color:var(--muted);font-size:18px}
@@ -46,7 +44,7 @@ section{display:flex;flex-direction:column;gap:14px}
 .field{display:flex;flex-direction:column;gap:4px}
 .field label{font-weight:600}
 .field small{color:var(--muted);font-size:14px}
-input,textarea{width:100%;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-height:48px}
+input,textarea{width:100%;background:var(--card);border:1px solid var(--field);border-radius:12px;padding:12px 14px;min-height:48px}
 textarea{min-height:88px;resize:vertical}
 input:focus,textarea:focus,select:focus,button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .keepout{background:var(--warn-bg);color:var(--ink);border-radius:12px;padding:12px 14px;font-size:15px}
@@ -57,15 +55,17 @@ input:focus,textarea:focus,select:focus,button:focus-visible,a:focus-visible{out
 .btn[disabled]{opacity:.55;cursor:default}
 .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .helperbox{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.helperbox textarea.fallback{min-height:260px;font:14px/1.5 var(--mono)}
 .helperbox pre{margin:0;max-height:260px;overflow:auto;white-space:pre-wrap;word-wrap:break-word;font:14px/1.5 var(--mono);color:var(--ink)}
 ol.howto{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:4px}
 .status{font-size:15px;color:var(--ok);min-height:1.2em;margin:0}
 .out{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;white-space:pre-wrap;word-wrap:break-word;min-height:3em}
-details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 14px}
-summary{cursor:pointer;font-weight:600}
-details[open] summary{margin-bottom:10px}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:2px 14px}
+details[open]{padding-bottom:12px}
+summary{cursor:pointer;font-weight:600;padding-block:10px}
+details[open] summary{margin-bottom:0}
 .dl{display:flex;flex-direction:column;gap:8px;margin:10px 0 0;padding:0;list-style:none}
-.dl a{color:var(--accent);font-weight:600}
+.dl a{color:var(--accent);font-weight:600;display:inline-flex;align-items:center;min-height:44px;word-break:break-all}
 code{font:14px/1.5 var(--mono);background:var(--accent-soft);border-radius:6px;padding:1px 6px;word-break:break-all}
 .tiles{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .tile{display:flex;flex-direction:column;gap:4px;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);text-decoration:none;min-width:0}
@@ -83,7 +83,7 @@ footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);paddin
     <a class="crumb" id="crumb" href="{{HUB_HREF}}" hidden></a>
     <span id="sitename" class="label"></span>
     <label class="lang"><span id="langlabel"></span>
-      <select id="lang" aria-label="Language">
+      <select id="lang">
         <option value="en">English</option>
         <option value="hi">हिन्दी</option>
         <option value="mr">मराठी</option>
@@ -123,16 +123,38 @@ const DATA = /*__DATA__*/null;
   const luhn = (digits) => { let sum = 0, alt = false;
     for (let i = digits.length - 1; i >= 0; i--) { let d = +digits[i]; if (alt) { d *= 2; if (d > 9) d -= 9; } sum += d; alt = !alt; }
     return sum % 10 === 0; };
+  // Phone-like runs: separators allowed, but no one-digit groups (so "rooms 6 7 8 9 10 11 12" passes).
+  const groupsOk = (m) => m.trim().split(/[\s-]+/).every((g, i) => g.replace(/\D/g, "").length !== 1 || (i === 0 && g === "0"));
+  const anyMatch = (re, s, ok) => { for (const m of s.matchAll(re)) if (ok(m)) return true; return false; };
+  const NUM_WORDS = "zero|oh|one|two|three|four|five|six|seven|eight|nine|double|triple";
+  const REF = /\b(ref|reference|order|invoice|ticket|pnr|receipt|id)\b[\s.:#-]*(?:no\.?|number)?[\s.:#-]*$/i;
+  const SOCIAL = /^(insta|instagram|ig|fb|facebook|twitter|x|youtube|yt|threads|telegram|tg)$/i;
   const SCANS = [
     ["email", /[\w.+-]+@[\w-]+\.[\w.]+/],
-    ["upi", /\b[\w.-]{2,}@(ok[a-z]+|ybl|ibl|axl|paytm|upi|apl|[a-z]{3,})\b/i],
-    ["phone", /(?:\+?91[\s-]?)?(?<!\d)[6-9]\d{4}[\s-]?\d{5}(?!\d)/],
-    ["aadhaar", /(?<!\d)[2-9]\d{3}([\s-]?)\d{4}\1\d{4}(?!\d)/],
-    ["pan", /\b[A-Z]{5}\d{4}[A-Z]\b/],
-    ["card", { test: (s) => (s.match(/(?:\d[ -]?){13,19}/g) || []).some(m => { const d = m.replace(/\D/g, ""); return d.length >= 13 && d.length <= 19 && luhn(d); }) }],
-    ["secret", /\b(otp|password|passcode|pin)\b(?!\s*code)\s*(?:is|:|=|-)\s*\S{4,}/i]
+    ["upi", { test: (s) => anyMatch(/(?<![\w.-])([\w.-]{2,})@(ok[a-z]+|ybl|ibl|axl|paytm|upi|apl|[a-z]{3,})\b/gi, s, (m) => !SOCIAL.test(m[1])) }],
+    ["phone", { test: (s) =>
+      // Indian mobile: optional +91, 91, (+91) or 0 in front; spaced or dashed groupings
+      anyMatch(/(?<!\d)(?:\(?\+?91\)?[\s-]?|0[\s-]?)?[6-9](?:[\s-]?\d){9}(?!\d)/g, s, (m) => groupsOk(m[0]) && !REF.test(s.slice(Math.max(0, m.index - 20), m.index))) ||
+      // Landline or mobile written with a trunk 0 or +91 (0832 2267890, +91 832 226 7890)
+      anyMatch(/(?<!\d)(?:\+91|\(\+?91\)|0)[\s-]?[1-9](?:[\s-]?\d){9}(?!\d)/g, s, (m) => groupsOk(m[0])) ||
+      // International (+44, +7, +49 ... or 00 prefix), not +91
+      anyMatch(/(?:\+|(?<!\d)00)\s?([1-9][\d\s().-]{6,20}\d)/g, s, (m) => { const d = m[1].replace(/\D/g, ""); return !d.startsWith("91") && d.length >= 8 && d.length <= 15; }) ||
+      // Spelled out: "nine eight two two zero ..."
+      new RegExp("\\b(?:(?:" + NUM_WORDS + ")[\\s,-]+){7,}(?:" + NUM_WORDS + ")\\b", "i").test(s) }],
+    ["aadhaar", /(?<!\d[\s-]?)[2-9]\d{3}([\s-]?)\d{4}\1\d{4}(?![\s-]?\d)/],
+    ["pan", /\b[A-Z]{5}\d{4}[A-Z]\b/i],
+    ["card", { test: (s) =>
+      anyMatch(/(?<!\d)(?:\d[ -]?){14,18}\d(?!\d)/g, s, (m) => { const d = m[0].replace(/\D/g, "");
+        return [15, 16, 19].includes(d.length) && luhn(d) && !/(fssai|licen[cs]e|gstin)/i.test(s.slice(Math.max(0, m.index - 16), m.index)); }) ||
+      // Bank account number or IFSC code
+      /\b[A-Z]{4}0[A-Z0-9]{6}\b/i.test(s) ||
+      /\b(?:a\/c|acc(?:ount|t)?)\.?(?:\s*(?:no|number))?\.?\s*[:#-]?\s*\d(?:[\s-]?\d){8,17}(?!\d)/i.test(s) }],
+    ["passport", { test: (s) => /passport|\bform\s*c\b/i.test(s) && /\b(?:[A-Z]{1,2}\d{6,8}|\d{9})\b/i.test(s) }],
+    ["secret", { test: (s) => anyMatch(/\b(otp|password|passcode|passwd|pwd|pin)\b(?!\s*code)\s*(?:is\b|:|=|-)?\s*((?=\S*\d)\S{4,})/gi, s,
+      (m) => !(/^pin$/i.test(m[1]) && /^\d{6}[.,;]?$/.test(m[2]))) }]
   ];
-  const scan = (text) => {
+  const scan = (raw) => {
+    const text = raw.replace(/[\u0966-\u096F]/g, (c) => String(c.charCodeAt(0) - 0x0966));
     const hits = [];
     for (const [kind, re] of SCANS) if (re.test(text) && !hits.includes(kind)) hits.push(kind);
     if (hits.includes("email") && hits.includes("upi")) hits.splice(hits.indexOf("upi"), 1);
@@ -140,9 +162,22 @@ const DATA = /*__DATA__*/null;
     return hits;
   };
 
-  async function copyText(text, statusEl) {
-    try { await navigator.clipboard.writeText(text); statusEl.textContent = t("copied"); }
-    catch (e) { statusEl.textContent = t("copy.fail"); }
+  const scrollMode = () => (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) ? "auto" : "smooth";
+
+  // Copy: clipboard first; if that fails, show the full helper in a read-only box, select it and try the old copy command.
+  async function copyText(text, statusEl, fallbackEl) {
+    try { await navigator.clipboard.writeText(text); statusEl.textContent = t("copied"); return; }
+    catch (e) {}
+    fallbackEl.value = text;
+    fallbackEl.hidden = false;
+    fallbackEl.style.height = "auto";
+    fallbackEl.style.height = fallbackEl.scrollHeight + 2 + "px";
+    fallbackEl.focus();
+    fallbackEl.select();
+    try { fallbackEl.setSelectionRange(0, text.length); } catch (e) {}
+    let ok = false;
+    try { ok = document.execCommand("copy"); } catch (e) {}
+    statusEl.textContent = ok ? t("copied") : t("copy.fail");
   }
 
   function helperFor(pkg, answers) {
@@ -162,14 +197,14 @@ const DATA = /*__DATA__*/null;
       el("h2", {text: t("hub.pick")})
     );
     const tiles = el("div", {class: "tiles"});
+    const s = DATA.packages.find(p => p.id === "start-here");
+    if (s) tiles.append(el("a", {class: "tile start", href: DATA.links[s.id]},
+      el("strong", {text: pt(s.id, "title")}), el("span", {text: pt(s.id, "short")})));
     for (const p of DATA.packages) {
       if (p.id === "start-here") continue;
       tiles.append(el("a", {class: "tile", href: DATA.links[p.id]},
         el("strong", {text: pt(p.id, "title")}), el("span", {text: pt(p.id, "short")})));
     }
-    const s = DATA.packages.find(p => p.id === "start-here");
-    if (s) tiles.append(el("a", {class: "tile start", href: DATA.links[s.id]},
-      el("strong", {text: pt(s.id, "title")}), el("span", {text: pt(s.id, "short")})));
     main.append(tiles);
   }
 
@@ -188,12 +223,13 @@ const DATA = /*__DATA__*/null;
       el("div", {class: "keepout"}, el("strong", {text: t("keepout.title") + ": "}), t("keepout.body")));
     for (const q of pkg.questions) {
       const id = "q-" + q.id;
-      const input = q.multiline ? el("textarea", {id, rows: "3"}) : el("input", {id, type: "text", autocomplete: "off"});
+      const hid = "h-" + q.id;
+      const input = q.multiline ? el("textarea", {id, rows: "3", "aria-describedby": hid}) : el("input", {id, type: "text", autocomplete: "off", "aria-describedby": hid});
       if (answers[q.id]) input.value = answers[q.id];
       input.addEventListener("input", () => { answers[q.id] = input.value; });
       s1.append(el("div", {class: "field"},
         el("label", {for: id, text: pt(pkg.id, "q." + q.id)}),
-        el("small", {text: pt(pkg.id, "q." + q.id + ".hint")}), input));
+        el("small", {id: hid, text: pt(pkg.id, "q." + q.id + ".hint")}), input));
     }
     const scanBox = el("div", {class: "scan", role: "alert", hidden: true});
     const makeBtn = el("button", {class: "btn", type: "button", text: t("btn.make")});
@@ -201,28 +237,29 @@ const DATA = /*__DATA__*/null;
     main.append(s1);
 
     // Step 2: helper
-    const pre = el("pre", {id: "helpertext", tabindex: "0"});
+    const pre = el("pre", {id: "helpertext", tabindex: "0", lang: "en"});
+    const fallback = el("textarea", {class: "fallback", readonly: "", lang: "en", "aria-labelledby": "s2h", hidden: true});
     const status = el("p", {class: "status", "aria-live": "polite"});
     const copyBtn = el("button", {class: "btn", type: "button", text: t("btn.copy")});
     const s2 = el("section", {hidden: true, "aria-labelledby": "s2h"},
-      el("div", {class: "step"}, el("b", {text: "2"}), el("h2", {id: "s2h", text: t("step.helper")})),
-      el("div", {class: "helperbox"}, el("p", {class: "note", text: t("helper.what")}), pre,
+      el("div", {class: "step"}, el("b", {text: "2"}), el("h2", {id: "s2h", tabindex: "-1", text: t("step.helper")})),
+      el("div", {class: "helperbox"}, el("p", {class: "note", text: t("helper.what")}), pre, fallback,
         el("div", {class: "row"}, copyBtn,
           el("a", {class: "btn ghost", href: "https://claude.ai/new", target: "_blank", rel: "noopener", text: t("btn.openclaude")}),
-          el("button", {class: "btn ghost", type: "button", text: t("edit"), onclick: () => { s1.scrollIntoView({behavior: "smooth"}); }})),
+          el("button", {class: "btn ghost", type: "button", text: t("edit"), onclick: () => { s1.scrollIntoView({behavior: scrollMode()}); }})),
         status),
       el("h2", {text: t("use.title")}),
       el("ol", {class: "howto"}, ...["use.1","use.2","use.3","use.4"].map(k => el("li", {text: t(k)}))),
       el("details", {}, el("summary", {text: t("save.title")}),
         el("p", {class: "note", text: t("save.body")}), el("p", {class: "note", text: t("save.project")})));
-    copyBtn.addEventListener("click", () => copyText(pre.textContent, status));
+    copyBtn.addEventListener("click", () => copyText(pre.textContent, status, fallback));
     main.append(s2);
 
     // Optional: try it inside Claude (only when this page runs as a Claude artifact).
     const tryIn = el("textarea", {id: "try-in", rows: "3", placeholder: t("example") + ": " + pt(pkg.id, "try.placeholder")});
     const tryBtn = el("button", {class: "btn", type: "button", text: t("btn.try")});
     const stopBtn = el("button", {class: "btn ghost", type: "button", text: t("btn.stop"), hidden: true});
-    const out = el("div", {class: "out", "aria-live": "polite"});
+    const out = el("div", {class: "out", "aria-live": "polite", "aria-busy": "false"});
     const tryScan = el("div", {class: "scan", role: "alert", hidden: true});
     const s3 = el("section", {hidden: true},
       el("h2", {text: t("try.title")}), el("p", {class: "note", text: t("try.note")}),
@@ -245,15 +282,17 @@ const DATA = /*__DATA__*/null;
       if (hits.length) {
         scanBox.hidden = false;
         scanBox.textContent = t("scan.found") + " " + hits.map(k => t("scan." + k)).join(", ") + ".";
-        scanBox.scrollIntoView({behavior: "smooth", block: "center"});
+        scanBox.scrollIntoView({behavior: scrollMode(), block: "center"});
         return;
       }
       scanBox.hidden = true;
       pre.textContent = helperFor(pkg, answers);
+      fallback.hidden = true; fallback.value = "";
       status.textContent = all.trim() ? "" : t("empty.answers");
       s2.hidden = false;
       if (sampleFn) s3.hidden = false;
-      s2.scrollIntoView({behavior: "smooth"});
+      s2.scrollIntoView({behavior: scrollMode()});
+      $("#s2h").focus({preventScroll: true});
     });
 
     let sampleFn = null, ctl = null;
@@ -268,7 +307,7 @@ const DATA = /*__DATA__*/null;
       if (hits.length) { tryScan.hidden = false; tryScan.textContent = t("scan.found") + " " + hits.map(k => t("scan." + k)).join(", ") + "."; return; }
       tryScan.hidden = true;
       ctl = new AbortController();
-      tryBtn.disabled = true; stopBtn.hidden = false; out.textContent = t("thinking");
+      tryBtn.disabled = true; stopBtn.hidden = false; out.textContent = t("thinking"); out.setAttribute("aria-busy", "true");
       try {
         await sampleFn([{role: "user", content: pre.textContent + "\n\n---\n\n" + msg}], {
           signal: ctl.signal, cache: false, onText: ({text}) => { out.textContent = text; }
@@ -281,7 +320,7 @@ const DATA = /*__DATA__*/null;
           out.append(el("p", {class: "note", text: t(key)}));
           if (code === "not_granted" || code === "sampling_disabled" || code === "capability_disabled") s3.hidden = true;
         }
-      } finally { tryBtn.disabled = false; stopBtn.hidden = true; }
+      } finally { tryBtn.disabled = false; stopBtn.hidden = true; out.setAttribute("aria-busy", "false"); }
     });
   }
 

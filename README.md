@@ -4,7 +4,7 @@ Free, ready-to-use AI helpers for small businesses: replying to customers, booki
 
 **On a phone? Open the helpers:** https://jfk-cil.github.io/small-business-ai-helpers/
 
-Pick a job, answer a few short questions in English, Hindi, Marathi or Konkani, and copy your ready helper into Claude, or into ChatGPT or Gemini if that's what you use. The page saves only your language choice and sends your answers nowhere. What you paste into an AI goes to that AI, so leave out names and numbers.
+Pick a job, answer a few short questions in English, Hindi, Marathi or Konkani, and copy your ready helper into Claude. It should also work in ChatGPT or Gemini if that's what you use (tested so far in Claude only). The page saves only your language choice and sends your answers nowhere. What you paste into an AI goes to that AI, so leave out names and numbers.
 
 ## The helpers
 
@@ -25,7 +25,7 @@ Each package solves one problem that owners named in their own words.
 
 ## Three ways to use them
 
-**1. Phone, any plan, any AI (2 minutes).** Open the phone page, answer the questions, tap **Copy helper**, open Claude and paste. The helper is plain text, so it also works in ChatGPT and Gemini, and it keeps working after any free credits end. Save it in WhatsApp "Message yourself" to reuse it.
+**1. Phone, any plan (2 minutes).** Open the phone page, answer the questions, tap **Copy helper**, open Claude and paste. The helper is plain text, so it should also work in ChatGPT and Gemini (tested so far in Claude only), and you can keep using it after any free credits end. Save it in WhatsApp "Message yourself" to reuse it.
 
 **2. Claude on a laptop (full version, 5 minutes).** Each package's page has a **Download** link for each Skill (also in [docs/downloads](docs/downloads/)). In Claude, open **Settings**, then **Capabilities**, then **Skills**, and upload the zip (as of October 2026). Skills need a paid Claude plan with code execution turned on (as of October 2026). Once uploaded, Claude uses the right Skill when you ask for that job.
 
@@ -36,7 +36,7 @@ Each package solves one problem that owners named in their own words.
 /plugin install customer-replies@small-business-ai-helpers
 ```
 
-In Cowork: **Customize**, then **Plugins**, then **Add marketplace**, and enter `jfk-cil/small-business-ai-helpers`.
+In Cowork: **Customize**, then **Plugins**, then **Add marketplace**, and enter `jfk-cil/small-business-ai-helpers` (as of October 2026).
 
 If you install several packages, shared Skills (like tracker-sheet-builder) come with each one. That's expected.
 
@@ -45,10 +45,16 @@ If you install several packages, shared Skills (like tracker-sheet-builder) come
 - They draft. You check and send everything yourself. Nothing here sends a message, posts, or books anything on its own.
 - They use only the facts you give and write `[blank]` where something is missing. They don't invent prices, dates, reviews or results.
 - They never ask for, and tell you to remove: customers' names or phone numbers, Aadhaar, PAN or passport details, bank, UPI or card details, passwords or OTPs, health details.
-- They don't give legal, tax or medical advice, and they never rank or score people.
+- They don't give legal, tax or medical advice.
+- They never rank or score staff or job applicants. The lead check only answers the fit questions you write.
+
+## What these helpers don't do
+
+Money records, invoices, GST, licenses, registrations, contracts, and labor or consumer law. These need your accountant, a lawyer or the official government portal for that rule. An AI draft from these helpers never replaces them.
 
 ## For builders and contributors
 
+- [At the table](guide/AT-THE-TABLE.md): one screen for a volunteer sitting with an owner.
 - [How it works](guide/HOW-IT-WORKS.md): sources, what is generated, and why.
 - [Deploying and publishing](guide/DEPLOY.md): GitHub Pages, Claude pages, Skill uploads, plugin installs.
 - [Privacy and safety rules](guide/PRIVACY.md).
@@ -61,6 +67,14 @@ python3 scripts/build.py          # regenerate packages, pages and downloads
 python3 scripts/check.py          # lint everything (also runs in CI)
 python3 scripts/build.py --check  # fail if generated files are stale
 ```
+
+## Who looks after this
+
+- Maintained by volunteers, on a best-effort basis. Report a problem or suggest a change in [GitHub Issues](https://github.com/jfk-cil/small-business-ai-helpers/issues).
+- No organization, program or government body endorses or reviews these helpers.
+- Provided as is, with no warranty of any kind (see [LICENSE](LICENSE)).
+- Releases are tagged. The pages change when the main branch changes, so fork the repo if you need to control your own copy (see [DEPLOY.md](guide/DEPLOY.md), path g).
+- WhatsApp, Instagram, Google, Claude, ChatGPT and Gemini are trademarks of their owners. This project is not affiliated with or endorsed by them.
 
 ## License
 

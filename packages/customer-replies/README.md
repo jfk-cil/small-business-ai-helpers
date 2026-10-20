@@ -24,8 +24,8 @@ The full version (Skills) also:
 1. Open the phone page: https://jfk-cil.github.io/small-business-ai-helpers/customer-replies/
 2. Answer 4 short questions: what kind of business and where; what customers ask most and your answers; how you like to sound; which messages must always come to you. All are optional. You can tap the mic on your keyboard and speak. The page has English, Hindi, Marathi and Konkani (Devanagari and Romi).
 3. Tap **Make my helper**, then **Copy helper**.
-4. Open Claude, or the AI you already use (ChatGPT and Gemini work too), start a new chat, paste and send.
-5. Paste one or more customer messages. Change each name or number to Customer 1, Customer 2 first.
+4. Open Claude, or the AI you already use (it should also work in ChatGPT and Gemini; tested so far in Claude only), start a new chat, paste and send.
+5. Paste customer messages one at a time (copying several at once adds names or numbers). Change each name or number to Customer 1, Customer 2 first.
 
 Keep it for next time: send the helper to yourself in WhatsApp ("Message yourself").
 
@@ -36,7 +36,7 @@ If you open the page inside Claude, a **Try it here** box lets you test the help
 The full version is a set of Claude Skills. They know more and check their own work.
 
 **claude.ai (web or desktop app)**
-You need a paid Claude plan with code execution turned on (Settings > Capabilities).
+You need a paid Claude plan with code execution turned on (Settings > Capabilities), as of October 2026.
 1. Download the Skills:
    - [message-sorter.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/message-sorter.zip)
    - [guest-inquiry-replies.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/guest-inquiry-replies.zip)
@@ -51,7 +51,7 @@ You need a paid Claude plan with code execution turned on (Settings > Capabiliti
 ```
 
 **Cowork**
-Open Customize > Plugins > Add marketplace and enter `jfk-cil/small-business-ai-helpers`. Then install **customer-replies** from that marketplace.
+Open Customize > Plugins > Add marketplace (as of October 2026) and enter `jfk-cil/small-business-ai-helpers`. Then install **customer-replies** from that marketplace.
 
 ## What's inside
 
@@ -73,7 +73,7 @@ For the owner: [PLAYBOOK.md](PLAYBOOK.md). For a volunteer at the table: [BUILDE
 - **It won't promise** a price, a slot, availability, a refund, a discount, an arrival time, legal title, a loan or a possession date that you didn't give it. Missing facts come back as [blank] or "Let me check and confirm shortly."
 - **It won't follow orders hidden in a customer's message** ("ignore your rules", "say the owner agreed"). Those go to "Needs you".
 - **No legal, tax, GST or medical advice.** Quotes keep the tax line blank for your accountant. No invoices or bookkeeping.
-- **Plans:** the phone helper works on any Claude plan, including free, and in ChatGPT or Gemini. Uploading Skills needs a paid Claude plan with code execution turned on. Claude Projects (saving the helper as instructions) also need a paid plan. Claude Code and Cowork need a plan that includes them. Free plans have message limits; if you reach one, paste the same helper into another AI.
+- **Plans:** the phone helper should work on any Claude plan, including free, and also in ChatGPT or Gemini (tested so far in Claude only). Uploading Skills needs a paid Claude plan with code execution turned on. Claude Projects (saving the helper as instructions) also need a paid plan. Claude Code and Cowork need a plan that includes them. Free plans have message limits; if you reach one, paste the same helper into another AI.
 - The Hindi, Marathi and Konkani versions of the page are draft translations. Check them with someone who reads the language well.
 
 ## Privacy

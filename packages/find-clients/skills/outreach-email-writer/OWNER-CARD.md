@@ -3,7 +3,7 @@
 **What it does:** writes a short, honest first email to a business you'd like to work with (a hotel, a cafe, an office). If you ask, it also writes up to 3 polite follow-ups for if they don't reply.
 
 ## What to type
-- "Write a first email from my bakery to a cafe on the beach road in Mandrem. They do big breakfasts. Croissants Rs 60 each, minimum 20."
+- "Write a first email from my bakery to a cafe on the beach road in Candolim. They do big breakfasts. Croissants Rs 60 each, minimum 20."
 - "I emailed a hotel in Panjim about yoga classes last week and they didn't reply. Write my follow-ups."
 
 ## What you get

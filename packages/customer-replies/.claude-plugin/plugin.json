@@ -1,6 +1,6 @@
 {
   "name": "customer-replies",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "AI drafts the routine replies in your tone for you to check and send. You write only the ones that need you.",
   "author": {
     "name": "Small business AI helpers (CC0)"

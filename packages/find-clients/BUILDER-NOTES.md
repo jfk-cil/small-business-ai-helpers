@@ -13,13 +13,13 @@ For a volunteer sitting with an owner at a table. Aim: the owner leaves with 2 o
 
 | Time | What you do |
 |---|---|
-| 0:00 to 2:00 | Say what it is: "It turns your best customers into a clear picture of who to look for, where, and what to say. You do the searching and you send every message." Ask what they sell and who their best customers are, as types. If you want to take notes or record, say so out loud and ask first. Only go ahead on a clear yes. |
+| 0:00 to 2:00 | Say what it is: "It turns your best customers into a clear picture of who to look for, where, and what to say. You do the searching and you send every message." Ask what they sell and who their best customers are, as types. If you want to take notes, ask out loud first: paper only, with no names or numbers. No photos or recordings. |
 | 2:00 to 5:00 | Demo on your phone with the made-up example below. Show step 1 (types) and a few search phrases from step 2. |
 | 5:00 to 8:00 | The owner opens the page and answers the 4 questions. "Best customers" is the key answer: types, not names. |
 | 8:00 to 12:00 | Owner copies the helper, opens their AI, pastes, sends, types "go". Read the customer types together. Does the owner recognize them? Ask for changes if not. |
 | 12:00 to 15:00 | Step 2: the owner tries 2 search phrases live on Google Maps or Instagram. Talk about what they find. Real businesses come from their search, not from the AI. |
 | 15:00 to 18:00 | Start the lead sheet in the Google Sheets app with the column names from the playbook. Add 2 businesses the owner just found, each with one true thing. Then ask the helper for step 4: one first message. |
-| 18:00 to 20:00 | Agree one move for this week (for example: 5 first messages by Friday). Check the AI chat has no names, numbers or emails; if it does, delete that chat together. |
+| 18:00 to 20:00 | Agree one move for this week (for example: 5 first messages by Friday). Save the helper in "Message yourself" if it isn't there yet. Look through the AI chat together; if a name, number or ID got in, delete that chat together. |
 
 ## Demo with a made-up example
 
@@ -43,7 +43,7 @@ What to point out:
 - **The AI makes claims** ("we've grown 50 brands", "guaranteed results"). The helper tells it not to. If a draft still does, the owner removes it. Proof comes only from the owner's real work.
 - **Owner wants to WhatsApp everyone.** First contact goes by email, a contact form, a business page or in person, one business at a time. Once someone says yes to hearing more, WhatsApp is fine.
 - **The lead checker and fairness.** If an owner wants to filter people by religion, caste, community, gender, age, language or where they're from, the full version refuses and checks only the job. Back it up.
-- **Credits or free messages run out.** The helper is plain text. Paste the same helper into ChatGPT or Gemini (free) and carry on. Only the Skills and Projects stay inside Claude.
+- **Credits or free messages run out.** The helper is plain text. Paste the same helper into ChatGPT or Gemini (free) and carry on. It should work there too, though so far it has been tested in Claude only. Only the Skills and Projects stay inside Claude.
 - **No "Try it here" box.** That box only appears when the page is opened inside Claude. Copying the helper always works.
 
 ## Turning a working helper into the owner's own Skill (laptop)
@@ -61,6 +61,7 @@ To make a Skill that already knows the owner's business:
    description: Helps me find and contact new clients for my social media service for cafés and homestays in North Goa. Use when I ask who to look for, for search phrases, or for a first message.
    ---
    ```
+   Avoid a colon in the description, or wrap it in double quotes.
 3. Under that, paste the helper text from the phone page, the customer types the owner agreed on, and their fit rules (smallest job, areas, notice). No client names, emails, phone numbers or passwords.
 4. Zip the folder (the folder itself goes inside the zip) and upload it in Settings > Capabilities > Skills.
 5. Test it in a new chat by typing "go".
@@ -84,8 +85,9 @@ Be clear with the owner about size and cost before you start any of these.
 ## Do not
 
 - Put the owner's data in your own accounts. No client lists, emails or numbers in your Claude, your sheets or your phone.
-- Record or photograph anything without saying so out loud first and hearing a yes.
-- Post the owner's name, business, phone, screenshots or client names anywhere public, including GitHub issues and social media.
+- Record audio, video or screens, or photograph or screenshot owners, customers, staff, screens or chats, even with a yes. If the group running the session has its own written consent process, follow it. Notes on paper only, with no names or numbers.
+- Post the owner's name, business, phone or client names anywhere public, including GitHub issues and social media.
 - Ask for or touch the owner's passwords or OTPs. They log in themselves.
 - Introduce the owner to your own contacts in a way that shares their details without asking first.
 - Promise results.
+- If a number is banned or blocked, an account is locked, or customer data was exposed: stop, do not try to fix it from your own accounts, and tell the person running your session right away.

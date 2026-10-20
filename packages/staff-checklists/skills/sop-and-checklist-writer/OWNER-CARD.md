@@ -4,7 +4,7 @@
 
 ## What to type
 - "Write the steps for opening my cafe: unlock at 7, coffee machine on for 20 minutes, wipe tables, check milk, menu board out, doors open 7:30. Plus a checklist to print."
-- "Make a welcome guide for my homestay in Mandrem: wifi, check-out at 11, breakfast 8 to 10, no loud music after 10 pm."
+- "Make a welcome guide for my homestay in Candolim: wifi, check-out at 11, breakfast 8 to 10, no loud music after 10 pm."
 
 ## What you get
 - **Steps:** numbered, one action each, in your order, with your times.

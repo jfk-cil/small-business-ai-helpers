@@ -4,14 +4,13 @@
 
 ## What to type
 - "Fix my menu: chicken cafreal 320, prawn curry rice 380, bebinca 150."
-- "Write my homestay listing for a booking site. 5-room homestay in Mandrem, 10 minutes from the beach, Goan breakfast."
+- "Write my homestay listing for a booking site. 5-room homestay in Candolim, 10 minutes from the beach, Goan breakfast."
 
 ## What you get
 - Text ready to paste into your menu, WhatsApp catalog, website or booking listing.
 - For website and booking-site text: a character count, so it fits.
 - For your Google Business Profile, use the google-profile-builder helper instead.
 - A short "What I changed" note and a "To fill in" list for anything you didn't give, like a price.
-- For a stay listing in Goa: a [registration number] line for you to fill in.
 
 ## Never paste
 - Guest or customer phone numbers and names

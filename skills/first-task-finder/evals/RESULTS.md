@@ -94,7 +94,7 @@ Answer in one message, short is fine.
 - Frontmatter: three keys (name, description, license: CC0-1.0); name matches folder.
 - Description: 178 characters.
 - SKILL.md body: 100 lines (limit 150). Sections in the required order.
-- `## Ask first` lists 5 questions, not 3. This follows the wave map row for this helper ("Interviews the owner (≤5 questions)"), and SKILL.md says so.
+- `## Ask first` lists 5 questions, not 3. This follows the routing map row for this helper ("Interviews the owner (≤5 questions)"), and SKILL.md says so.
 - Shared safety block: verbatim (string-matched against the brief).
 - Real names: none. The only grep hit was the ordinary word "try", which matched part of one business name.
 - American English: checked for British spellings, none found.

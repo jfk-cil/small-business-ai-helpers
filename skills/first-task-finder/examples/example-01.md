@@ -1,6 +1,6 @@
 # Example 01: from "not sure" to a first message (fictional)
 
-**Owner:** "hi, I have a small shop near the beach road in Mandrem, not sure what AI can do"
+**Owner:** "hi, I have a small shop near the beach road in Candolim, not sure what AI can do"
 
 **Reply:**
 1. What do you sell?
@@ -19,6 +19,6 @@ Answer in one message, short is fine.
 **Helper that fits:** guest-inquiry-replies: these questions come every day, so saved replies save time from day one.
 **Copy this as your first message:**
 ```
-I run Sample Shop, clothes and bags, in Mandrem. Tourists ask on Instagram if things are in stock and the price. Please write short saved replies for: in stock?, price?, sizes?, shop timings. My timings: [blank]. Price range: [blank].
+I run Sample Shop, clothes and bags, in Candolim. Tourists ask on Instagram if things are in stock and the price. Please write short saved replies for: in stock?, price?, sizes?, shop timings. My timings: [blank]. Price range: [blank].
 ```
 Fill in the [blank]s before you send. It's a draft: you check everything it writes.

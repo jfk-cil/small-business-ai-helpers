@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.0.2 (October 20, 2026)
+- Paid or gifted posts: start with "Ad" or "Collaboration with [partner]" and also use the platform's paid-partnership label, matching social-content-planner and the phone helper.
+
 ## v1.0.1 (October 20, 2026)
 - STOP handling covers WhatsApp Channels and Communities (remind people they can unfollow or exit).
 - Paid or gifted posts: "#ad" or the paid-partnership label "as advertising rules and the platform require".

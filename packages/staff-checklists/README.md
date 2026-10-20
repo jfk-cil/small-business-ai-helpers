@@ -21,7 +21,7 @@ Open the phone page: https://jfk-cil.github.io/small-business-ai-helpers/staff-c
 
 1. Answer four short questions: your business, your roles, what goes wrong when you are away, and your hours. Every question is optional.
 2. Tap **Make my helper**, then **Copy helper**.
-3. Open Claude, or the AI you already use, start a new chat, paste the helper and send it.
+3. Open Claude, or the AI you already use (it should also work in ChatGPT and Gemini; tested so far in Claude only), start a new chat, paste the helper and send it.
 4. Name a role and a shift, for example "counter, closing". It writes the steps and a wall version.
 
 If you open the page inside Claude, a **Try it here** box lets you run it on the page itself. It runs on your own Claude account. This page saves nothing.
@@ -32,7 +32,7 @@ Send the helper to yourself on WhatsApp ("Message yourself") so you can copy it 
 
 The full version also writes step-by-step guides for new staff, guest welcome guides and short intake forms, and designs tracker sheets with formulas and color rules. It comes as two Skills.
 
-**Claude on the web or desktop app** (paid plan, code execution turned on)
+**Claude on the web or desktop app** (paid plan, code execution turned on, as of October 2026)
 
 Download each Skill:
 
@@ -50,7 +50,7 @@ Then in Claude open **Settings**, then **Capabilities**, then **Skills**, and up
 
 **Cowork**
 
-Open **Customize**, then **Plugins**, then **Add marketplace**. Enter `jfk-cil/small-business-ai-helpers`, then install **staff-checklists**.
+Open **Customize**, then **Plugins**, then **Add marketplace** (as of October 2026). Enter `jfk-cil/small-business-ai-helpers`, then install **staff-checklists**.
 
 ## What's inside
 
@@ -65,7 +65,7 @@ Open **Customize**, then **Plugins**, then **Add marketplace**. Enter `jfk-cil/s
 - **Tasks, not people.** Checklists track jobs. Initials and a date only. It will not add scores, ratings, warnings or "who forgot", and it will not help judge, watch or discipline anyone.
 - **No money amounts.** Cash steps are steps only ("count the till, write it in the book"). It never asks for or writes money figures, and it will not build a cash book, sales ledger, payroll or tax sheet.
 - **No safety or legal rules of its own.** It does not write food safety, fire or licensing rules. Where a step involves gas, electricity, hot liquids, knives or cleaning chemicals, it marks it so you can add how to do it safely. Check with a qualified person.
-- **Free and paid plans.** The phone helper works on any Claude plan, including free, and in ChatGPT or Gemini too. Uploading Skills needs a paid Claude plan with code execution turned on.
+- **Free and paid plans.** The phone helper should work on any Claude plan, including free, and also in ChatGPT or Gemini (tested so far in Claude only). Uploading Skills needs a paid Claude plan with code execution turned on.
 
 ## Privacy
 

@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.0.2 (October 20, 2026)
+- Outreach and places to try name kinds, not organizations: "community and local WhatsApp groups (only where the group allows job posts)" and "job sites (search 'jobs in [area]'; check each site's terms and costs)" (SKILL.md, kit-templates.md and example).
+
 ## v1.0.1 (October 19, 2026)
 - Rules tightened after the first live run.
 

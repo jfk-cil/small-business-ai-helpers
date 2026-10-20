@@ -27,7 +27,7 @@ Usage:
   python3 check.py -r run1.json -r run2.json testbank/*.json      # two replicates
 
 responses.json: {"responses": {"<case id>": "<reply text>", ...}}
-Testbank files use the common schema in 01-WAVE-1-1-ADDENDUM.md:
+Testbank files use the shared testbank schema:
   {"suite","version","date","cases":[{"id","skill","archetype","kind","prompt","expected","checks":[...]}]}
 
 Check types: contains, not_contains, regex, not_regex, max_words, max_chars,

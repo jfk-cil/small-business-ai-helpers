@@ -25,7 +25,7 @@ The full version (Skills) also:
 1. Open the phone page: https://jfk-cil.github.io/small-business-ai-helpers/find-clients/
 2. Answer 4 short questions: what you sell and to whom; your 3 best customers (types, not names); where your clients are; how you'd like to reach out. All are optional. You can tap the mic on your keyboard and speak. The page has English, Hindi, Marathi and Konkani (Devanagari and Romi).
 3. Tap **Make my helper**, then **Copy helper**.
-4. Open Claude, or the AI you already use (ChatGPT and Gemini work too), start a new chat, paste and send.
+4. Open Claude, or the AI you already use (it should also work in ChatGPT and Gemini; tested so far in Claude only), start a new chat, paste and send.
 5. Type "go" to start with step 1.
 
 Keep it for next time: send the helper to yourself in WhatsApp ("Message yourself").
@@ -37,7 +37,7 @@ If you open the page inside Claude, a **Try it here** box lets you test the help
 The full version is a set of Claude Skills. They know more and check their own work.
 
 **claude.ai (web or desktop app)**
-You need a paid Claude plan with code execution turned on (Settings > Capabilities).
+You need a paid Claude plan with code execution turned on (Settings > Capabilities), as of October 2026.
 1. Download the Skills:
    - [target-customer-finder.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/target-customer-finder.zip)
    - [outreach-email-writer.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/outreach-email-writer.zip)
@@ -53,7 +53,7 @@ You need a paid Claude plan with code execution turned on (Settings > Capabiliti
 ```
 
 **Cowork**
-Open Customize > Plugins > Add marketplace and enter `jfk-cil/small-business-ai-helpers`. Then install **find-clients** from that marketplace.
+Open Customize > Plugins > Add marketplace (as of October 2026) and enter `jfk-cil/small-business-ai-helpers`. Then install **find-clients** from that marketplace.
 
 ## What's inside
 
@@ -77,7 +77,7 @@ For the owner: [PLAYBOOK.md](PLAYBOOK.md). For a volunteer at the table: [BUILDE
 - **Fair checks only.** The lead checker looks at the job (need, budget, timing, area, who decides), never at religion, caste, community, gender, age, language or where someone is from. You make the call.
 - **Drafts only.** You check and send every message yourself, from your own email or phone.
 - **No contracts or tax advice.** For contract terms, billing details and tax, check with a qualified person.
-- **Plans:** the phone helper works on any Claude plan, including free, and in ChatGPT or Gemini. Uploading Skills needs a paid Claude plan with code execution turned on. Claude Projects (saving the helper as instructions) also need a paid plan. Claude Code and Cowork need a plan that includes them. Free plans have message limits; if you reach one, paste the same helper into another AI.
+- **Plans:** the phone helper should work on any Claude plan, including free, and also in ChatGPT or Gemini (tested so far in Claude only). Uploading Skills needs a paid Claude plan with code execution turned on. Claude Projects (saving the helper as instructions) also need a paid plan. Claude Code and Cowork need a plan that includes them. Free plans have message limits; if you reach one, paste the same helper into another AI.
 - The Hindi, Marathi and Konkani versions of the page are draft translations. Check them with someone who reads the language well.
 
 ## Privacy

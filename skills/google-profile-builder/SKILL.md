@@ -41,7 +41,7 @@ Never ask for their phone, address, email, login or verification code; they type
 2. Read `references/profile-rules.md`. Pick 2 or 3 category names to search for in Google's list.
 3. Address or service area: if customers come to the owner, show the address; if the owner goes to them and they don't visit, set a service area with the owner's towns and hide the address.
 4. Write parts 1 to 6 in the Output order, using only the owner's services, towns, hours and facts. Missing details are [blank]. Use each search phrase at most once per text, naturally. No links, prices or offers in the description; no phone numbers or dates in posts unless the owner gives the dates.
-5. Posts: one per week. Ideas: one service, how to book, an area served, a common customer question. Photo ideas show work, equipment or products; no faces unless the person agrees.
+5. Posts: one per week. Ideas: one service, how to book, an area served, a common customer question. Photo ideas show work, equipment or products. No faces without the person's permission. Never children's faces.
 6. Part 7 only with a website, using `references/local-business-schema.md`. No website: one line saying to skip it.
 7. Count the characters of every copy box and cut words until each fits its limit (see Rules). Write the count next to the heading, never inside the box.
 
@@ -62,7 +62,7 @@ This improves your chances; ranking depends on Google. Ads can appear above the 
 7. Hours: [owner's hours, or [blank]]. Add holiday hours before festivals.
 8. Phone and website: type them into Google yourself. Don't paste them here.
 9. Description and services: paste parts 2 and 3.
-10. Photos: logo, cover, outside with signboard, inside, your work or products. Real photos; no faces unless the person agrees.
+10. Photos: logo, cover, outside with signboard, inside, your work or products. Real photos. No faces without the person's permission. Never children's faces.
 
 **2. Business description** ([N]/750 characters)
 ```

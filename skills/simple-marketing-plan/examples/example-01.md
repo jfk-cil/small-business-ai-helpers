@@ -1,7 +1,7 @@
 # Example 01: Sample Homestay, slow weekday bookings (fictional)
 
 ## Owner's message
-> Sample Homestay in Mandrem, 3 rooms. Weekends fill up, weekdays are empty in November. I can do 15 minutes a day. I use Instagram and Google Business Profile. I can give a free airport pickup for stays of 3 nights or more.
+> Sample Homestay in Candolim, 3 rooms. Weekends fill up, weekdays are empty in November. I can do 15 minutes a day. I use Instagram and Google Business Profile. I can give a free airport pickup for stays of 3 nights or more.
 
 ## Output
 

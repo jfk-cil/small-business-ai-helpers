@@ -1,24 +1,24 @@
 # Example 01: WhatsApp catalog items for Sample Bakery (fictional)
 
 ## Owner's message
-> Sample Bakery, Mandrem. For my WhatsApp catalog: banana bread loaf 450g ₹280, made with jaggery. Coconut cookies box of 12 ₹220. Sourdough loaf, price same as last week.
+> Sample Bakery, Candolim. For my WhatsApp catalog: banana bread loaf 450g ₹280, made with jaggery. Coconut cookies box of 12 ₹220. Sourdough loaf, price same as last week.
 
 ## Output
 
 **Catalog items: ready to paste**
 
 **Banana Bread Loaf** · ₹280
-A 450 g banana bread loaf, sweetened with jaggery. Baked at Sample Bakery in Mandrem.
+A 450 g banana bread loaf, sweetened with jaggery. Baked at Sample Bakery in Candolim.
 
 **Coconut Cookies (box of 12)** · ₹220
-A box of 12 coconut cookies from our Mandrem bakery.
+A box of 12 coconut cookies from our Candolim bakery.
 
 **Sourdough Loaf** · [price]
-Our sourdough loaf, baked in Mandrem.
+Our sourdough loaf, baked in Candolim.
 
 **What I changed:**
 - Gave each item a clear name, size and price so it's easy to order from your catalog.
-- Put "Mandrem" in naturally so local people searching can find you.
+- Put "Candolim" in naturally so local people searching can find you.
 
 **To fill in:**
 sourdough price (you said "same as last week")

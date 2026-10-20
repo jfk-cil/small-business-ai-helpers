@@ -13,13 +13,13 @@ For a volunteer sitting with an owner at a table. Aim: the owner leaves with the
 
 | Time | What you do |
 |---|---|
-| 0:00 to 2:00 | Say what it is: "It writes the confirmation, reminders and follow-up messages for each booking. You save them once and send them in two taps. It can't send or schedule anything by itself." Ask what people book and what usually goes wrong. If you want to take notes or record, say so out loud and ask first. Only go ahead on a clear yes. |
+| 0:00 to 2:00 | Say what it is: "It writes the confirmation, reminders and follow-up messages for each booking. You save them once and send them in two taps. It can't send or schedule anything by itself." Ask what people book and what usually goes wrong. If you want to take notes, ask out loud first: paper only, with no names or numbers. No photos or recordings. |
 | 2:00 to 5:00 | Demo on your phone with the made-up example below. Show the full set, the [blank]s, and the weekday check. |
 | 5:00 to 9:00 | The owner opens the page and answers the 4 questions. Spend most of the time on "What must the customer do or bring beforehand". Their exact words, not yours. |
 | 9:00 to 13:00 | Owner copies the helper, opens their AI, pastes and sends. Then describes one real booking without a name: service, day, date, time. Read every message together. Check the preparation lines are exactly the owner's. |
 | 13:00 to 17:00 | WhatsApp Business: save the confirmation (`booked`) and the day-before reminder (`tomorrow`) as quick replies. Make the three labels. If time allows, start the booking sheet in the Google Sheets app with the column names from the playbook. |
 | 17:00 to 19:00 | Add a daily Google Calendar event for the owner: "Send tomorrow's reminders". Save the helper in "Message yourself". Walk through "Every day" on the playbook. |
-| 19:00 to 20:00 | Agree one move for this week (for example: save the other six quick replies). Check the AI chat has no names or numbers; if it does, delete that chat together. |
+| 19:00 to 20:00 | Agree one move for this week (for example: save the other six quick replies). Save the helper in "Message yourself" if it isn't there yet. Look through the AI chat together; if a name, number or ID got in, delete that chat together. |
 
 ## Demo with a made-up example
 
@@ -51,7 +51,7 @@ Don't use a medical or testing example with made-up preparation steps in the dem
 - **The AI adds its own preparation steps.** It shouldn't. If it does, delete them and use the owner's words only.
 - **Dates look wrong in the sheet.** Set the sheet's locale to India in a browser (File > Settings > Locale) before pasting, so dates read day/month/year.
 - **Owner wants a second or third nudge.** The helper writes one. After that, a phone call or let it go.
-- **Credits or free messages run out.** The helper is plain text. Paste the same helper into ChatGPT or Gemini (free) and carry on. Only the Skills and Projects stay inside Claude.
+- **Credits or free messages run out.** The helper is plain text. Paste the same helper into ChatGPT or Gemini (free) and carry on. It should work there too, though so far it has been tested in Claude only. Only the Skills and Projects stay inside Claude.
 - **No "Try it here" box.** That box only appears when the page is opened inside Claude. Copying the helper always works.
 
 ## Turning a working helper into the owner's own Skill (laptop)
@@ -69,6 +69,7 @@ To make a Skill that already knows the owner's business:
    description: Writes confirmation and reminder messages for deep cleaning visits for my business. Use when I describe a booking or say "booking messages".
    ---
    ```
+   Avoid a colon in the description, or wrap it in double quotes.
 3. Under that, paste the helper text from the phone page and the owner's preparation steps. Hours, days and rules are fine. No customer names, phone numbers, UPI ID, address or passwords.
 4. Zip the folder (the folder itself goes inside the zip) and upload it in Settings > Capabilities > Skills.
 5. Test it in a new chat with the made-up booking above.
@@ -92,8 +93,9 @@ Be clear with the owner about size and cost before you start any of these.
 ## Do not
 
 - Put the owner's data in your own accounts. No bookings, customer names or numbers in your Claude, your sheets or your phone.
-- Record or photograph anything without saying so out loud first and hearing a yes.
-- Post the owner's name, business, phone, screenshots or booking details anywhere public, including GitHub issues and social media.
+- Record audio, video or screens, or photograph or screenshot owners, customers, staff, screens or chats, even with a yes. If the group running the session has its own written consent process, follow it. Notes on paper only, with no names or numbers.
+- Post the owner's name, business, phone or booking details anywhere public, including GitHub issues and social media.
 - Ask for or touch the owner's passwords or OTPs. They log in themselves.
 - Write preparation, health or results advice for the owner. That comes from them or a qualified person.
 - Promise results.
+- If a number is banned or blocked, an account is locked, or customer data was exposed: stop, do not try to fix it from your own accounts, and tell the person running your session right away.

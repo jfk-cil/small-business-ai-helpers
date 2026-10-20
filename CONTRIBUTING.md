@@ -8,9 +8,16 @@ Read [guide/HOW-IT-WORKS.md](guide/HOW-IT-WORKS.md) first: it explains which fil
 
 - Plain, precise American English. US dates ("October 19, 2026"). Short sentences.
 - No em dashes. No emoji.
-- Fictional examples only: "Sample Café", "Sample Sparkle Cleaning" and the like. Goa place names are fine. Never name a real person, a real business or a private organization; `scripts/check.py` fails if it finds one.
+- Fictional examples only: "Sample Café", "Sample Sparkle Cleaning" and the like. Goa place names are fine. Never name a real person, a real business, a private organization, a program or an event.
+- The private-name scan in `scripts/check.py` reads a plain-text list of names that the maintainer keeps locally and never commits (`SBH_PRIVATE_TERMS=/path/to/terms.txt`). Without that file, `check.py` prints a warning and skips the scan; CI cannot run it. So the scan does not protect your pull request: check your own text. The maintainer runs the full scan before every release.
 - Fake contact and ID values only, from the list in `scripts/check.py`.
 - Follow [guide/PRIVACY.md](guide/PRIVACY.md) in every helper, example and test.
+
+## Adapting for one owner, or fixing a small thing
+
+- **Adapting for one owner** (their business, their tone, their facts): do it in the owner's own account, with the phone page answers or the "own Skill" steps in that package's `BUILDER-NOTES.md`. Never commit an owner's version, facts, messages or chats to this repo, not even with the names taken out.
+- **Small text fixes in hand-written docs** (`README.md`, `guide/`, `packages/<id>/README.md`, `PLAYBOOK.md`, `BUILDER-NOTES.md`): edit, run the build and the checks below, and open a pull request. No test bank is needed.
+- **Anything that changes what a Skill does** follows "Add or change a Skill" below, tests first.
 
 ## Add a package
 

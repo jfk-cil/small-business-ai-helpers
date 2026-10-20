@@ -15,13 +15,13 @@ Owners often arrive asking for "a bot that follows up 2 or 3 times and sends me 
 
 | Time | What you do |
 |---|---|
-| 0:00 to 2:00 | Say what it is: "It writes your follow-up messages, tells you who is due each day, and makes your daily report. You send every message. It is not a bot." Ask who they follow up and how many people. If you want to take notes or record, say so out loud and ask first. Only go ahead on a clear yes. |
+| 0:00 to 2:00 | Say what it is: "It writes your follow-up messages, tells you who is due each day, and makes your daily report. You send every message. It is not a bot." Ask who they follow up and how many people. If you want to take notes, ask out loud first: paper only, with no names or numbers. No photos or recordings. |
 | 2:00 to 5:00 | Demo on your phone: type "sequence", then paste the made-up tracker rows below. Show the date math and the Stop list. |
 | 5:00 to 8:00 | The owner opens the page and answers the 4 questions. Make sure "days between follow-ups" is their number, not yours. |
 | 8:00 to 12:00 | Owner copies the helper, opens their AI, pastes, sends, and types "sequence". Read the 3 messages together. Remove anything that sounds like pressure or guilt. Fill the [blank]s. |
 | 12:00 to 15:00 | WhatsApp Business: save the 3 messages as quick replies (`fu-first`, `fu-second`, `fu-last`). Make the labels. |
 | 15:00 to 18:00 | Start the tracker in the Google Sheets app with the column names from the playbook. The owner gives 3 real people codes (S1, S2, S3). Names, if any, go only in the owner's sheet. Then paste those 3 coded rows into the AI to see "who is due today". |
-| 18:00 to 20:00 | Try the end-of-day report with made-up notes. Add the daily calendar reminder. Agree one move for this week. Check the AI chat has no names or numbers; if it does, delete that chat together. |
+| 18:00 to 20:00 | Try the end-of-day report with made-up notes. Add the daily calendar reminder. Agree one move for this week. Save the helper in "Message yourself" if it isn't there yet. Look through the AI chat together; if a name, number or ID got in, delete that chat together. |
 
 ## Demo with a made-up example
 
@@ -59,7 +59,7 @@ Then try the report with: "Sent 12, S3 said yes, S7 call back Friday, S9 asked t
 - **Dates read the wrong way.** The helper reads 10/12 as day/month. Writing "Oct 12" avoids confusion. In Google Sheets, set the locale to India in a browser (File > Settings > Locale) so dates match.
 - **Owner wants a fourth message or daily chasing.** The helper stops at 3. Explain that more can feel like pressure and gets numbers blocked or reported.
 - **Broadcast lists don't reach everyone.** In WhatsApp Business, a broadcast only reaches people who saved the owner's number. Follow-ups work best one chat at a time with quick replies.
-- **Credits or free messages run out.** The helper is plain text. Paste the same helper into ChatGPT or Gemini (free) and carry on. Only the Skills and Projects stay inside Claude.
+- **Credits or free messages run out.** The helper is plain text. Paste the same helper into ChatGPT or Gemini (free) and carry on. It should work there too, though so far it has been tested in Claude only. Only the Skills and Projects stay inside Claude.
 - **No "Try it here" box.** That box only appears when the page is opened inside Claude. Copying the helper always works.
 
 ## Turning a working helper into the owner's own Skill (laptop)
@@ -77,6 +77,7 @@ To make a Skill that already knows the owner's group:
    description: Writes follow-up messages, the daily "who is due" list and the end-of-day report for our winter food drive. Use when I say "sequence", paste tracker rows with codes, or paste my day's notes.
    ---
    ```
+   Avoid a colon in the description, or wrap it in double quotes.
 3. Under that, paste the helper text from the phone page and the owner's final 3 messages. No names, phone numbers, UPI ID or passwords.
 4. Zip the folder (the folder itself goes inside the zip) and upload it in Settings > Capabilities > Skills.
 5. Test it in a new chat with the made-up tracker rows above.
@@ -100,8 +101,9 @@ Be clear with the owner about size and cost before you start any of these.
 ## Do not
 
 - Put the owner's data in your own accounts. No contact lists, names, numbers or tracker rows in your Claude, your sheets or your phone.
-- Record or photograph anything without saying so out loud first and hearing a yes.
-- Post the owner's name, group, phone, screenshots or reports anywhere public, including GitHub issues and social media.
+- Record audio, video or screens, or photograph or screenshot owners, customers, staff, screens or chats, even with a yes. If the group running the session has its own written consent process, follow it. Notes on paper only, with no names or numbers.
+- Post the owner's name, group, phone or reports anywhere public, including GitHub issues and social media.
 - Ask for or touch the owner's passwords or OTPs. They log in themselves.
 - Help message people who never agreed, or reach someone through their family or friends.
 - Promise results.
+- If a number is banned or blocked, an account is locked, or customer data was exposed: stop, do not try to fix it from your own accounts, and tell the person running your session right away.

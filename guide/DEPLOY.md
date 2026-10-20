@@ -30,7 +30,7 @@ Each page must be published with the `sample` capability declared, `{"sample": {
 Steps, from a Claude Code session in the repo (or any Claude session that can publish pages from a file):
 
 1. Run `python3 scripts/build.py`.
-2. Publish `artifacts/hub.html`, then each of the nine package fragments (`start-here`, `customer-replies`, `booking-reminders`, `follow-ups`, `find-clients`, `get-found-on-google`, `staff-checklists`, `hire-and-onboard`, `social-posts`). For each, ask Claude for exactly this: "Publish `artifacts/<page>.html` as a Claude page with capabilities `{"sample": {}}`." The page title comes from the fragment's own `<title>`.
+2. Publish `artifacts/hub.html`, then each of the ten package fragments (`start-here`, `customer-replies`, `booking-reminders`, `follow-ups`, `find-clients`, `one-page-shop`, `get-found-on-google`, `staff-checklists`, `hire-and-onboard`, `social-posts`). For each, ask Claude for exactly this: "Publish `artifacts/<page>.html` as a Claude page with capabilities `{"sample": {}}`." The page title comes from the fragment's own `<title>`.
 3. Write each page's link into `artifacts/urls.json`. Keys are `hub` and the package ids:
 
    ```json
@@ -41,6 +41,7 @@ Steps, from a Claude Code session in the repo (or any Claude session that can pu
      "booking-reminders": "https://claude.ai/...",
      "follow-ups": "https://claude.ai/...",
      "find-clients": "https://claude.ai/...",
+     "one-page-shop": "https://claude.ai/...",
      "get-found-on-google": "https://claude.ai/...",
      "staff-checklists": "https://claude.ai/...",
      "hire-and-onboard": "https://claude.ai/...",
@@ -105,16 +106,19 @@ The repo is a plugin marketplace (`.claude-plugin/marketplace.json`); each packa
 2. Choose **Add marketplace** and enter `jfk-cil/small-business-ai-helpers`.
 3. Install the packages the owner needs.
 
+Menu names are as of October 2026 and may change.
+
 Some organizations limit which marketplaces members can add; an admin may need to allow it.
 
 ## (f) Plain-text helpers in ChatGPT or Gemini
 
-The phone helper is plain text, so it works in any chat AI, on any plan, including free ones.
+The phone helper is plain text, so it should also work in ChatGPT, Gemini and other chat AIs, on free plans too (tested so far in Claude only).
 
 1. Open the package's phone page, answer the questions, tap **Make my helper**, then **Copy helper**.
 2. Open ChatGPT or Gemini, start a new chat, paste the helper and send it.
 3. Then paste a customer message or describe today's job, with no names or numbers.
 4. Save the helper in WhatsApp "Message yourself" to paste again any day.
+5. If the owner prefers that their chats are not used to train the model, open the AI's **Settings** and look for the data or activity control, and switch it off. Menus change; it is the owner's choice. It does not replace the never-type list.
 
 If the AI lets you save standing instructions (for example a custom GPT in ChatGPT or a Gem in Gemini), the helper can go there instead. The full Skills are written for Claude; their references are not loaded automatically anywhere else.
 
@@ -125,23 +129,33 @@ A group that runs table sessions with owners can use the GitHub Pages links as t
 Publishing your own Claude pages:
 
 1. Clone the repo and run `python3 scripts/build.py`.
-2. From your group's own Claude account, follow path (b): publish the hub and the nine package fragments with `{"sample": {}}`, put the links in `artifacts/urls.json`, rebuild, and republish to the same links.
+2. From your group's own Claude account, follow path (b): publish the hub and the ten package fragments with `{"sample": {}}`, put the links in `artifacts/urls.json`, rebuild, and republish to the same links. Replace every link in `artifacts/urls.json` with your own, or delete any you do not republish. The shipped file holds the publisher's own Claude page links; any id you delete falls back to its GitHub Pages address.
 3. Share the pages by link. Try it here still runs on each viewer's own Claude account, never on the group's.
 4. If your sessions should send owners to your Claude pages instead of GitHub Pages, change the links in `packages/<id>/PLAYBOOK.md` and `packages/<id>/BUILDER-NOTES.md` (they name the GitHub Pages address), and reprint any handouts that carry the old links.
 
 Hosting your own fork on GitHub:
 
 1. Fork the repo. In `catalog/packages.json`, change `repo` to `<your-account>/<your-repo>` and `pages_base` to your Pages address. `marketplace_name` can stay.
-2. Update the hand-written links in `README.md` and the package docs.
-3. Rebuild and check, then follow path (a) for your fork.
-4. The install command becomes `/plugin marketplace add <your-account>/<your-repo>`.
+2. Replace the old address in every hand-written file (`README.md`, the guides, the package docs and the release workflow). From the repo root:
+
+   ```
+   grep -rl jfk-cil --include=*.md --include=*.yml . | xargs sed -i 's#jfk-cil.github.io/small-business-ai-helpers#<your-account>.github.io/<your-repo>#g; s#jfk-cil/small-business-ai-helpers#<your-account>/<your-repo>#g'
+   ```
+
+   On a Mac, write `sed -i ''` instead of `sed -i`. Then run `grep -rn jfk-cil .` and fix anything left by hand.
+3. In `publish.sh`, set `OWNER` (and `NAME`, if you renamed the repo) to your own.
+4. Set `artifacts/urls.json` to `{}` before your first build, so no page links to the original publisher's Claude pages.
+5. Rebuild and check, then follow path (a) for your fork.
+6. The install command becomes `/plugin marketplace add <your-account>/<your-repo>`.
+
+Taking over the original repo: a group that will look after these helpers long term can instead ask the maintainer to transfer the repository to the group's own account or a neutral GitHub account. GitHub redirects links to the old repository, but not the old GitHub Pages address, so phone-page links and handouts would need the new address.
 
 Before each session:
 
 - Open every page you will use on a phone with mobile data, not office wifi.
 - Run each helper once with the made-up example in its `BUILDER-NOTES.md`.
 - Check the Download links work.
-- Have the never-type list from [PRIVACY.md](PRIVACY.md) printed for each table.
+- Have the never-type list from [PRIVACY.md](PRIVACY.md) printed for each table, and give each builder [AT-THE-TABLE.md](AT-THE-TABLE.md).
 - Owners use their own phones and their own AI accounts, never the group's or a volunteer's.
 
 ## Known limits

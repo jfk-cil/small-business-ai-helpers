@@ -26,7 +26,7 @@
 
 ## Never type these
 
-Your Google password or verification code. Customers' names or phone numbers. Aadhaar, PAN or passport details. Bank, UPI or card details. Passwords or OTPs. Health details. Staff ID numbers or wages. Family details. Photos of people.
+Your Google password or verification code. Customers' names or phone numbers. Aadhaar, PAN or passport details. Bank, UPI or card details. Passwords or OTPs. Health details. Staff ID numbers or wages. Family details. Photos of people. Sales or money figures (your public prices are fine).
 
 Type your own phone, address and website straight into Google. Pasted something by mistake? Delete that chat and start again with a [blank].
 

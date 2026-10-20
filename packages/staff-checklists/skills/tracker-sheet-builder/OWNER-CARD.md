@@ -27,6 +27,6 @@ If you paste one by mistake, stop, delete that chat, and type it again with a [b
 
 Your real lists stay in your own sheet. If you want a list cleaned up, ask how, and you'll get steps to do it in your sheet.
 
-**Not here:** cash books, sales money, invoices, payroll, GST or tax. Keep those on paper or ask a qualified person. No sheets that rate or rank staff.
+**Not here:** cash books, sales money, invoices, payroll, GST or tax. Keep them in your own accounts book or software, with your accountant, not in an AI chat. For questions, ask a qualified person. No sheets that rate or rank staff.
 
 **It's a draft: you check it, you build it, you decide what goes in it.**

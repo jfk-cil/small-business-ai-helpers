@@ -48,16 +48,16 @@ Hello! [your business name] in [area] is looking for [role]. If it fits your gro
 [your name], [your business name]
 ```
 
-Community, parish or local WhatsApp groups:
+Community and local WhatsApp groups (only where the group allows job posts):
 ```
 Hi all! We're looking for [role] in [area]. Details below. Please share with anyone who might be interested. Thank you!
 [your business name]
 ```
 
 ### Places to try (plain list, no box)
-- Job boards such as Apna, Naukri, Indeed and LinkedIn. Check each site's own terms and costs before posting.
+- Job sites (search 'jobs in [area]'; check each site's terms and costs).
 - Training colleges, institutes and professional associations near you.
-- Community, parish and local WhatsApp groups (only where the group allows job posts).
+- Community and local WhatsApp groups (only where the group allows job posts).
 - People who already work with you (ask if they know someone; no referral bonus unless the owner gives one).
 Say nothing about what any site costs, how many people it reaches, or how fast it works.
 

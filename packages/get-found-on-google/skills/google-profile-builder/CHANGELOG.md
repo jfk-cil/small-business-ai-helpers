@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.0.2 (October 20, 2026)
+- Photos: "No faces without the person's permission. Never children's faces." (SKILL.md, example and profile-rules.md).
+
 ## v1.0.1 (October 19, 2026)
 - Rules tightened after the first live run.
 - Example and test case B-GPB-001 reworded after the first run so no real business can be recognized; the run result for that case was recorded on the earlier wording.

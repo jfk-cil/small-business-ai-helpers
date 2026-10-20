@@ -32,4 +32,4 @@ Every format below works as a reel, a photo post or a WhatsApp Status. Film on a
 - Is everything in it the owner's own photo, video and know-how?
 - Is anyone's face in it? Do they agree? Is any child visible? (Then use another shot.)
 - Does it promise a result, a health effect or a number the owner didn't give?
-- If it's paid or gifted: does it start with "#ad" or use the platform's paid-partnership label?
+- If it's paid or gifted: does it start with "Ad" or "Collaboration with [partner]", and does it also use the platform's paid-partnership label?

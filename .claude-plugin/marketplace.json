@@ -4,69 +4,69 @@
     "name": "Small business AI helpers (CC0)"
   },
   "metadata": {
-    "description": "Reference Skills and phone helpers for small businesses: customer replies, bookings, follow-ups, finding clients, Google visibility, staff checklists and hiring.",
-    "version": "1.1.0"
+    "description": "Reference Skills and phone helpers for small businesses: customer replies, bookings, follow-ups, finding clients, a one-page shop, Google visibility, posts that turn followers into customers, staff checklists and hiring.",
+    "version": "1.1.1"
   },
   "plugins": [
     {
       "name": "start-here",
       "source": "./packages/start-here",
       "description": "Not sure yet? Find one job AI can help with this week.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "customer-replies",
       "source": "./packages/customer-replies",
       "description": "AI drafts the routine replies in your tone for you to check and send. You write only the ones that need you.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "booking-reminders",
       "source": "./packages/booking-reminders",
       "description": "Confirmation and reminder messages that tell customers exactly what to do.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "follow-ups",
       "source": "./packages/follow-ups",
       "description": "A polite 3-step follow-up, a daily \"who to message today\" list, and an end-of-day report.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "find-clients",
       "source": "./packages/find-clients",
       "description": "Turn your best customers into a clear picture of who to look for, where, and what to say.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "one-page-shop",
       "source": "./packages/one-page-shop",
       "description": "One link for everything you offer, with a clear button for each: buy, book or ask.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "get-found-on-google",
       "source": "./packages/get-found-on-google",
       "description": "A complete Google profile, the right words, and steps to earn genuine reviews.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "staff-checklists",
       "source": "./packages/staff-checklists",
       "description": "Clear opening, closing and daily checklists for each role, so work runs without you.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "hire-and-onboard",
       "source": "./packages/hire-and-onboard",
       "description": "Job posts that bring the right people, fewer drop-offs, and a calm first week.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "social-posts",
       "source": "./packages/social-posts",
       "description": "A week of posts and captions in your voice, with photo ideas you can shoot yourself.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     }
   ]
 }

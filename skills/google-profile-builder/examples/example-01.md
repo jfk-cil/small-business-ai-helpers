@@ -20,7 +20,7 @@ This improves your chances; ranking depends on Google. Ads can appear above the 
 7. Hours: Monday to Saturday, 8:30 am to 6:30 pm; Sunday closed. Add holiday hours before festivals.
 8. Phone and website: type them into Google yourself. Don't paste them here.
 9. Description and services: paste parts 2 and 3.
-10. Photos: logo, cover photo of the yard, the signboard from the road, machines lined up, a truck loading. Real photos; no faces unless the person agrees.
+10. Photos: logo, cover photo of the yard, the signboard from the road, machines lined up, a truck loading. Real photos. No faces without the person's permission. Never children's faces.
 
 **2. Business description** (481/750 characters)
 ```

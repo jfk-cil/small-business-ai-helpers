@@ -22,7 +22,7 @@ Open the phone page: https://jfk-cil.github.io/small-business-ai-helpers/hire-an
 
 1. Answer four short questions: the roles, how people find you and join today, where they drop off (counts only, no names), and what a new person needs in week one. Every question is optional.
 2. Tap **Make my helper**, then **Copy helper**.
-3. Open Claude, or the AI you already use, start a new chat, paste the helper and send it.
+3. Open Claude, or the AI you already use (it should also work in ChatGPT and Gemini; tested so far in Claude only), start a new chat, paste the helper and send it.
 4. Type "go". It starts with your hiring steps and where people drop off. Then name a role for the job post.
 
 If you open the page inside Claude, a **Try it here** box lets you run it on the page itself. It runs on your own Claude account. This page saves nothing.
@@ -33,7 +33,7 @@ Send the helper to yourself on WhatsApp ("Message yourself") so you can copy it 
 
 The full version knows more about fair hiring questions and health roles, and checks the length of every message. It comes as two Skills.
 
-**Claude on the web or desktop app** (paid plan, code execution turned on)
+**Claude on the web or desktop app** (paid plan, code execution turned on, as of October 2026)
 
 Download each Skill:
 
@@ -51,7 +51,7 @@ Then in Claude open **Settings**, then **Capabilities**, then **Skills**, and up
 
 **Cowork**
 
-Open **Customize**, then **Plugins**, then **Add marketplace**. Enter `jfk-cil/small-business-ai-helpers`, then install **hire-and-onboard**.
+Open **Customize**, then **Plugins**, then **Add marketplace** (as of October 2026). Enter `jfk-cil/small-business-ai-helpers`, then install **hire-and-onboard**.
 
 ## What's inside
 
@@ -69,7 +69,7 @@ Open **Customize**, then **Plugins**, then **Add marketplace**. Enter `jfk-cil/s
 - **No clinical steps.** How to give an injection, collect a sample or move a patient comes from a qualified person on your team, not from AI.
 - **Automatic is a bigger job.** An automatic WhatsApp flow needs the WhatsApp Business Platform through an approved provider, people's opt-in and approved message templates. That is a builder project. The helper shows the manual setup you can use today: labels, quick replies, a greeting message and a daily reminder.
 - **No promises.** It cannot promise how many people will apply, reply or finish signing up.
-- **Free and paid plans.** The phone helper works on any Claude plan, including free, and in ChatGPT or Gemini too. Uploading Skills needs a paid Claude plan with code execution turned on.
+- **Free and paid plans.** The phone helper should work on any Claude plan, including free, and also in ChatGPT or Gemini (tested so far in Claude only). Uploading Skills needs a paid Claude plan with code execution turned on.
 
 ## Privacy
 

@@ -85,7 +85,7 @@ Hi [their name],
 - The checklist lists the owner's tasks. It never rates staff or the client.
 
 ## Example
-Owner: "Sample Landscaping. A homestay in Mandrem said yes to a garden makeover. Site visit Monday 19 October, 8 am. Work starts the week after. I need photos of the garden and to know where the water tap is."
+Owner: "Sample Landscaping. A homestay in Candolim said yes to a garden makeover. Site visit Monday 19 October, 8 am. Work starts the week after. I need photos of the garden and to know where the water tap is."
 
 **Welcome message** (copy and paste)
 ```

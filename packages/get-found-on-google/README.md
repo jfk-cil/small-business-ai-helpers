@@ -26,7 +26,7 @@ Open the phone page: https://jfk-cil.github.io/small-business-ai-helpers/get-fou
 
 1. Answer five short questions about your business. Every question is optional.
 2. Tap **Make my helper**, then **Copy helper**.
-3. Open Claude, or the AI you already use, start a new chat, paste the helper and send it.
+3. Open Claude, or the AI you already use (it should also work in ChatGPT and Gemini; tested so far in Claude only), start a new chat, paste the helper and send it.
 4. Type "go". It writes your kit one part at a time and asks before the next part.
 
 If you open the page inside Claude, a **Try it here** box lets you run it on the page itself. It runs on your own Claude account. This page saves nothing.
@@ -37,7 +37,7 @@ Send the helper to yourself on WhatsApp ("Message yourself") so you can copy it 
 
 The full version knows more of Google's rules, checks its own character counts and handles more cases. It comes as three Skills.
 
-**Claude on the web or desktop app** (paid plan, code execution turned on)
+**Claude on the web or desktop app** (paid plan, code execution turned on, as of October 2026)
 
 Download each Skill:
 
@@ -56,7 +56,7 @@ Then in Claude open **Settings**, then **Capabilities**, then **Skills**, and up
 
 **Cowork**
 
-Open **Customize**, then **Plugins**, then **Add marketplace**. Enter `jfk-cil/small-business-ai-helpers`, then install **get-found-on-google**.
+Open **Customize**, then **Plugins**, then **Add marketplace** (as of October 2026). Enter `jfk-cil/small-business-ai-helpers`, then install **get-found-on-google**.
 
 ## What's inside
 
@@ -73,7 +73,7 @@ Open **Customize**, then **Plugins**, then **Add marketplace**. Enter `jfk-cil/s
 - **Genuine reviews only.** It will not write reviews, offer gifts or discounts for reviews, or help ask only happy customers.
 - **Your real business name.** It will not add search words, towns or "best" to your name. Google can suspend profiles for that.
 - **No unproven claims.** It leaves out "largest", "best" and "No. 1" and suggests a fact you can show instead.
-- **Free and paid plans.** The phone helper works on any Claude plan, including free, and in ChatGPT or Gemini too. Uploading Skills needs a paid Claude plan with code execution turned on. On a free plan you get fewer messages a day, so let it write one part at a time.
+- **Free and paid plans.** The phone helper should work on any Claude plan, including free, and also in ChatGPT or Gemini (tested so far in Claude only). Uploading Skills needs a paid Claude plan with code execution turned on. On a free plan you get fewer messages a day, so let it write one part at a time.
 - **Rules change.** Google's menus and guidelines change. Check Google's own help pages before you rely on any line.
 
 ## Privacy

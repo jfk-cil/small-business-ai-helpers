@@ -319,7 +319,7 @@ Pre-registered assertions: run 1 19/19 pass, run 2 19/19 pass (all checked by sc
 - Description: 195 characters (limit 200), third person, says what and when, uses owner words ("fix my menu", "write my About page").
 - license: CC0-1.0.
 - SKILL.md body: 88 lines (limit 150). Sections in the required order.
-- Shared safety block present verbatim (checked by script against the wave brief).
+- Shared safety block present verbatim (checked by script against the shared brief).
 - Name check: grep (case-insensitive, whole word) of every business and person name in the source sheet, plus third-party org branding, across all package files: 0 hits.
 - American English: script check for common British spellings: 0 hits ("catalog", not "catalogue").
 - OWNER-CARD.md (was SKILL-CARD.md): no use of the word "skill".

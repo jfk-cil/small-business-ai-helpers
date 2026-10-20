@@ -12,7 +12,7 @@ The phone helper works in four steps, one per message, and asks before moving on
 
 1. **An offer map**: each offer, who it's for, the one action (buy, book, ask or join a list), where that happens today, and what's missing. Then a 10-item checklist for your one-link entry point.
 2. **The words for your page**: a short headline, one line about you, one block and one button per offer, how to order or book, and up to 5 questions and answers.
-3. **One simple page file** (HTML) you can put on a free website builder, with every link left as a placeholder like [your shop link] or [your WhatsApp link].
+3. **The page itself**: on a phone, the words laid out block by block for a link-in-bio page or Google Sites. If someone with a laptop is helping you, or your website builder accepts HTML, one simple page file (HTML) instead. Either way, every link is left as a placeholder like [your shop link] or [your WhatsApp link].
 4. **What happens after the click** for each offer: a quick reply, a confirmation and one polite follow-up.
 
 The full version (Skills) also:
@@ -26,7 +26,7 @@ The full version (Skills) also:
 1. Open the phone page: https://jfk-cil.github.io/small-business-ai-helpers/one-page-shop/
 2. Answer 4 short questions: what you offer (list each one); who buys or books and where they find you now; what people should do for each offer; what you already use to sell or take bookings (names of tools only, no links or account details). All are optional. You can tap the mic on your keyboard and speak. The page has English, Hindi, Marathi and Konkani (Devanagari and Romi).
 3. Tap **Make my helper**, then **Copy helper**.
-4. Open Claude, or the AI you already use (ChatGPT and Gemini work too), start a new chat, paste and send.
+4. Open Claude, or the AI you already use (it should also work in ChatGPT and Gemini; tested so far in Claude only), start a new chat, paste and send.
 5. Type "go" to start with your offer map.
 
 Keep it for next time: send the helper to yourself in WhatsApp ("Message yourself").
@@ -38,7 +38,7 @@ If you open the page inside Claude, a **Try it here** box lets you test the help
 The full version is a set of Claude Skills. They know more and check their own work.
 
 **claude.ai (web or desktop app)**
-You need a paid Claude plan with code execution turned on (Settings > Capabilities).
+You need a paid Claude plan with code execution turned on (Settings > Capabilities), as of October 2026.
 1. Download the Skills:
    - [storefront-page-builder.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/storefront-page-builder.zip)
    - [listing-and-catalog-writer.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/listing-and-catalog-writer.zip)
@@ -53,7 +53,7 @@ You need a paid Claude plan with code execution turned on (Settings > Capabiliti
 ```
 
 **Cowork**
-Open Customize > Plugins > Add marketplace and enter `jfk-cil/small-business-ai-helpers`. Then install **one-page-shop** from that marketplace.
+Open Customize > Plugins > Add marketplace (as of October 2026) and enter `jfk-cil/small-business-ai-helpers`. Then install **one-page-shop** from that marketplace.
 
 ## What's inside
 
@@ -77,7 +77,7 @@ For the owner: [PLAYBOOK.md](PLAYBOOK.md). For a volunteer at the table: [BUILDE
 - **A plain page.** The page file has no scripts, tracking or forms, so it sends nothing anywhere. A shopping cart or online booking stays in the shop app or booking tool you already use; the page links to it.
 - **No legal or tax advice.** Refund, returns and delivery wording, GST, consumer rules, and what your payment provider asks your page to show: check with a qualified person.
 - **Free hosting terms change.** Free website builders, link-in-bio services, Google Sites and GitHub Pages change their plans, limits and menus often. Check each service's current terms before you rely on it.
-- **Plans:** the phone helper works on any Claude plan, including free, and in ChatGPT or Gemini. Uploading Skills needs a paid Claude plan with code execution turned on. Claude Projects (saving the helper as instructions) also need a paid plan. Claude Code and Cowork need a plan that includes them. Free plans have message limits; if you reach one, paste the same helper into another AI.
+- **Plans:** the phone helper should work on any Claude plan, including free, and also in ChatGPT or Gemini (tested so far in Claude only). Uploading Skills needs a paid Claude plan with code execution turned on. Claude Projects (saving the helper as instructions) also need a paid plan. Claude Code and Cowork need a plan that includes them. Free plans have message limits; if you reach one, paste the same helper into another AI.
 - The Hindi, Marathi and Konkani versions of the page are draft translations. Check them with someone who reads the language well.
 
 ## Privacy

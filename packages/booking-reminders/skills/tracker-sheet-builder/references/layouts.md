@@ -92,7 +92,7 @@ Dropdowns: Done (Yes, blank); Area (the owner's areas).
 Date	Job	Place	Assigned (role)	Start time	Status	Notes
 15/10/2026	Sample: garden clean-up	Assagao	Team A	09:00	To do	
 15/10/2026	Sample: AC service	Panjim	Team B	11:30	In progress	Bring filter
-16/10/2026	Sample: deep clean	Mandrem	Team A	10:00	To do	
+16/10/2026	Sample: deep clean	Candolim	Team A	10:00	To do	
 ```
 
 Today tab (morning summary)
@@ -108,7 +108,7 @@ For planning routes and fuel, not for judging riders.
 
 ```
 Date	Order ref	Area	Out time	Back time	Minutes	Km	Result	Notes
-15/10/2026	Sample-101	Mandrem	10:00	10:40		12	Delivered	
+15/10/2026	Sample-101	Candolim	10:00	10:40		12	Delivered	
 15/10/2026	Sample-102	Beach road	11:15	12:05		18	Delivered	Gate locked, called
 15/10/2026	Sample-103	Morjim	14:00	14:30		9	Returned	Nobody home
 ```
@@ -158,7 +158,7 @@ Formula
 Colors
 - Columns F and G: "No" → yellow fill (checklist not finished).
 
-Note: bank, UPI and payment amounts stay off this sheet. Settling vendor bills is money record-keeping: keep it on paper.
+Note: bank, UPI and payment amounts stay off this sheet. Settling vendor bills is money record-keeping: keep it in your own accounts book or software, with your accountant, not in an AI chat.
 
 ## 8. Order and prep sheet (tabs: Orders and Prep)
 

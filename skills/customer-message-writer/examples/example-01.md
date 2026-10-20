@@ -1,7 +1,7 @@
 # Example 01: a reorder reminder (fictional)
 
 **Owner types:**
-> Sample Shop in Mandrem. Customers buy 20-litre water cans every week, ₹90 a can. Write a reminder they can reply to.
+> Sample Shop in Candolim. Customers buy 20-litre water cans every week, ₹90 a can. Write a reminder they can reply to.
 
 **Helper replies:**
 
@@ -20,7 +20,7 @@ Reply STOP if you'd rather not get these messages.
 - Send only to customers who agreed to hear from you.
 - In WhatsApp Business, broadcast lists only reach people who have saved your number.
 - If someone replies STOP, take them off your list.
-- Someone who ordered once hasn't agreed to offers. Ask first ("Can we WhatsApp you about new stock? Reply YES"). Messages people don't answer count against WhatsApp's monthly limit.
+- Someone who ordered once hasn't agreed to offers. Ask first ("Can we WhatsApp you about new stock? Reply YES"). Messages people don't answer count against WhatsApp's monthly limit (as of October 2026; check WhatsApp's help pages).
 - Send it on WhatsApp only, not as bulk SMS or calls from your mobile number: promotional SMS and calls from ordinary numbers can get the number cut off. Check with a qualified person if unsure.
 
 (31 words. Only the owner's price and facts.)

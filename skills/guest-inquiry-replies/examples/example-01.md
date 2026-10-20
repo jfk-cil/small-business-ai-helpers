@@ -1,7 +1,7 @@
 # Example 01: a guest asks about price and dates (fictional)
 
 **Owner types:**
-> I run Sample Homestay near the beach road in Mandrem. ₹1,800 a night for 2, no breakfast. A guest asked: "Hi, room for 2 from 3 to 5 March? Price? Do you have parking?"
+> I run Sample Homestay near the beach road in Candolim. ₹1,800 a night for 2, no breakfast. A guest asked: "Hi, room for 2 from 3 to 5 March? Price? Do you have parking?"
 
 **Helper replies:**
 

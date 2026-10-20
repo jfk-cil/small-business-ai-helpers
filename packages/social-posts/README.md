@@ -32,7 +32,7 @@ Open the phone page: https://jfk-cil.github.io/small-business-ai-helpers/social-
 
 1. Answer four short questions: your business and where, where you post, what makes you special, and anything happening this week. Every question is optional.
 2. Tap **Make my helper**, then **Copy helper**.
-3. Open Claude, or the AI you already use, start a new chat, paste the helper and send it.
+3. Open Claude, or the AI you already use (it should also work in ChatGPT and Gemini; tested so far in Claude only), start a new chat, paste the helper and send it.
 4. Type "week". It writes a plan for 3 posts (ask for more), each with one clear next step, plus 3 short replies to save. Or describe one thing to share and get 3 caption options.
 
 If you open the page inside Claude, a **Try it here** box lets you run it on the page itself. It runs on your own Claude account. This page saves nothing.
@@ -43,7 +43,7 @@ Send the helper to yourself on WhatsApp ("Message yourself") so you can copy it 
 
 The full version also plans a whole month, writes reel ideas shot by shot, builds a simple system for turning followers into customers, plans an online workshop launch, and makes a one-page marketing plan. It comes as three Skills.
 
-**Claude on the web or desktop app** (paid plan, code execution turned on)
+**Claude on the web or desktop app** (paid plan, code execution turned on, as of October 2026)
 
 Download each Skill:
 
@@ -62,7 +62,7 @@ Then in Claude open **Settings**, then **Capabilities**, then **Skills**, and up
 
 **Cowork**
 
-Open **Customize**, then **Plugins**, then **Add marketplace**. Enter `jfk-cil/small-business-ai-helpers`, then install **social-posts**.
+Open **Customize**, then **Plugins**, then **Add marketplace** (as of October 2026). Enter `jfk-cil/small-business-ai-helpers`, then install **social-posts**.
 
 ## What's inside
 
@@ -85,10 +85,10 @@ For the owner: [PLAYBOOK.md](PLAYBOOK.md). For a volunteer at the table: [BUILDE
 - **No fake engagement.** No bought followers, likes or views, no follow-for-follow, and no giveaways that make people tag others.
 - **Only true claims.** It uses only what you tell it. It will not invent offers, prices, discounts, awards, reviews, customer quotes, student results or urgency (no "only 3 seats left" unless it's true), and it will not say "best" or "No. 1" unless you say you can show it.
 - **No health claims.** It will not write that a food, drink, class or treatment cures or prevents anything.
-- **People in photos need permission.** It suggests hands, food, rooms, views and you. For a customer's or staff member's face, ask first. Never children's faces.
+- **People in photos need permission.** It suggests hands, food, rooms, views and you. No faces without the person's permission. Never children's faces.
 - **No promised results.** No one can promise a number of likes, followers, customers or bookings, and it won't claim to know what "the algorithm" rewards. The plan gives you simple counts so you can see for yourself.
 - **Paid ads are optional.** It never makes ads the whole plan and never predicts reach or sales.
-- **Free and paid plans.** The phone helper works on any Claude plan, including free, and in ChatGPT or Gemini too. Uploading Skills needs a paid Claude plan with code execution turned on.
+- **Free and paid plans.** The phone helper should work on any Claude plan, including free, and also in ChatGPT or Gemini (tested so far in Claude only). Uploading Skills needs a paid Claude plan with code execution turned on.
 
 ## Privacy
 

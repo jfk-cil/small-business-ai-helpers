@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-"""Repository checks. Python 3 standard library only. Exit code 1 on any error.
+"""Repository checks. Python 3 standard library only (PyYAML is used if installed). Exit code 1
+on any error.
 
   python3 scripts/check.py           run every check
   python3 scripts/check.py --strict  also fail on warnings
 
 Checks
-  skills      SKILL.md frontmatter (name = folder, 1-64 chars, a-z 0-9 and single hyphens, no
-              "claude" or "anthropic"; description 1-1024 chars, no angle brackets; license),
-              required files, JSON files parse, every eval file has ids.
+  skills      SKILL.md frontmatter (strict YAML: parsed with PyYAML if installed, otherwise an
+              unquoted ": " or other YAML-breaking value is an error; name = folder, 1-64 chars,
+              a-z 0-9 and single hyphens, no "claude" or "anthropic"; description 1-1024 chars,
+              no angle brackets; license), required files, JSON files parse, every eval file has ids.
   catalog     every package skill exists, every skill is used, ids are valid plugin names,
               helper {{slots}} match the questions.
   testbank    evals/testbank/*.json follow the shared schema and use known check types.
@@ -44,6 +46,40 @@ def frontmatter(text):
     return fm
 
 
+def strict_yaml_problem(text):
+    """Return a reason string if the frontmatter is not valid YAML, else None.
+    Uses PyYAML when it is installed; otherwise flags plain (unquoted) values that YAML rejects,
+    the common one being ": " inside a description."""
+    m = re.match(r"^---\n(.*?)\n---\n", text, re.S)
+    if not m:
+        return "no YAML frontmatter"
+    try:
+        import yaml
+    except ImportError:
+        yaml = None
+    if yaml is not None:
+        try:
+            d = yaml.safe_load(m.group(1))
+        except yaml.YAMLError as e:
+            return "invalid YAML (%s)" % " ".join(str(e).split())
+        if not isinstance(d, dict):
+            return "frontmatter is not a YAML mapping"
+        for k in ("name", "description"):
+            if k in d and not isinstance(d[k], str):
+                return "%s is not a plain string" % k
+        return None
+    for line in m.group(1).splitlines():
+        mm = re.match(r"^([A-Za-z_-]+):[ \t]*(.*)$", line)
+        if not mm:
+            continue
+        k, v = mm.group(1), mm.group(2).rstrip()
+        if not v or v[0] in "\"'":
+            continue
+        if ": " in v or v.endswith(":") or " #" in v or v[0] in "&*!|>%@`{[]},#" or v.startswith(("- ", "? ")):
+            return "%s value needs double quotes or rewording (unquoted ': ', ' #' or a YAML symbol at the start)" % k
+    return None
+
+
 NAME_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 REQUIRED = ["SKILL.md", "OWNER-CARD.md", "SAFEGUARDS.md", "LICENSE", "CHANGELOG.md"]
 
@@ -63,6 +99,8 @@ def check_skills():
         fm = frontmatter(sk.read_text(encoding="utf-8"))
         if fm is None:
             err("skills/%s/SKILL.md: no YAML frontmatter" % d.name); continue
+        bad = strict_yaml_problem(sk.read_text(encoding="utf-8"))
+        if bad: err("skills/%s/SKILL.md: frontmatter %s" % (d.name, bad))
         n, desc = fm.get("name", ""), fm.get("description", "")
         if n != d.name: err("skills/%s: name %r does not match folder" % (d.name, n))
         if not NAME_RE.match(n) or len(n) > 64: err("skills/%s: invalid name %r" % (d.name, n))
@@ -150,19 +188,31 @@ def check_pages():
 
 
 # Private names: read from a local, never-committed file (one term per line), so the list is not
-# published. Set SBH_PRIVATE_TERMS=/path/to/terms.txt; without it this check is skipped with a warning.
+# published. Set SBH_PRIVATE_TERMS=/path/to/terms.txt; without it this check is skipped with a loud
+# warning (exit code stays 0, because CI cannot hold the file). The maintainer runs it before release.
+PRIVATE_SCAN_NOTE = []
+
+
 def load_private_terms():
     import os
     p = os.environ.get("SBH_PRIVATE_TERMS")
-    if not p or not Path(p).exists():
+    if not p:
+        PRIVATE_SCAN_NOTE.append("SBH_PRIVATE_TERMS is not set.")
         return None
-    return {t.strip().lower() for t in Path(p).read_text(encoding="utf-8").splitlines() if t.strip() and not t.startswith("#")}
+    if not Path(p).exists():
+        PRIVATE_SCAN_NOTE.append("SBH_PRIVATE_TERMS is set, but the file does not exist: %s" % p)
+        return None
+    terms = {t.strip().lower() for t in Path(p).read_text(encoding="utf-8").splitlines() if t.strip() and not t.startswith("#")}
+    if not terms:
+        PRIVATE_SCAN_NOTE.append("SBH_PRIVATE_TERMS file has no terms: %s" % p)
+        return None
+    return terms
 FAKE_OK = {"98765 43210", "9876543210", "1234 5678 9012", "123456789012", "ABCDE1234F"}
 PII = [("phone", re.compile(r"(?<!\d)(?:\+?91[\s-]?)?[6-9]\d{4}[\s-]?\d{5}(?!\d)")),
        ("aadhaar", re.compile(r"(?<!\d)\d{4}[\s-]\d{4}[\s-]\d{4}(?!\d)")),
        ("pan", re.compile(r"\b[A-Z]{5}\d{4}[A-Z]\b")),
        ("email/upi", re.compile(r"\b[\w.+-]+@[a-z][\w-]*(?:\.[\w.-]+)?\b", re.I))]
-EMAIL_OK = re.compile(r"^(noreply@|[\w.-]+@(small-business-ai-helpers|example\.(com|org|in)|ok[a-z]+|ybl|upi|sample[\w.-]*))", re.I)
+EMAIL_OK = re.compile(r"^(noreply@|[\w.-]+@(small-business-ai-helpers|example\.(com|org|in)|ok[a-z]+|ybl|upi|sample[\w.-]*|mail\.test$))", re.I)
 SCAN_SUFFIX = {".md", ".json", ".html", ".txt", ".py", ".yml", ".yaml", ".sh", ""}
 SKIP_DIRS = {".git", "docs", "artifacts", "packages"}  # generated copies are scanned at their source
 
@@ -181,7 +231,7 @@ def ngrams(text):
 def check_privacy():
     terms = load_private_terms()
     if terms is None:
-        warn("private-name scan skipped (set SBH_PRIVATE_TERMS to a local terms file)")
+        warn("private-name scan NOT run: maintainer must run it before release (%s)" % PRIVATE_SCAN_NOTE[-1])
     files = []
     for p in ROOT.rglob("*"):
         rel = p.relative_to(ROOT)
@@ -237,6 +287,14 @@ def main():
     check_style()
     for w in WARN: print("warning: " + w)
     for e in ERR: print("ERROR: " + e)
+    if PRIVATE_SCAN_NOTE:
+        bar = "!" * 72
+        print(bar)
+        print("WARNING: private-name scan NOT run: maintainer must run it before release.")
+        print(PRIVATE_SCAN_NOTE[-1])
+        print("Run: SBH_PRIVATE_TERMS=/path/to/terms.txt python3 scripts/check.py")
+        print("(a local plain-text list, one name per line, never committed)")
+        print(bar)
     print("checked %d skills, %d test cases: %d errors, %d warnings" % (len(names), n, len(ERR), len(WARN)))
     sys.exit(1 if ERR or (a.strict and WARN) else 0)
 

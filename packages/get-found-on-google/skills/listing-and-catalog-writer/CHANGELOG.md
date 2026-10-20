@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.5 (October 20, 2026)
+- Registration and license numbers: included exactly if the owner gives one; never added, asked about or judged as needed. If a site asks and the owner has none to give, write [number, if the site asks] and say "Check with a qualified person what applies." The Goa stay listing no longer gets a registration line by default (SKILL.md and owner card).
+
 ## v0.2.4 (October 20, 2026)
 - Description says "About or product pages" instead of "website pages", so it no longer overlaps with storefront-page-builder.
 

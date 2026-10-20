@@ -17,7 +17,7 @@ These are the basics of Google's guidelines for a Google Business Profile, as of
    - Ask every customer, not only the happy ones. Don't send unhappy customers somewhere else first so that only happy ones review ("review gating").
    - Never post reviews of a competitor.
 6. **Description and posts:** no links in the description, no phone numbers typed into posts (use the Call button), nothing misleading, no prices or offers you can't honor.
-7. **Photos:** real photos of your business. No stock photos made to look like yours. People's faces only with their agreement.
+7. **Photos:** real photos of your business. No stock photos made to look like yours. No faces without the person's permission. Never children's faces.
 8. **Verification:** Google decides how you verify (video, phone call or text, email, or postcard). Type the code only into Google. Never share it with anyone, including an AI chat or an "SEO agency" on WhatsApp.
 
 ## What usually helps local results

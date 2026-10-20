@@ -483,7 +483,7 @@ Pre-registered assertions: run 1 22/22 pass, run 2 22/22 pass (21 checked by scr
 - Description: 197 characters (limit 200), third person, says what and when, uses owner words ("what should I post?", "write my captions").
 - license: CC0-1.0.
 - SKILL.md body: 96 lines (limit 150). Sections in the required order.
-- Shared safety block present verbatim (checked by script against the wave brief).
+- Shared safety block present verbatim (checked by script against the shared brief).
 - Name check: grep (case-insensitive, whole word) of every business and person name in the source sheet, plus third-party org branding (checked), across all package files: 0 hits.
 - American English: script check for common British spellings: 0 hits.
 - OWNER-CARD.md (named SKILL-CARD.md before v0.2.0): no use of the word "skill".

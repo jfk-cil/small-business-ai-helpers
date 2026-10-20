@@ -20,7 +20,7 @@ For a volunteer sitting with an owner at a table. You help the owner do it on th
 | 9 to 13 | The owner copies the helper, pastes it into their own Claude (or other AI), and types "week". Read the plan together. |
 | 13 to 16 | Make one caption sound like the owner. Ask: "Would you say it like this to a regular?" Change the words until they say yes. Fill the blanks. Check each weekday against its date. |
 | 16 to 19 | If they are ready, take the first photo now, on their phone, and post it. If not, they send the captions to themselves on WhatsApp ("Message yourself"). |
-| 19 to 20 | Agree on one next step with a day: "Post number 2 on Wednesday" and set a Monday "Plan posts" reminder on their phone. Hand them the printed PLAYBOOK. |
+| 19 to 20 | Agree on one next step with a day: "Post number 2 on Wednesday" and set a Monday "Plan posts" reminder on their phone. Save the helper in "Message yourself" if it isn't there yet. Look through the AI chat together; if a name, number or ID got in, delete that chat together. Hand them the printed PLAYBOOK. |
 
 ## When the problem is views that don't turn into customers
 
@@ -51,9 +51,9 @@ With the full version on a laptop, also type "My reels get views but nobody buys
 
 ## Common snags
 
-- **"Make it sound more like me."** Ask the owner to send a voice note's worth of how they talk about their food or place, then type a few of those phrases into the chat. Or paste one old caption they liked.
+- **"Make it sound more like me."** Ask the owner to say out loud how they describe their food or place; the owner types a few of those phrases into the chat. Or paste one old caption they liked.
 - **No time to take photos.** Batch them: ten minutes once a week, before opening, in good light.
-- **Photos with customers or kids.** Faces only with permission; never children's faces. Otherwise hands, plates, the room.
+- **Photos with customers or kids.** No faces without the person's permission. Never children's faces. Otherwise hands, plates, the room.
 - **Weekday and date don't match.** The helper is told to check, but always check against the phone's calendar before posting.
 - **Google posts.** This helper doesn't write Google Business posts. Use the Get found on Google helper for those (no hashtags needed).
 - **Music in reels.** Use the app's own music library, not songs from elsewhere.
@@ -78,8 +78,9 @@ Do this only on the owner's laptop, in the owner's own Claude account, on a paid
    description: Plans my weekly posts and writes captions in my voice for [business type] in [place]. Use when I say "week", ask what to post, or describe something to share.
    ---
    ```
+   Avoid a colon in the description, or wrap it in double quotes.
 4. Below that, paste the filled-in helper from the phone page. Add a short "My voice" section: 5 lines on how the owner talks, words they use, words they never use, and two real captions they wrote and liked. Add the true facts they want repeated (signature items, hours, the place).
-5. Keep the rules from the helper word for word: no invented offers, prices, awards or health claims; no faces without permission.
+5. Keep the rules from the helper word for word: no invented offers, prices, awards or health claims; no faces without the person's permission, and never children's faces.
 6. Zip the folder so the folder sits at the top of the zip. Upload it in **Settings**, then **Capabilities**, then **Skills**.
 7. Test it in a new chat with three prompts: "week", "We have a new cake, 3 caption options", and "Write 3 fake reviews" (it should refuse).
 
@@ -87,7 +88,7 @@ Do this only on the owner's laptop, in the owner's own Claude account, on a paid
 
 Honest scope. Each is a separate visit, done with the owner, in the owner's accounts.
 
-- **A photo session.** Thirty minutes with the owner's phone: products, hands at work, the room, the street, the owner. Save them in one album so posting days are quick. No faces unless the person agrees.
+- **A photo session.** Thirty minutes with the owner's phone: products, hands at work, the room, the street, the owner. Save them in one album so posting days are quick. No faces without the person's permission. Never children's faces.
 - **Scheduling inside the apps.** Instagram and Facebook business or creator accounts can usually schedule a post from inside the app. Show the owner where, on their phone, if their app offers it. The owner pastes the caption and presses schedule. Nothing here posts for them.
 - **A simple post calendar.** A Google Sheet in the owner's own account: Date, Day, Idea, Caption ready (yes or no), Posted (yes or no), "People who mentioned it" as a tally. No sales or money figures.
 - **The 4-week plan.** Use simple-marketing-plan for the one thing the owner most wants to sell more of. Paper tallies, compared with the 4 weeks before.
@@ -105,4 +106,5 @@ Honest scope. Each is a separate visit, done with the owner, in the owner's acco
 - Do not write or arrange fake reviews, comments, followers or likes.
 - Do not add anyone to the owner's WhatsApp list, group, Community or Channel without that person saying yes, and never use bought, copied or scraped lists.
 - Do not rank or score people, including staff or followers.
-- Do not record audio, video or screens, or photograph customers or staff, without saying so out loud first and getting a clear yes.
+- Do not record audio, video or screens, and do not photograph or screenshot owners, customers, staff, screens or chats, even with a yes. If the group running the session has its own written consent process, follow it. Notes on paper only, with no names or numbers.
+- If a number is banned or blocked, an account is locked, or customer data was exposed: stop, do not try to fix it from your own accounts, and tell the person running your session right away.

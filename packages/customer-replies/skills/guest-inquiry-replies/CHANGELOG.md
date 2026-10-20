@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.2 (October 20, 2026)
+- Older changelog lines now describe the change only; no change to how the helper works.
+
 ## v0.2.1 (October 14, 2026)
 Fixes from the live model run audit (runs/LIVE-RESULT.md).
 - Shared rule: never invent durations or lead times either ("an hour", "arrive 10 minutes early").
@@ -16,9 +19,9 @@ Red-team fixes, October 14, 2026.
 - LICENSE uses the shared bare template; RESULTS.md branding line made neutral.
 
 ## 0.1.1 (2026-10-14)
-- "Not for" now points to the Wave 1.1 sales-funnel helpers.
+- "Not for" now points to the sales-funnel helpers.
 
 ## v0.1.0 (2026-10-14)
-- First draft for a small-business AI series in Goa.
+- First draft.
 - One reply or a set of up to 8 WhatsApp Business Quick Replies; shortcut 25 characters or fewer, message 500 characters or fewer (aim 50 words), ends with [your business name], placeholders [your UPI ID] and [location link].
 - Pre-registered 3 evals; self-run results in evals/RESULTS.md in the GitHub repo.

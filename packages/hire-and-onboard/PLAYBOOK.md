@@ -32,6 +32,6 @@
 
 ## Never type these
 
-Applicants' or staff names, numbers, CVs or photos. Documents, ID, certificates or police verification. Aadhaar, PAN or passport numbers. Registration numbers. Patients' names or details. Wages. Bank, UPI or card details. Family details. Passwords or OTPs.
+Applicants' or staff names, numbers, CVs or photos. Documents, ID, certificates or police verification. Aadhaar, PAN or passport numbers. Registration numbers. Patients' names or details. Wages. Bank, UPI or card details. Family details. Passwords or OTPs. Sales or money figures.
 
 Write "Applicant 1", not a name. Pasted something by mistake? Delete that chat and start again with a [blank].

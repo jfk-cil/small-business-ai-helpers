@@ -40,5 +40,6 @@ A few good businesses each week, found by you, contacted one at a time.
 - Passport, Form C, Aadhaar or PAN details, and staff ID numbers
 - Bank, UPI and card details, passwords and OTPs
 - Health information, wages, family members' details, photos of people
+- Sales or money figures (your public prices are fine)
 
 Pasted one by mistake? Delete that chat and type it again with a [blank].

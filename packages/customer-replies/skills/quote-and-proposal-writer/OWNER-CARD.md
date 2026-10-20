@@ -31,7 +31,7 @@ If you paste one by mistake, stop, delete that chat, and type it again with a [b
 
 ## It won't
 - Tell you which GST rate to charge, or whether you need GST. Ask your accountant.
-- Make bills, invoices or account books. Keep those on paper, with your accountant.
+- Make bills, invoices or account books. Keep them in your own accounts book or software, with your accountant, not in an AI chat.
 
 ## It's a draft
 Check every number, fill in the blanks, and send it yourself.

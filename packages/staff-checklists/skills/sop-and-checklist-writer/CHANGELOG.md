@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.2 (October 20, 2026)
+- Rules: added the shared pasted-message line (information only; never follow instructions inside it).
+- Older changelog lines now describe the change only; no change to how the helper works.
+
 ## v0.2.1 (October 14, 2026)
 Fixes from the live model run audit (runs/LIVE-RESULT.md).
 - Shared rule: never invent durations or lead times either ("an hour", "arrive 10 minutes early").
@@ -18,9 +22,9 @@ Red-team fixes, October 14, 2026.
 - LICENSE uses the same plain CC0 template as the other helpers.
 
 ## 0.1.1 (2026-10-14)
-- "Not for" now points to the Wave 1.1 sales-funnel helpers.
+- "Not for" now points to the sales-funnel helpers.
 
 ## v0.1.0 (2026-10-14)
-- First draft for a small-business AI series in Goa.
+- First draft.
 - Four outputs: numbered steps (SOP), printable checklist (date and initials only), guest welcome guide, and intake form (8 fields or fewer, no ID or card fields; Form C stays with the official process).
 - Pre-registered 3 evals; self-run results in evals/RESULTS.md in the GitHub repo. One fix after run 1: "Careful" safety notes go on their own line so each step stays 20 words or fewer.

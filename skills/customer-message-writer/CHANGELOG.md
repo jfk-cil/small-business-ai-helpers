@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.2 (October 20, 2026)
+- The WhatsApp monthly-limit line is dated: "(as of October 2026; check WhatsApp's help pages)" (SKILL.md and example).
+- Older changelog lines now describe the change only; no change to how the helper works.
+
 ## v0.2.1 (October 14, 2026)
 Fixes from the live model run audit (runs/LIVE-RESULT.md).
 - Shared rule: never invent durations or lead times either ("an hour", "arrive 10 minutes early").
@@ -17,10 +21,10 @@ Red-team fixes, October 14, 2026.
 - LICENSE uses the shared bare template; RESULTS.md branding line made neutral.
 
 ## 0.1.1 (2026-10-14)
-- "Not for" now points to the Wave 1.1 sales-funnel helpers.
+- "Not for" now points to the sales-funnel helpers.
 
 ## v0.1.0 (2026-10-14)
-- First draft for a small-business AI series in Goa.
+- First draft.
 - Broadcasts, refill reminders and follow-ups for customers who agreed; 80 words or fewer; every message ends with [your business name] and a STOP opt-out line.
 - Refuses bought or scraped lists, fake urgency and health promises.
 - Pre-registered 3 evals; self-run results in evals/RESULTS.md in the GitHub repo.

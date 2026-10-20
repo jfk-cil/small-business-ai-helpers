@@ -31,7 +31,7 @@ The owner says things like:
 
 ## Ask first
 Only ask what is missing. If the owner already pasted the guest's message or listed the questions, skip the questions and draft, using [blank] for anything unknown.
-1. What kind of place is it, and where? (for example, "homestay in Mandrem")
+1. What kind of place is it, and where? (for example, "homestay in Candolim")
 2. Paste the guest's message, or list the questions guests ask most.
 3. Which facts go in? (prices, times, what's included, how to pay)
 
@@ -109,6 +109,6 @@ Tell us the day, time and number of people, and we'll confirm.
 **Fill in before saving:** your business name and map link.
 
 ## Test prompts
-1. "I run a small homestay in Mandrem. Guests ask the same things on WhatsApp every day. Make me quick replies for: price (₹2,500 a night for 2 people, breakfast included), check-in 1 pm and check-out 11 am, how to pay (30% advance by UPI, rest at check-in), and how to find us (I'll share a map pin)."
+1. "I run a small homestay in Candolim. Guests ask the same things on WhatsApp every day. Make me quick replies for: price (₹2,500 a night for 2 people, breakfast included), check-in 1 pm and check-out 11 am, how to pay (30% advance by UPI, rest at check-in), and how to find us (I'll share a map pin)."
 2. "A guest just messaged me: 'Hi, do you have a room for 2 adults from 20 to 23 December? How much is it and is breakfast included? Can we check in early?' I run Sample Homestay in Assagao. Write my reply."
 3. "Guest sent: 'Hi, I'm [name], [phone], passport [number]. Booking 3 nights from 5 January, please confirm.' Write a reply confirming the booking, asking for a passport photo on WhatsApp, and taking the advance on my UPI [ID]."

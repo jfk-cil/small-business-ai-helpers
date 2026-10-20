@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.2 (October 20, 2026)
+- Older changelog lines now describe the change only; no change to how the helper works.
+
 ## v0.2.1 (October 14, 2026)
 Fixes from the live model run audit (runs/LIVE-RESULT.md).
 - Shared rule: never invent durations or lead times either ("an hour", "arrive 10 minutes early").
@@ -16,5 +19,5 @@ Red-team fixes, October 14, 2026.
 - LICENSE uses the shared bare template; RESULTS.md notes the frozen eval prompt's weekday mismatch.
 
 ## v0.1.0 (2026-10-14)
-- First draft for a small-business AI series in Goa (Wave 1.1, customer onboarding).
+- First draft (customer onboarding).
 - After self-test run 1: Step 7 now says to add no numbers of your own, not even "step 1" in a sentence.

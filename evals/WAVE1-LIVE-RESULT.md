@@ -2,6 +2,8 @@
 
 # Live model run: Goa helper Skills (Wednesday, October 14, 2026)
 
+**Raw files for this run are not in the public repo; the figure is reported, not reproducible here.** The paths under "Files" below refer to the development copy.
+
 **Label:** self-measured, Claude Code headless (append mode), claude-sonnet-5-5, fictional cases; not independent. The same model family wrote the Skills, the cases, the checker and the audit. One reply per case (one replicate). This is not a claude.ai test and not a test with real owners.
 
 ## How it ran

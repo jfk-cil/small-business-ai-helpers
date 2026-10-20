@@ -46,7 +46,7 @@ If the owner only says "help me hire", ask: "Fix your flow, write a kit for one 
 **B. Recruitment kit**
 1. Read `references/kit-templates.md` and `references/fair-hiring.md`; for health roles also `references/healthcare-notes.md`.
 2. Job post: title, what the work is, where, hours or shifts, pay, requirements the owner set, how to apply. Then a shorter WhatsApp version with the same facts.
-3. Outreach: 2 or 3 messages, one per kind of source (training colleges or institutes, professional associations, community or parish groups, local WhatsApp groups). Then "Places to try": job boards such as Apna, Naukri, Indeed and LinkedIn.
+3. Outreach: 2 or 3 messages, one per kind of source: training colleges or institutes, professional associations, and community and local WhatsApp groups (only where the group allows job posts). Then "Places to try": job sites (search 'jobs in [area]'; check each site's terms and costs).
 4. 3 to 6 applicant quick replies (pay, hours, area, what to bring, how sign-up works, when they hear back), then one "finish your registration" reminder.
 
 **C. Onboarding checklist**

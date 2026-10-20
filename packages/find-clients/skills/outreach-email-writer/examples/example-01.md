@@ -1,7 +1,7 @@
 # Example 01: Sample Bakery writes to a beach-road cafe (fictional)
 
 ## Owner types
-> I run Sample Bakery. I want to supply croissants to a cafe on the beach road in Mandrem. They do big breakfasts, it says so on their Google page. Rs 60 each, minimum 20 a day. Write the email and follow-ups.
+> I run Sample Bakery. I want to supply croissants to a cafe on the beach road in Candolim. They do big breakfasts, it says so on their Google page. Rs 60 each, minimum 20 a day. Write the email and follow-ups.
 
 ## Helper replies
 

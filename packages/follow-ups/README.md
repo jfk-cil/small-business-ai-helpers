@@ -25,7 +25,7 @@ The full version (Skills) also gives:
 1. Open the phone page: https://jfk-cil.github.io/small-business-ai-helpers/follow-ups/
 2. Answer 4 short questions: who you follow up with; what your first message asks for; how many days between follow-ups; how you sign your messages. All are optional. You can tap the mic on your keyboard and speak. The page has English, Hindi, Marathi and Konkani (Devanagari and Romi).
 3. Tap **Make my helper**, then **Copy helper**.
-4. Open Claude, or the AI you already use (ChatGPT and Gemini work too), start a new chat, paste and send.
+4. Open Claude, or the AI you already use (it should also work in ChatGPT and Gemini; tested so far in Claude only), start a new chat, paste and send.
 5. Type "sequence" to get your 3 messages.
 
 Keep it for next time: send the helper to yourself in WhatsApp ("Message yourself").
@@ -37,7 +37,7 @@ If you open the page inside Claude, a **Try it here** box lets you test the help
 The full version is a set of Claude Skills. They know more and check their own work.
 
 **claude.ai (web or desktop app)**
-You need a paid Claude plan with code execution turned on (Settings > Capabilities).
+You need a paid Claude plan with code execution turned on (Settings > Capabilities), as of October 2026.
 1. Download the Skills:
    - [follow-up-planner.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/follow-up-planner.zip)
    - [lead-reply-and-follow-up.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/lead-reply-and-follow-up.zip)
@@ -53,7 +53,7 @@ You need a paid Claude plan with code execution turned on (Settings > Capabiliti
 ```
 
 **Cowork**
-Open Customize > Plugins > Add marketplace and enter `jfk-cil/small-business-ai-helpers`. Then install **follow-ups** from that marketplace.
+Open Customize > Plugins > Add marketplace (as of October 2026) and enter `jfk-cil/small-business-ai-helpers`. Then install **follow-ups** from that marketplace.
 
 ## What's inside
 
@@ -77,7 +77,7 @@ For the owner: [PLAYBOOK.md](PLAYBOOK.md). For a volunteer at the table: [BUILDE
 - **No guilt, pressure or invented facts.** No "we're counting on you", no made-up numbers, deadlines, matching gifts or event dates.
 - **No tax-benefit claims** for donations unless you state them, and then check with a qualified person before sending.
 - **Only people who agreed.** No bought, copied or scraped lists.
-- **Plans:** the phone helper works on any Claude plan, including free, and in ChatGPT or Gemini. Uploading Skills needs a paid Claude plan with code execution turned on. Claude Projects (saving the helper as instructions) also need a paid plan. Claude Code and Cowork need a plan that includes them. Free plans have message limits; if you reach one, paste the same helper into another AI.
+- **Plans:** the phone helper should work on any Claude plan, including free, and also in ChatGPT or Gemini (tested so far in Claude only). Uploading Skills needs a paid Claude plan with code execution turned on. Claude Projects (saving the helper as instructions) also need a paid plan. Claude Code and Cowork need a plan that includes them. Free plans have message limits; if you reach one, paste the same helper into another AI.
 - The Hindi, Marathi and Konkani versions of the page are draft translations. Check them with someone who reads the language well.
 
 ## Privacy

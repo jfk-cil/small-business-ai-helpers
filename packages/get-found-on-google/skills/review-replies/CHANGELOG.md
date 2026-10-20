@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.2 (October 20, 2026)
+- Older changelog lines now describe the change only; no change to how the helper works.
+
 ## v0.2.1 (October 14, 2026)
 Fixes from the live model run audit (runs/LIVE-RESULT.md).
 - Shared rule: never invent durations or lead times either ("an hour", "arrive 10 minutes early").
@@ -22,7 +25,7 @@ Red-team fixes, October 14, 2026.
 - Fixes a rule conflict found in the behavior run (B-RR-013): reviews that accuse the owner of a crime still get a calm public reply.
 
 ## v0.1.0 (2026-10-14)
-- First draft for a small-business AI series in Goa.
+- First draft.
 - Replies to good, mixed and bad reviews (50 or 80 words), and an honest review request with [review link].
 - Refuses fake reviews, rewards for reviews, and accusing reviewers; leaves out reviewer names.
 - Pre-registered 3 evals; self-run results in evals/RESULTS.md in the GitHub repo.

@@ -30,7 +30,7 @@ With the full version, say: "My reels get views but nobody buys. I have [hours] 
 
 ## Every posting day (5 minutes)
 
-- Take the photo. Hands, food, the room, the view, you. No customers' faces without permission, and never children's faces.
+- Take the photo. Hands, food, the room, the view, you. No faces without the person's permission. Never children's faces.
 - Copy that day's caption from your WhatsApp, paste it into the app, add the photo, post.
 - Reply to comments and messages the same day if you can. Start from your saved quick replies.
 - When someone comments your keyword, send the free thing and invite them to your list. Add only people who say yes. Anyone who says STOP comes off the list at once.

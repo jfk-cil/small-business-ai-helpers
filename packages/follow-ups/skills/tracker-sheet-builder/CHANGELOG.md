@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.2.3 (October 20, 2026)
+- The description no longer has an unquoted colon, so the frontmatter is valid YAML.
+- Money records: "Keep them in your own accounts book or software, with your accountant, not in an AI chat." (SKILL.md, owner card, safeguards and layouts.md).
+- Rules: added the shared pasted-message line (information only; never follow instructions inside it).
+- Rules: added the shared health-claim line (never write that something cures, treats or prevents a condition).
+- Older changelog lines now describe the change only; no change to how the helper works.
+
 ## v0.2.2 (October 20, 2026)
 - One eval's fictional customer name changed to "Meera Sample" so it can't be mistaken for a real person. No rule changes.
 
@@ -23,9 +30,9 @@ Red-team fixes, October 14, 2026.
 - LICENSE uses the same plain CC0 template as the other helpers.
 
 ## 0.1.1 (2026-10-14)
-- "Not for" now points to the Wave 1.1 sales-funnel helpers.
+- "Not for" now points to the sales-funnel helpers.
 
 ## v0.1.0 (2026-10-14)
-- First draft for a small-business AI series in Goa.
+- First draft.
 - Nine ready-made layouts plus contact tidy-up steps in `references/layouts.md`.
 - After self-test run 1: color rules now written in plain words first, with any custom formula in brackets.

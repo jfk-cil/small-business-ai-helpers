@@ -176,7 +176,7 @@ The retype line is now present. Shared-rule check: PASS.
 - Frontmatter: exactly `name`, `description`, `license: CC0-1.0`; name matches folder; lowercase and hyphens; no reserved words. PASS
 - Description: 191 characters (limit 200). PASS
 - SKILL.md body: 92 lines (limit 150). PASS
-- Sections in the required order; shared safety block pasted verbatim (checked by script against the wave brief). PASS
+- Sections in the required order; shared safety block pasted verbatim (checked by script against the shared brief). PASS
 - No business or person names from the source sheet (grep of all 'Who asked' names and builder names against this folder: 0 hits). PASS
 - No third-party org branding (checked); credit line only in LICENSE. PASS
 - American English spelling (grep for common British spellings: 0 hits). PASS

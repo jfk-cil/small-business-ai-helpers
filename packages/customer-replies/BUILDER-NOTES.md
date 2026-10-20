@@ -13,13 +13,13 @@ For a volunteer sitting with an owner at a table. Aim: the owner leaves with a w
 
 | Time | What you do |
 |---|---|
-| 0:00 to 2:00 | Say what it is: "It sorts your messages and drafts the routine replies. You check and send every one. It can't read your WhatsApp or reply by itself." Ask what kind of business it is and roughly how many messages a day. If you want to take notes or record, say so out loud and ask first. Only go ahead on a clear yes. |
+| 0:00 to 2:00 | Say what it is: "It sorts your messages and drafts the routine replies. You check and send every one. It can't read your WhatsApp or reply by itself." Ask what kind of business it is and roughly how many messages a day. If you want to take notes, ask out loud first: paper only, with no names or numbers. No photos or recordings. |
 | 2:00 to 5:00 | Demo on your phone with the made-up example below. Show "Needs you" with its holding line, the routine drafts, the quick reply, and the count. |
 | 5:00 to 9:00 | The owner opens the page and answers the 4 questions. Push gently for real facts: prices or how pricing works, hours, areas covered, how to book. These are what make the drafts useful. Mic and language picker help. |
-| 9:00 to 13:00 | Owner copies the helper, opens their AI, pastes and sends. Then they copy 3 to 5 real messages from WhatsApp and change each name or number to Customer 1, 2, 3 before pasting. Read the result together. Check every price against what they told you. |
+| 9:00 to 13:00 | Owner copies the helper, opens their AI, pastes and sends. Then they copy 3 to 5 real messages from WhatsApp one at a time (copying several at once adds names or numbers), and change each name or number to Customer 1, 2, 3 before pasting. Read the result together. Check every price against what they told you. |
 | 13:00 to 17:00 | WhatsApp Business: save 2 quick replies from the result, make the three labels (Needs me, Routine, Waiting for reply), and turn on the away message. |
 | 17:00 to 19:00 | Save the helper in "Message yourself". Walk through "Every day" on the playbook. |
-| 19:00 to 20:00 | Agree one move for this week. Check the AI chat has no names or numbers in it; if it does, delete that chat together. |
+| 19:00 to 20:00 | Agree one move for this week. Save the helper in "Message yourself" if it isn't there yet. Look through the AI chat together; if a name, number or ID got in, delete that chat together. |
 
 ## Demo with a made-up example
 
@@ -52,7 +52,7 @@ What to point out:
 - **"Can't it just reply for me?"** Be honest. Not this helper, and not safely with unofficial apps. See "Going further" for what a real automatic setup needs.
 - **Voice notes.** The AI can't hear them. The owner types what the customer said.
 - **Quick reply too long.** Ask "Make it shorter, under 300 characters."
-- **Credits or free messages run out.** The helper is plain text. Paste the same helper into ChatGPT or Gemini (free) and carry on. Only the Skills and Projects stay inside Claude.
+- **Credits or free messages run out.** The helper is plain text. Paste the same helper into ChatGPT or Gemini (free) and carry on. It should work there too, though so far it has been tested in Claude only. Only the Skills and Projects stay inside Claude.
 - **No "Try it here" box.** That box only appears when the page is opened inside Claude. Copying the helper always works.
 
 ## Turning a working helper into the owner's own Skill (laptop)
@@ -70,6 +70,7 @@ To make a Skill that already knows the owner's business:
    description: Sorts customer WhatsApp messages and drafts routine replies for my cleaning service in Margao. Use when I paste customer messages or say "sort my messages".
    ---
    ```
+   Avoid a colon in the description, or wrap it in double quotes.
 3. Under that, paste the helper text from the phone page, then the owner's "My tone" and "My business facts" notes. Prices and hours are fine. No customer names, phone numbers, UPI ID or passwords.
 4. Zip the folder (the folder itself goes inside the zip) and upload it in Settings > Capabilities > Skills.
 5. Test it in a new chat with the made-up batch above.
@@ -90,8 +91,9 @@ Be clear with the owner about size and cost before you start any of these.
 ## Do not
 
 - Put the owner's data in your own accounts. No owner or customer messages in your Claude, your notes app or your phone's photos.
-- Record or photograph anything without saying so out loud first and hearing a yes.
-- Post the owner's name, business, phone, screenshots or customers' messages anywhere public, including GitHub issues and social media.
+- Record audio, video or screens, or photograph or screenshot owners, customers, staff, screens or chats, even with a yes. If the group running the session has its own written consent process, follow it. Notes on paper only, with no names or numbers.
+- Post the owner's name, business, phone or customers' messages anywhere public, including GitHub issues and social media.
 - Ask for or touch the owner's passwords or OTPs. They log in themselves.
 - Install anything on the owner's phone that reads their WhatsApp.
 - Promise results.
+- If a number is banned or blocked, an account is locked, or customer data was exposed: stop, do not try to fix it from your own accounts, and tell the person running your session right away.

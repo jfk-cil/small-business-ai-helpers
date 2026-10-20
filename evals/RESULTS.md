@@ -102,16 +102,32 @@ The spot rerun is a check of the fixes, not a new pass rate: it reran only faile
 
 ## Fifteen Skills from the earlier wave (v0.2.1), October 14, 2026
 
-**263/351 = 74.9% (95% CI 70.1–79.2)**, same label and harness. Details: [WAVE1-LIVE-RESULT.md](WAVE1-LIVE-RESULT.md).
+**263/351 = 74.9% (95% CI 70.1–79.2)**, same label and harness. Details: [WAVE1-LIVE-RESULT.md](WAVE1-LIVE-RESULT.md). Raw files for this run are not in the public repo; the figure is reported, not reproducible here.
 
 Since then the descriptions of listing-and-catalog-writer, social-content-planner, simple-marketing-plan, client-onboarding-writer, customer-message-writer and sop-and-checklist-writer were edited to stop overlapping with the new Skills. Google Business descriptions and posts moved to google-profile-builder. Those Skills were not rerun. Cases B-LCW-007, B-LCW-019, B-SCP-005 and B-SCP-006 test jobs that moved to google-profile-builder; they are retired for v1.0 and kept in the bank unchanged.
+
+## Phone helpers, first live run (October 20, 2026)
+
+**Label:** self-measured, model claude-sonnet-5-5 via Claude Code headless, fictional conversations, one reply per case, graded by hand against the hard rules (no checker, no pre-registered bank); not independent. The same model family wrote the helpers, the cases and the grades. This says nothing about the free claude.ai model, ChatGPT or Gemini, which are untested.
+
+- The 10 phone helpers (v1.1.0 text, assembled exactly as the page does) were run in 41 fictional conversations: English 34, Hindi 4, Konkani in Roman script 3.
+- **39 of 41 met every hard rule (95%); 33 of 41 had no issue at all.**
+- Traps: privacy 4/4, pasted instructions 3/3, unsafe asks 7/7 (cure claims, fake reviews, fake scarcity, bulk or automatic sending, invented contacts, a tax-benefit claim, scoring staff), weekday checks 5/5.
+- Failures: one helper (hire-and-onboard) gave all its steps in one long reply; it now works one step per message (fixed in v1.1.1). One Hindi reply left out the "check" line; that wording was tightened in v1.1.1.
+- **Rerun on v1.1.1 text (12 of the cases, same label, not pre-registered):** all 12 met every hard rule. The hiring helper now stops after step 1 (421 words, was 1,029); the Google first step fell from 704 to 269 words and find-clients step 1 from 534 to 276; all 4 Hindi replies and the Konkani one ended with the check line; the Konkani reply had no Devanagari slip; booking confirmations left the reschedule route as [blank]. One refusal still names the instructions it ignored ("a 50% discount") while saying it ignored them.
+- The Konkani wording needs a fluent reader; nobody fluent has checked it.
+- Raw replies for this run are not in the public repo; the figures are reported, not reproducible here.
+
+The page itself is tested separately: Playwright tests in light and dark themes check that the helpers fill in, the privacy scan blocks contact details, and language switching keeps answers.
+
+**Known change to a pre-registered Skill eval:** v1.1.1 removed named job sites from staff-hiring-and-onboarding, so one case in its `evals/evals.json` and case B-SHO-002 in `evals/testbank/SHO.json` (both expect a job-site name) will now fail by design. Both were left unchanged so their pre-registered hashes still match.
 
 ## Not tested yet
 
 - **Routing:** whether Claude picks the right Skill among all 22.
 - **Judge checks:** not scored.
-- **Real use:** use on a phone, on a free account, inside ChatGPT or Gemini, and with real owners.
-- **The phone helper prompts:** only the page itself was tested: Playwright tests at 390 px in light and dark themes check that the helpers fill in, the privacy scan blocks contact details, and language switching keeps answers.
+- **Other models:** the phone helpers on the free claude.ai model, in ChatGPT and in Gemini.
+- **Real use:** use on a phone, on a free account, and with real owners.
 
 ## How to run
 

@@ -42,7 +42,7 @@ Hello! I run [your business name] in Porvorim. We're looking for nurses (GNM or 
 ```
 (51 words)
 
-**Outreach: parish and community groups**
+**Outreach: community and local WhatsApp groups**
 ```
 Hi all! We're looking for nurses for home visits to elders in Porvorim, Mapusa and Panjim. Details below. Please share with anyone who might be interested. Thank you!
 [your business name]
@@ -50,9 +50,9 @@ Hi all! We're looking for nurses for home visits to elders in Porvorim, Mapusa a
 (31 words)
 
 **Places to try**
-- Job boards such as Apna, Naukri, Indeed and LinkedIn. Check each site's own terms and costs before posting.
+- Job sites (search 'jobs in Porvorim'; check each site's terms and costs).
 - Nursing colleges and institutes near you, and nurses' associations or groups.
-- Parish, community and local WhatsApp groups (only where the group allows job posts).
+- Community and local WhatsApp groups (only where the group allows job posts).
 - Nurses who already work with you: ask if they know someone.
 
 **Applicant quick replies**

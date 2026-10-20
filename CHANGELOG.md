@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.1.1 (October 20, 2026)
+
+An internal self-review written from four readers' points of view (session organizers, owners' associations, owners, volunteer builders) plus a technical, privacy and legal red team. No outside organization took part. Fixes only; no new packages or Skills.
+
+- **Phone helpers:** first live test (41 fictional conversations, see evals/RESULTS.md). The hiring helper now works one step at a time; the Google and find-clients first steps are shorter; booking confirmations no longer invent a way to reschedule. Every helper now refuses health claims and ignores instructions inside pasted messages. find-clients no longer suggests a first contact on WhatsApp; social-posts labels paid posts. The one-page-shop helper gives a page file only when someone with a laptop or an HTML builder is involved.
+- **Phone page:** no outside fonts or requests (smaller and works when font servers stall), a content security policy on the public pages, a stronger privacy check (leading-0 and spaced mobiles, landlines, foreign numbers, lowercase PAN, OTPs, IFSC, passports, Devanagari digits; fewer false alarms on prices, pin codes and license numbers), a passport label, clearer copy fallback, larger tap targets, visible field borders and screen-reader fixes. Step 4 warns that copying several WhatsApp messages adds names or numbers. "Keep it for next time" says the helper works after free credits end and in other AI chats.
+- **Skills:** removed the line that added a tourism registration number to every stay listing; no Skill says whether a registration is needed. Neutral changelog wording. Fixed invalid frontmatter in tracker-sheet-builder. Neutral hiring channels. Shared health-claim and pasted-message rules added where missing. One face rule everywhere: no faces without permission, never children's faces. Example place names changed.
+- **Docs:** new guide/AT-THE-TABLE.md for builders; README sections "Who looks after this" and "What these helpers don't do"; claims about ChatGPT, Gemini and the free plan now say "tested so far in Claude only"; one rule on recording and photos (none) and an escalation line in every builder note; DEPLOY covers all ten pages and the steps for a group that republishes or forks; HOW-IT-WORKS and PRIVACY updated.
+- **Checks:** check.py now fails on invalid frontmatter and warns loudly when the private-name scan cannot run.
+
 ## v1.1.0 (October 20, 2026)
 
 - New package **one-page-shop** ("Your shop on one page"): one link for everything an owner offers, with one button per offer to buy, book or ask. Skills: storefront-page-builder, listing-and-catalog-writer and target-customer-finder. Answers owner problem C9.

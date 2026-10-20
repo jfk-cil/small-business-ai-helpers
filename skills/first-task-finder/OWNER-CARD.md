@@ -3,7 +3,7 @@
 **What it does:** Asks you up to 5 quick questions about your business, then picks ONE job to try with AI first and gives you the first message to send.
 
 **What to type** (two examples)
-- "I have a homestay in Mandrem and I'm not sure where AI can help."
+- "I have a homestay in Candolim and I'm not sure where AI can help."
 - "I run a small café. Everything takes my time. Where do I start?"
 
 **What you get**

@@ -20,7 +20,7 @@ For a volunteer sitting with an owner at a table. You help the owner do it on th
 | 9 to 13 | The owner copies the helper, pastes it into their own Claude (or other AI), and types "go". Read the flow together. Agree on the one message to fix first. |
 | 13 to 17 | Set up that fix on the owner's phone: save the new first reply as a WhatsApp Business quick reply, and add labels for each stage. The owner types; you point. |
 | 17 to 19 | If time allows, name one role and get the job post. The owner fills in pay and hours. If they don't want to share pay yet, leave the [blank]; the `/pay` quick reply can answer it once they decide. |
-| 19 to 20 | Agree on one next step with a day: "Send the new first reply to everyone who messaged this week" or "Post the job on Thursday." Hand them the printed PLAYBOOK. |
+| 19 to 20 | Agree on one next step with a day: "Send the new first reply to everyone who messaged this week" or "Post the job on Thursday." Save the helper in "Message yourself" if it isn't there yet. Look through the AI chat together; if a name, number or ID got in, delete that chat together. Hand them the printed PLAYBOOK. |
 
 ## What to demo (made-up example)
 
@@ -61,6 +61,7 @@ Do this only on the owner's laptop, in the owner's own Claude account, on a paid
    description: Writes job posts, applicant replies, sign-up reminders and first-week checklists for [roles] at my [business type]. Use when I ask about hiring, applicants or a new starter.
    ---
    ```
+   Avoid a colon in the description, or wrap it in double quotes.
 4. Below that, paste the filled-in helper from the phone page. Add the facts the owner has decided: roles, areas, shifts, advertised pay, how to apply, what a new person needs in week one. No names, no wages of any one person, no ID or registration numbers, no patients.
 5. Keep the rules from the helper word for word, especially: a person decides who to hire; job-related questions only; documents checked in person.
 6. Zip the folder so the folder sits at the top of the zip. Upload it in **Settings**, then **Capabilities**, then **Skills**.
@@ -83,4 +84,6 @@ Honest scope. Each is a separate visit, done with the owner, in the owner's acco
 - Do not handle, photograph or forward anyone's ID, certificates or registration documents.
 - Do not tell the owner which registrations or checks are legally needed. Send them to a qualified person.
 - Do not promise more applicants, replies or hires.
-- Do not record audio, video or screens without saying so out loud first and getting a clear yes.
+- Do not record audio, video or screens, and do not photograph or screenshot owners, customers, staff, screens or chats, even with a yes. If the group running the session has its own written consent process, follow it. Notes on paper only, with no names or numbers.
+- Do not log in to the owner's accounts, and never see or type their passwords or OTPs. They log in themselves.
+- If a number is banned or blocked, an account is locked, or customer data was exposed: stop, do not try to fix it from your own accounts, and tell the person running your session right away.
