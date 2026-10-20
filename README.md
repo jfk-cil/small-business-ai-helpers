@@ -1,6 +1,6 @@
 # Small business AI helpers
 
-Free, ready-to-use AI helpers for small businesses: replying to customers, bookings and reminders, follow-ups, finding clients, getting found on Google, posts, staff checklists and hiring. Written with owners in Goa, India, and usable anywhere.
+Free, ready-to-use AI helpers for small businesses: replying to customers, bookings and reminders, follow-ups, finding clients, a one-page shop, getting found on Google, posts, staff checklists and hiring. Written with owners in Goa, India, and usable anywhere.
 
 **On a phone? Open the helpers:** https://jfk-cil.github.io/small-business-ai-helpers/
 
@@ -17,10 +17,11 @@ Each package solves one problem that owners named in their own words.
 | [Bookings and reminders](packages/booking-reminders/) | Customers book, then forget what to bring or don't turn up. | [open](https://jfk-cil.github.io/small-business-ai-helpers/booking-reminders/) | booking-confirmations, tracker-sheet-builder |
 | [Follow-ups that get replies](packages/follow-ups/) | No time to follow up each call or unanswered message. | [open](https://jfk-cil.github.io/small-business-ai-helpers/follow-ups/) | follow-up-planner, lead-reply-and-follow-up, tracker-sheet-builder, customer-message-writer |
 | [Find new clients](packages/find-clients/) | Not sure who to look for or how to reach out. | [open](https://jfk-cil.github.io/small-business-ai-helpers/find-clients/) | target-customer-finder, outreach-email-writer, lead-qualifier, client-onboarding-writer |
+| [Your shop on one page](packages/one-page-shop/) | People find you online, but there's no single place to buy, book or ask. | [open](https://jfk-cil.github.io/small-business-ai-helpers/one-page-shop/) | storefront-page-builder, listing-and-catalog-writer, target-customer-finder |
 | [Get found on Google](packages/get-found-on-google/) | People search for what you sell nearby, and you don't show up. | [open](https://jfk-cil.github.io/small-business-ai-helpers/get-found-on-google/) | google-profile-builder, listing-and-catalog-writer, review-replies |
 | [Staff checklists](packages/staff-checklists/) | Things slip when you're not there. | [open](https://jfk-cil.github.io/small-business-ai-helpers/staff-checklists/) | sop-and-checklist-writer, tracker-sheet-builder |
 | [Hire and welcome staff](packages/hire-and-onboard/) | Skilled people don't reach out, or stop halfway through signing up. | [open](https://jfk-cil.github.io/small-business-ai-helpers/hire-and-onboard/) | staff-hiring-and-onboarding, sop-and-checklist-writer |
-| [Posts that bring customers](packages/social-posts/) | No time to think of what to post. | [open](https://jfk-cil.github.io/small-business-ai-helpers/social-posts/) | social-content-planner, simple-marketing-plan |
+| [Posts that bring customers](packages/social-posts/) | No time to post, and views that don't turn into customers. | [open](https://jfk-cil.github.io/small-business-ai-helpers/social-posts/) | social-content-planner, followers-to-customers, simple-marketing-plan |
 
 ## Three ways to use them
 
@@ -53,6 +54,7 @@ If you install several packages, shared Skills (like tracker-sheet-builder) come
 - [Privacy and safety rules](guide/PRIVACY.md).
 - [Contributing](CONTRIBUTING.md): add or change a Skill, run the checks and tests.
 - [Test results](evals/RESULTS.md) and the [owner problems](catalog/problems.md) each package answers.
+- [Changelog](CHANGELOG.md): what changed in each release.
 
 ```
 python3 scripts/build.py          # regenerate packages, pages and downloads

@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.2 (October 20, 2026)
+- One eval's fictional customer name changed to "Meera Sample" so it can't be mistaken for a real person. No rule changes.
+
 ## v0.2.1 (October 14, 2026)
 Fixes from the live model run audit (runs/LIVE-RESULT.md).
 - Shared rule: never invent durations or lead times either ("an hour", "arrive 10 minutes early").

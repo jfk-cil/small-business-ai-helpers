@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.1.0 (October 20, 2026)
+- Routing table points to the two new helpers: storefront-page-builder (no single place online to buy, book or ask) and followers-to-customers (views but few customers).
+
 ## v1.0.0 (October 19, 2026)
 - Routing table points to the five new helpers: message-sorter, booking-confirmations, follow-up-planner, google-profile-builder, staff-hiring-and-onboarding.
 

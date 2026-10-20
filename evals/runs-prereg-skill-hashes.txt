@@ -1,5 +1,0 @@
-f445ad1e0e9fa705da247c30d0a79727a4f3237d240b8a1b8a487cf717ab918c  ../skills/message-sorter/SKILL.md
-d35be9ab52b53334b3a2fdaa972b9671b933890cba1376fcb57d3455343b114b  ../skills/booking-confirmations/SKILL.md
-ec6dad3efdd461c044c4dbce5221f94f505fd338a3a3fcf1fdaa28fa5a146530  ../skills/follow-up-planner/SKILL.md
-b40de74e61ffbc33add2680b7f133134045e074adabff5c725efd731c32f2a6a  ../skills/google-profile-builder/SKILL.md
-2c63f7440650fa65da4423a4c8f50b8095c275fd201b9100d902585ce1aca1fc  ../skills/staff-hiring-and-onboarding/SKILL.md

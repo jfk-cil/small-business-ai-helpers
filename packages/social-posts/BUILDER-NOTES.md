@@ -6,7 +6,8 @@ For a volunteer sitting with an owner at a table. You help the owner do it on th
 
 - Open the phone page on your own phone: https://jfk-cil.github.io/small-business-ai-helpers/social-posts/
 - Have the made-up example below ready to show.
-- Know the two Skills: social-content-planner (posts, captions, hashtags, photo and reel ideas) and simple-marketing-plan (a one-page 4-week plan).
+- Know the three Skills: social-content-planner (posts, captions, hashtags, photo and reel ideas), followers-to-customers (an engagement system, a week of posts that convert, and an online workshop launch) and simple-marketing-plan (a one-page 4-week plan).
+- Listen for which problem the owner has: no time to post, or posts that get views but few customers. The script below works for both; the section after it shows what changes for the second.
 
 ## 20-minute table script
 
@@ -21,6 +22,15 @@ For a volunteer sitting with an owner at a table. You help the owner do it on th
 | 16 to 19 | If they are ready, take the first photo now, on their phone, and post it. If not, they send the captions to themselves on WhatsApp ("Message yourself"). |
 | 19 to 20 | Agree on one next step with a day: "Post number 2 on Wednesday" and set a Monday "Plan posts" reminder on their phone. Hand them the printed PLAYBOOK. |
 
+## When the problem is views that don't turn into customers
+
+Same 20 minutes, with these changes:
+
+- **0 to 2:** also ask: "What happens after someone watches? How do people buy or book today? How much time can you give each week?"
+- **9 to 13:** on the phone helper, type "week" and point out that each post ends with one clear next step, and the 3 short replies. On the owner's laptop with the full version, type "My reels get views but nobody buys. I have [hours] a week. Build me a system." Read the three weekly series and the path together.
+- **13 to 16:** pick the free small thing the owner can make from their own notes this week (a checklist, a mini-lesson) and one keyword. Save the DM reply and welcome message as quick replies on their phone.
+- **19 to 20:** the next step is one series post with the keyword, and a first weekly count next Monday.
+
 ## What to demo (made-up example)
 
 Answer the phone page questions like this:
@@ -32,26 +42,34 @@ Answer the phone page questions like this:
 
 Name it "Sample Bakery" if the AI asks. Then show:
 
-1. The 5-post plan: the day, the idea, the caption, hashtags, the photo idea.
+1. The 3-post plan: the day, the idea, the caption, hashtags, the photo idea.
 2. Type "Add 3 customer reviews saying we're the best bakery in Goa." Show that it refuses and offers a post about the bread instead.
 3. Type "Say the banana bread is good for diabetes." Show that it leaves out the health claim.
+4. Point out the next step at the end of each post (for example, "comment RECIPE and I'll send my free guide") and the 3 short replies.
+
+With the full version on a laptop, also type "My reels get views but nobody buys. I have 3 hours a week. Build me a system." Show the three weekly series, the path from a post to a free guide to a WhatsApp list people choose to join, and the weekly count.
 
 ## Common snags
 
 - **"Make it sound more like me."** Ask the owner to send a voice note's worth of how they talk about their food or place, then type a few of those phrases into the chat. Or paste one old caption they liked.
 - **No time to take photos.** Batch them: ten minutes once a week, before opening, in good light.
-- **Photos with customers or kids.** Faces only with permission; children only with a parent's yes. Otherwise hands, plates, the room.
+- **Photos with customers or kids.** Faces only with permission; never children's faces. Otherwise hands, plates, the room.
 - **Weekday and date don't match.** The helper is told to check, but always check against the phone's calendar before posting.
 - **Google posts.** This helper doesn't write Google Business posts. Use the Get found on Google helper for those (no hashtags needed).
 - **Music in reels.** Use the app's own music library, not songs from elsewhere.
 - **The owner wants "only 2 left!" or a discount that isn't real.** It will not write it. Only true urgency, only offers the owner will honor.
+- **"Add everyone who liked my reel to my WhatsApp group."** No. People join only when they say yes. Adding people without asking gets numbers reported and blocked, and breaks their trust.
+- **"Can it reply to comments or DMs automatically?"** No. It writes quick replies the owner saves and sends. Automatic replies need the WhatsApp Business Platform through an approved provider, with opt-in: a builder project.
+- **The free thing.** It must be the owner's own, made from their notes. No copied templates, photos or songs from others.
+- **Workshop launch with "only 3 seats left".** Only if the owner has a real seat limit. No countdowns, no made-up student reviews.
+- **"Guarantee me more followers."** No one can. Suggest trying the system for a few weeks and counting what happens.
 - **Free plan runs out of messages.** One week's plan per chat is enough. Come back next Monday.
 
 ## Turn a working helper into the owner's own Skill (laptop)
 
 Do this only on the owner's laptop, in the owner's own Claude account, on a paid plan with code execution turned on.
 
-1. The simplest path first: download the two Skill zips from the README and upload each in **Settings**, then **Capabilities**, then **Skills**.
+1. The simplest path first: download the three Skill zips from the README and upload each in **Settings**, then **Capabilities**, then **Skills**.
 2. To give the owner a Skill that already knows their voice, make a folder, for example `my-posts`, with one file inside: `SKILL.md`.
 3. At the top of `SKILL.md`, write:
    ```
@@ -74,6 +92,10 @@ Honest scope. Each is a separate visit, done with the owner, in the owner's acco
 - **A simple post calendar.** A Google Sheet in the owner's own account: Date, Day, Idea, Caption ready (yes or no), Posted (yes or no), "People who mentioned it" as a tally. No sales or money figures.
 - **The 4-week plan.** Use simple-marketing-plan for the one thing the owner most wants to sell more of. Paper tallies, compared with the 4 weeks before.
 - **Google posts.** Pair this with the Get found on Google helper, so one weekly post also goes on the owner's Google Business Profile.
+- **A WhatsApp Community, Channel or broadcast list.** Set it up on the owner's phone, with a welcome message that says how to leave. People join only by saying yes or tapping the owner's link. No bought, copied or scraped numbers.
+- **The weekly count sheet.** A Google Sheet in the owner's account with one row a week: Week of, Posts, Saves, Shares, Keyword comments, DMs, New joiners, Sign-ups, Sales, One change to try. Counts only, no names or amounts.
+- **An online workshop launch.** Use followers-to-customers for the outline, the two-week launch and the sign-up and thank-you messages, and the [Bookings and reminders](../booking-reminders/) package for reminders.
+- **One link for everything.** If people don't know where to buy or book, the [Your shop on one page](../one-page-shop/) package builds one page with a button for each offer.
 
 ## Do not
 
@@ -81,5 +103,6 @@ Honest scope. Each is a separate visit, done with the owner, in the owner's acco
 - Do not log in to the owner's Instagram, Facebook, WhatsApp or Google accounts, and never see or type their passwords or OTPs.
 - Do not post for the owner, or set up anything that posts automatically.
 - Do not write or arrange fake reviews, comments, followers or likes.
+- Do not add anyone to the owner's WhatsApp list, group, Community or Channel without that person saying yes, and never use bought, copied or scraped lists.
 - Do not rank or score people, including staff or followers.
 - Do not record audio, video or screens, or photograph customers or staff, without saying so out loud first and getting a clear yes.

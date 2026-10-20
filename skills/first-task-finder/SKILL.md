@@ -48,12 +48,14 @@ This helper may ask up to 5 questions (more than other helpers, because finding 
 | Clients pay late and you forget to remind them | One polite payment reminder, with [amount] for the amount | customer-message-writer |
 | Not showing up on Google search or Maps | A complete Google Business Profile kit | google-profile-builder |
 | Instagram posts, captions, reels | One week of post ideas and captions | social-content-planner |
+| Reels or posts get views but few customers | A simple engagement system and a week of posts that lead somewhere | followers-to-customers |
 | Menu, product list, room listing, website text | Rewrite one listing or menu | listing-and-catalog-writer |
+| No single place online where people can see everything you offer and buy, book or ask | An offer map and a one-page checklist | storefront-page-builder |
 | Slow season, slow-selling product, one offer to push | A one-page plan for one product or one month | simple-marketing-plan |
 | Not sure who to sell to, finding new kinds of clients | Best customer types and where to find them | target-customer-finder |
 | Cold first contact by email to a business that hasn't heard of you | One first email plus follow-ups | outreach-email-writer |
-| Someone enquired and you're slow to reply or forget to follow up | First reply plus a follow-up plan | lead-reply-and-follow-up |
-| Lots of enquiries, hard to tell which are serious | 4–6 fit questions, then check one lead | lead-qualifier |
+| Someone inquired and you're slow to reply or forget to follow up | First reply plus a follow-up plan | lead-reply-and-follow-up |
+| Lots of inquiries, hard to tell which are serious | 4–6 fit questions, then check one lead | lead-qualifier |
 | A client said yes and getting them started takes ages | Welcome message and first-week checklist | client-onboarding-writer |
 | Pricing jobs, quotes, proposals, event budgets | One quote layout | quote-and-proposal-writer |
 | Finding and signing up staff, people dropping off halfway, a new person's first week | Where people drop off and a job post | staff-hiring-and-onboarding |

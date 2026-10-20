@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "date": "2026-10-19",
+  "version": "1.1.0",
+  "date": "2026-10-20",
   "repo": "jfk-cil/small-business-ai-helpers",
   "pages_base": "https://jfk-cil.github.io/small-business-ai-helpers/",
   "marketplace_name": "small-business-ai-helpers",
@@ -32,7 +32,7 @@
           "multiline": true
         }
       ],
-      "helper": "You help me find one job in my business that an AI assistant could help with this week.\nMy business: {{business}}\nWhat takes most of my time: {{week}}\n\nAsk me one short question per message, at most 6 in total, and wait for each answer. I can say \"pass\". First find the job. Then ask what I have already tried, what worked and what didn't.\nAt the end, write in short lines: 1) the job in one line; 2) what we could make for it today; 3) which of these it fits: Replies to customers, Bookings and reminders, Follow-ups, Finding clients, Getting found on Google, Posts on social media, Staff checklists, Hiring staff; 4) my success checklist: 3 to 5 short lines in my own words.\nThen offer to make the first draft right now.",
+      "helper": "You help me find one job in my business that an AI assistant could help with this week.\nMy business: {{business}}\nWhat takes most of my time: {{week}}\n\nAsk me one short question per message, at most 6 in total, and wait for each answer. I can say \"pass\". First find the job. Then ask what I have already tried, what worked and what didn't.\nAt the end, write in short lines: 1) the job in one line; 2) what we could make for it today; 3) which of these it fits: Replies to customers, Bookings and reminders, Follow-ups, Finding clients, A one-page shop, Getting found on Google, Posts on social media, Staff checklists, Hiring staff; 4) my success checklist: 3 to 5 short lines in my own words.\nThen offer to make the first draft right now.",
       "try": {
         "label": "Tell it about your week",
         "placeholder": "Example: I run a small café. Mornings go on WhatsApp orders and I never have time for posts."
@@ -237,8 +237,57 @@
       }
     },
     {
-      "id": "get-found-on-google",
+      "id": "one-page-shop",
       "order": 5,
+      "cards": [
+        "C9"
+      ],
+      "skills": [
+        "storefront-page-builder",
+        "listing-and-catalog-writer",
+        "target-customer-finder"
+      ],
+      "text": {
+        "title": "Your shop on one page",
+        "short": "One link for everything you offer, with a clear button for each: buy, book or ask.",
+        "problem": "People find you on Instagram, but there's no single place to see everything you offer and buy, book or ask in one tap.",
+        "outcome": "An offer map and checklist, words for a one-page shop with one button per offer, a ready page file, and replies for each path. The full version adds a weekly check."
+      },
+      "questions": [
+        {
+          "id": "offers",
+          "label": "What do you offer? List each one.",
+          "hint": "For example: original paintings, prints, weekend workshops, custom orders.",
+          "multiline": true
+        },
+        {
+          "id": "who",
+          "label": "Who buys or books, and where do they find you now?",
+          "hint": "For example: tourists and locals, mostly through Instagram and friends.",
+          "multiline": true
+        },
+        {
+          "id": "action",
+          "label": "What should people do for each offer?",
+          "hint": "For example: buy prints, book a workshop, ask about a custom piece.",
+          "multiline": true
+        },
+        {
+          "id": "tools",
+          "label": "What do you already use to sell or take bookings?",
+          "hint": "For example: a shop app, a payment link, a booking form, WhatsApp. No links or account details.",
+          "multiline": false
+        }
+      ],
+      "helper": "You help me bring everything I offer into one simple page with one clear action for each offer.\nWhat I offer: {{offers}}\nWho buys and where they find me: {{who}}\nWhat people should do for each offer: {{action}}\nWhat I already use to sell or book: {{tools}}\n\nWork one step per message and ask before the next:\n1. An offer map: a table with each offer, who it is for, the one action (buy, book, ask or join a list), where that action happens today, and what is missing. Then a 10-item checklist for my one-link entry point.\n2. The words for my page: a short headline, one line about me, one block per offer with a button label of 4 words or fewer, a short \"how to order or book\" part, and up to 5 questions and answers.\n3. One simple page file (HTML) I can put on a free website builder, with every link as a placeholder like [your shop link], [your booking form link] or [your WhatsApp link]. No scripts, forms, tracking or outside files. Keep my UPI, bank details and phone number off the page; WhatsApp links stay https://wa.me/[your number with country code, no +]. No countdowns, 'only X left' or reviews unless I say they are true. No health claims.\n4. For each offer, what happens after the click: a quick reply, a confirmation and one polite follow-up.\nNever invent prices, sizes, materials, dates, delivery or refund terms, or reviews: write [blank]. Never ask for my passwords, payment details or website logins. No legal or tax advice for selling online; say \"check with a qualified person.\"",
+      "try": {
+        "label": "Start with your offer map",
+        "placeholder": "Example: go"
+      }
+    },
+    {
+      "id": "get-found-on-google",
+      "order": 6,
       "cards": [
         "C6"
       ],
@@ -293,7 +342,7 @@
     },
     {
       "id": "staff-checklists",
-      "order": 6,
+      "order": 7,
       "cards": [
         "C5"
       ],
@@ -341,7 +390,7 @@
     },
     {
       "id": "hire-and-onboard",
-      "order": 7,
+      "order": 8,
       "cards": [
         "C7"
       ],
@@ -389,17 +438,20 @@
     },
     {
       "id": "social-posts",
-      "order": 8,
-      "cards": [],
+      "order": 9,
+      "cards": [
+        "C10"
+      ],
       "skills": [
         "social-content-planner",
+        "followers-to-customers",
         "simple-marketing-plan"
       ],
       "text": {
         "title": "Posts that bring customers",
         "short": "A week of posts and captions in your voice, with photo ideas you can shoot yourself.",
-        "problem": "You know you should post, but there's no time to think of what to say every day.",
-        "outcome": "A plan for this week's posts with captions, hashtags and photo ideas. The full version adds a simple one-page plan."
+        "problem": "No time to post, and the views you get don't turn into customers.",
+        "outcome": "A plan for this week's posts with captions and photo ideas, each with one clear next step, plus replies for comments and messages. The full version adds a simple plan for turning followers into customers and launching a workshop."
       },
       "questions": [
         {
@@ -427,7 +479,7 @@
           "multiline": true
         }
       ],
-      "helper": "You help me post for my business: {{business}}.\nWhere I post: {{where}}\nWhat makes us special (only use this, never invent claims): {{special}}\nThis week: {{week}}\n\nWhen I say \"week\" (or ask for this week's posts in my own words), write a plan for 3 posts, or as many as I ask: for each, the day, the idea in one line, a caption under 60 words in my voice, 5 hashtags, and a photo idea I can take myself (no customers' or children's faces without permission). Each caption in its own copy box.\nWhen I describe one thing to share, write 3 caption options.\nNever invent offers, prices, discounts, awards or health claims. Never say \"best\" or \"No. 1\" unless I say I can show it. Check that weekdays match dates.",
+      "helper": "You help me post for my business: {{business}}.\nWhere I post: {{where}}\nWhat makes us special (only use this, never invent claims): {{special}}\nThis week: {{week}}\n\nWhen I say \"week\" (or ask for this week's posts in my own words), write a plan for 3 posts, or as many as I ask: for each, the day, the idea in one line, a caption under 60 words in my voice, 3 to 5 hashtags, and a photo idea I can take myself (no customers' faces without permission; never children's faces). Each caption in its own copy box.\nWhen I describe one thing to share, write 3 caption options.\nGive every post one clear next step for the viewer (for example: save this, message me to book, or \"DM me [WORD]\"; a comment prompt like \"comment [WORD]\" is an equal choice but may reach fewer people; offer a free guide only if I made one, add people to a list only if they say yes, and no tag-a-friend giveaways), and add 3 short replies I can save for comments and messages.\nNever invent offers, prices, discounts, awards or health claims. Never say \"best\" or \"No. 1\" unless I say I can show it. Check that weekdays match dates.",
       "try": {
         "label": "Ask for this week's plan",
         "placeholder": "Example: week"

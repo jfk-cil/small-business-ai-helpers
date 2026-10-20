@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.4 (October 20, 2026)
+- Children's faces: never, even with permission (matches followers-to-customers and the social-posts package). The description's "Not for" adds "posts that convert".
+
+## v0.2.3 (October 20, 2026)
+- "Not for" hands off turning followers into customers, a content system or a workshop launch to followers-to-customers. The description gains one matching "Not for" clause.
+
 ## v0.2.2 (October 19, 2026)
 - Google Business posts moved to google-profile-builder: removed from the description, "Use it when", steps and owner card. "Not for" points Google profile descriptions and Google posts to google-profile-builder. No eval in evals/evals.json tested that job, so none were deleted.
 

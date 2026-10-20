@@ -1,6 +1,6 @@
 ---
 name: listing-and-catalog-writer
-description: Rewrites menus, product and catalog text, marketplace listings and website pages so they read clearly. Use when an owner says "fix my menu", "write my product listing" or "write my About page". Not for a Google Business Profile (use google-profile-builder).
+description: Rewrites menus, product and catalog text, marketplace listings and About or product pages so they read clearly. Use when an owner says "fix my menu", "write my product listing" or "write my About page". Not for a Google Business Profile (use google-profile-builder) or a one-page shop that brings all your offers together (use storefront-page-builder).
 license: CC0-1.0
 ---
 
@@ -20,6 +20,7 @@ Takes the owner's rough menu, product list, listing or page notes and turns them
 - A Google Business Profile description or Google posts: use **google-profile-builder**.
 - A plan for who to reach and how over 4 weeks: use **simple-marketing-plan**.
 - Replies to guest questions: use **guest-inquiry-replies**.
+- A one-page shop or link page that brings all your offers together: use **storefront-page-builder**.
 - Building the website itself, domains, hosting or technical SEO: ask **a person** who builds websites.
 
 ## Ask first

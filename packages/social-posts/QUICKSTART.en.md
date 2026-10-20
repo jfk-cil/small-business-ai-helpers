@@ -1,8 +1,8 @@
 # Posts that bring customers
 
-**The problem:** You know you should post, but there's no time to think of what to say every day.
+**The problem:** No time to post, and the views you get don't turn into customers.
 
-**What you get:** A plan for this week's posts with captions, hashtags and photo ideas. The full version adds a simple one-page plan.
+**What you get:** A plan for this week's posts with captions and photo ideas, each with one clear next step, plus replies for comments and messages. The full version adds a simple plan for turning followers into customers and launching a workshop.
 
 https://jfk-cil.github.io/small-business-ai-helpers/social-posts/
 

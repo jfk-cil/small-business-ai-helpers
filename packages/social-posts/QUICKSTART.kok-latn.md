@@ -2,9 +2,9 @@
 
 _Ho anvad (translation) draft asa. Upkar korun hi bhas borem vachta tea konnakuch dakhoun check korat._
 
-**Somosso:** Post korunk zai tem tumkam kollit asa, punn dor dis kitem sangchem tacho vichar korunk vell na.
+**Somosso:** Post korunk vell na, ani mellta te views girayk zainant.
 
-**Tumkam kitem mellta:** Hea soptakachea post-ancho plan, caption, hashtag ani photo idea sangata. Puro version-ant ek sado ek-panacho plan-ui mellta.
+**Tumkam kitem mellta:** Hea soptakachea post-ancho plan, caption ani photo idea sangata, dor ekant ek spoxtt fuddlem pavl, ani comment ani message-ank zap. Puro version-ant follower-ank girayk korpacho ani workshop suru korpacho sado plan-ui mellta.
 
 https://jfk-cil.github.io/small-business-ai-helpers/social-posts/
 

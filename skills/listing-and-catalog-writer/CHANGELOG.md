@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.4 (October 20, 2026)
+- Description says "About or product pages" instead of "website pages", so it no longer overlaps with storefront-page-builder.
+
+## v0.2.3 (October 20, 2026)
+- "Not for" hands off a one-page shop or link page that brings all offers together to storefront-page-builder. The description gains one matching "Not for" clause.
+
 ## v0.2.2 (October 19, 2026)
 - The Google Business Profile description job moved to google-profile-builder: removed from the description, "Use it when", formats, example, test prompt, owner card and safeguards, and eval 1 deleted from evals/evals.json. "Not for" points Google profile descriptions and Google posts to google-profile-builder.
 - The example is now a website home page.

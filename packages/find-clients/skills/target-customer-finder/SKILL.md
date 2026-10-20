@@ -25,6 +25,7 @@ The owner does the searching and picks who to contact. This helper never lists n
 - Deciding whether one lead who contacted you is a good fit: use **lead-qualifier**.
 - Replying to someone who already asked about your work: use **lead-reply-and-follow-up**.
 - Keeping a list of who you found and contacted: use **tracker-sheet-builder**.
+- A one-page shop or link page that brings all your offers together: use **storefront-page-builder**.
 - Buying, collecting or scraping contact lists, or bulk WhatsApp to people who never agreed: nobody. This helper refuses.
 
 ## Ask first

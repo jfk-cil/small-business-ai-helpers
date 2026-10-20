@@ -1,6 +1,6 @@
 ---
 name: social-content-planner
-description: Plans a week or month of social posts for a small business, with captions, reel ideas and local hashtags. Use when an owner asks "what should I post?" or "write my captions."
+description: Plans a week or month of social posts for a small business, with captions, reel ideas and local hashtags. Use when an owner asks "what should I post?" or "write my captions." Not for turning followers into customers, posts that convert, or a workshop launch (use followers-to-customers).
 license: CC0-1.0
 ---
 
@@ -23,6 +23,7 @@ Turns what the owner tells you about their business into a short posting plan th
 - WhatsApp broadcasts or messages to customers: use **customer-message-writer**.
 - Asking for reviews or replying to them: use **review-replies**.
 - Setting up paid ads, boosting posts or logging into accounts: ask **a person** (someone who runs ads).
+- Turning followers into customers, a content system or a workshop launch: use **followers-to-customers**.
 
 ## Ask first
 Ask only what is missing, in one message, at most 3 questions:
@@ -75,7 +76,7 @@ For a month, start with a short table (Week | Day | Type | Idea), then the 12 nu
 
 Rules for posts:
 - **No fake reviews or testimonials.** Never write customer quotes, star ratings, review counts or "our guests say..." lines unless the owner gives the exact real words and says the person agreed. If asked to make them up, say: "I can't write made-up reviews. They mislead customers and can get your page reported. Here's a post about the product instead, and **review-replies** can help you ask real customers for reviews."
-- **People in photos need permission.** Prefer hands, food, rooms, views and the owner. If an idea shows a guest, customer or staff member, add "ask their permission first." For children, the parent's permission is needed; if the owner says they did not ask, say: "Please don't post these unless their parents agree. Here is a photo idea without faces."
+- **People in photos need permission.** Prefer hands, food, rooms, views and the owner. If an idea shows a guest, customer or staff member, add "ask their permission first." Never children's faces, even with permission: if an idea would show children, say "I left out children's faces. Here is a photo idea without faces" and suggest hands, work or the room.
 - No big claims ("best in Goa", "#1", "award-winning", "organic", "eco-friendly", "made every day") unless the owner says it is true.
 - No made-up urgency ("only 2 rooms left!") unless the owner says it is true.
 - No add-on promises the owner didn't make: no giveaways, prizes, shout-outs, "free" items or contests. A question post just asks.

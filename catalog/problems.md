@@ -14,6 +14,8 @@ Each package in `catalog/packages.json` lists the problems it answers in its `ca
 | C6 | Equipment hire | Getting found on Google search | [get-found-on-google](../packages/get-found-on-google/) |
 | C7 | Home healthcare | Bringing skilled specialists on board | [hire-and-onboard](../packages/hire-and-onboard/) |
 | C8 | Nonprofit or membership group | Following up with past supporters | [follow-ups](../packages/follow-ups/) |
+| C9 | Maker with products and workshops | One place online to buy, book or ask | [one-page-shop](../packages/one-page-shop/) |
+| C10 | Workshop or class business | Posts that turn viewers into customers | [social-posts](../packages/social-posts/) |
 
 ## C1. Appointment-based service
 
@@ -87,7 +89,24 @@ Each package in `catalog/packages.json` lists the problems it answers in its `ca
 - **Keep out of AI:** the standard never-paste list.
 - **Package:** [follow-ups](../packages/follow-ups/). A ready follow-up sequence with a purpose for each message, a tracker that shows who is due today, and a short daily report from the owner's notes. The owner sends each follow-up; an automatic WhatsApp bot is a separate builder project.
 
+## C9. Maker with products and workshops
+
+- **Business type:** a maker or artist who sells finished work, runs workshops and takes custom requests.
+- **The job:** one place online where people can see every offer and buy, book or ask.
+- **What it costs them today:** the work is ready to sell, and it already lives online in pieces: a portfolio site, a free shop app with a payment link, and Instagram. But nothing ties them together, so visitors can't tell where to shop, where to book a workshop or how to ask a question. Working alone, the owner has no time to find the common thread. It comes up every month and matters a lot.
+- **What success looks like:** one entry point, with a quick link for each offer, and simple steps that turn visits into orders and bookings.
+- **Keep out of AI:** guest or customer names and phone numbers; passport scans and Form C details; Aadhaar or PAN numbers; bank, UPI and card details; passwords and OTPs; health information.
+- **Package:** [one-page-shop](../packages/one-page-shop/). An offer map with one action per offer and a 10-item checklist, page words with one button per offer, a plain page file with placeholder links and free hosting steps, and the reply, confirmation and follow-up after each click. The owner adds their own links and publishes the page; the helper never asks for logins or payment details.
+
+## C10. Workshop or class business
+
+- **Business type:** a workshop or class business that posts short videos.
+- **The job:** posts and captions for the week.
+- **What it costs them today:** short videos bring new viewers every week, but few of them stay, engage or book, and there is no steady format for sharing something useful. The owner has notes and plans but no time to follow them. Nothing tried yet. It happens every week and matters a lot.
+- **What success looks like:** more engagement that leads to more sign-ups, so the owner can keep making new products and online workshops.
+- **Keep out of AI:** photos of people; bank, UPI and card details.
+- **Package:** [social-posts](../packages/social-posts/). Three weekly series (a tip, behind the scenes, what's on), an honest path from a post to a free small thing the owner makes, then to a WhatsApp list people choose to join, then to a workshop or product, a weekly rhythm that fits the owner's time and a short weekly count. Also a week of posts that convert with quick replies, and a launch plan for an online workshop with no fake urgency. The owner posts and sends everything.
+
 ## Not tied to one problem
 
 - [start-here](../packages/start-here/) is for owners who are not yet sure which job to hand to AI first.
-- [social-posts](../packages/social-posts/) answers a common need (no time to think of what to post) that none of the problems above names directly.

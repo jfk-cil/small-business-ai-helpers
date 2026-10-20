@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.2 (October 20, 2026)
+- "Not for" hands off a one-page shop or link page that brings all offers together to storefront-page-builder.
+
 ## v0.2.1 (October 14, 2026)
 Fixes from the live model run audit (runs/LIVE-RESULT.md).
 - Shared rule: never invent durations or lead times either ("an hour", "arrive 10 minutes early").
