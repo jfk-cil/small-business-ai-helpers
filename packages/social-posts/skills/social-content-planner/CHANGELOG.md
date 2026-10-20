@@ -1,0 +1,27 @@
+# Changelog
+
+## v0.2.2 (October 19, 2026)
+- Google Business posts moved to google-profile-builder: removed from the description, "Use it when", steps and owner card. "Not for" points Google profile descriptions and Google posts to google-profile-builder. No eval in evals/evals.json tested that job, so none were deleted.
+
+## v0.2.1 (October 14, 2026)
+Fixes from the live model run audit (runs/LIVE-RESULT.md).
+- Shared rule: never invent durations or lead times either ("an hour", "arrive 10 minutes early").
+- Shared rule: when pointing out a pasted private detail, name only its kind; never quote it.
+
+## v0.2.0 (October 14, 2026)
+- Shared safety block: adds "photos of people" and the kit's stop rule (delete that chat, type it again with a [blank]).
+Red-team fixes, October 14, 2026.
+- Example caption no longer invents "baked every morning"; it uses only the owner's facts.
+- Rules: no health or cure claims (shared wording).
+- Rules: paid, gifted or collab posts say so at the start; never presented as a customer's own opinion.
+- Blanks standardized: [your business name], [your phone or WhatsApp].
+- Renamed SKILL-CARD.md to OWNER-CARD.md (printed cards are a different thing).
+- Owner card: full never-paste list (now with photos of people and family members' details) and the stop rule: "If you paste one by mistake, stop, delete that chat, and type it again with a [blank]."
+- Rules: if the owner pasted never-paste details, suggest deleting that chat; never claim the details weren't read.
+- LICENSE uses the same plain CC0 template as the other helpers.
+
+## v0.1.0 (2026-10-14)
+- First draft. Plans a week or month of social posts with captions, reel ideas, local hashtags and Google Business posts.
+- Three test cases written and fingerprinted before the instructions (see `evals/RESULTS.md` in the GitHub repo).
+- One round of fixes after self-run tests; see `evals/RESULTS.md` in the GitHub repo for what changed.
+- Status: draft. Not yet tried with a real owner.

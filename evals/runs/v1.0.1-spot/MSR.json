@@ -1,0 +1,24 @@
+{
+ "meta": {
+  "date": "2026-10-19T13:17:13",
+  "claude_version": "2.1.303 (Claude Code)",
+  "model_requested": "claude-sonnet-5-5",
+  "models_seen": [
+   "claude-sonnet-5-5"
+  ],
+  "mode": "append",
+  "replicate": "1",
+  "testbanks": {
+   "../testbank/MSR.json": "01141fde130998f7f3e939fcd44bb4fb5ae3c83b7a74a350ce0cd1cee8f392b7"
+  },
+  "skills": {
+   "message-sorter": "698467e09f80b4ae213f780469b18607cff52f47f7d0357430354a7877321e44"
+  },
+  "errors": {},
+  "label": "self-measured, Claude Code headless (append mode), fictional cases; not independent"
+ },
+ "responses": {
+  "B-MSR-001": "**Needs you**\n\n**Customer 3:** asks to see the flat on Saturday morning. Label: Needs me\n```\nThanks for your message. I've seen it and will check and get back to you personally shortly.\n```\n\n**Customer 4:** asks for a better deal on price. Label: Needs me\n```\nThanks for telling me. I've seen your message and will get back to you personally shortly.\n```\n\n**Routine: ready to send**\n\n**Customer 2 and Customer 5** (office timings). Label: Routine\n```\nHi! Our office is open 10 am to 7 pm, Monday to Saturday.\n```\n\n**Customer 6** (plots in Siolim). Label: Routine\n```\nHi! Yes, we deal in plots in Siolim, along with resale flats and plots in Porvorim and Mapusa.\nLet me know what you're looking for and I'll help.\n```\n\n**Customer 1** (is the Sample Greens 2BHK still available). Label: Waiting for reply\n```\nHi! Let me check and confirm shortly whether the 2BHK in Sample Greens is still available.\n```\n\n**Fill in before sending:** nothing. Customer 1 needs you to check availability before you send a confirmation.\n\n**Save as quick replies**\n\n**Shortcut:** `office-hours`\n```\nHi! Our office is open 10 am to 7 pm, Monday to Saturday.\nSite visits are by appointment only.\n[your business name]\n```\nTo save: WhatsApp Business > Business tools > Quick replies > +. (Menus vary a little by phone.)\n\n**6 messages: 2 need you, 4 drafted, 0 no reply needed.**\n\nIt's a draft: check each one and send it yourself.",
+  "B-MSR-010": "**Needs you**\n\n**Customer 1:** asks if a 2BHK rental is available within a stated budget. Label: Needs me\n```\nHi! Aapka message dekh liya hai. Main check karke aapko personally jaldi batata hoon.\n```\n\n**Customer 3:** asks to visit a flat tomorrow. Label: Needs me\n```\nHi! Aapka message mil gaya. Main check karke visit confirm karta hoon.\n```\n\n**Routine: ready to send**\n\n**Customer 2** (office timing). Label: Routine\n```\nHi! Hamara office subah 10 se shaam 7 baje tak khula rehta hai.\nSunday band rehta hai.\n```\n\n**Customer 4** (brokerage). Label: Routine\n```\nHi! Brokerage [blank] hai.\nAap rent ya resale mein dekh rahe hain?\n```\n\n**Fill in before sending:**\n- Customer 4: aapka brokerage rate. Ye aapne nahi bataya, isliye maine koi number nahi likha. Agar aap brokerage pe baat karte hain, to isse Needs me mein daal dein.\n\nCustomer 3 ne \"kal\" likha hai, jo kal Tuesday 20 October hai. Office khula rehta hai, par Sunday band hai, isliye confirm karte waqt din dekh lein.\n\n**4 messages: 2 need you, 2 drafted, 0 no reply needed.**\n\nYe drafts hain. Har ek check karke khud bhejein.\n\nPlease check this with someone who reads it well.\n\nAapka tone seekhne ke liye apne 3 se 5 purane replies (bina naam ke) paste karein. Tab drafts bilkul aapke jaise honge."
+ }
+}

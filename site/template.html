@@ -1,0 +1,309 @@
+<title>{{TITLE}}</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Mukta:wght@400;600&display=swap">
+<style>
+/* Layout: one narrow column, phone first. Steps stack top to bottom; the helper box is the one heavy object. */
+:root{
+  --paper:#f5f7f3; --card:#ffffff; --ink:#15211c; --muted:#56635d; --line:#d6ded8;
+  --accent:#0d6a58; --accent-ink:#ffffff; --accent-soft:#e2f0eb;
+  --warn:#9c3f17; --warn-bg:#fbede5; --ok:#1f6b33;
+  --display:"Baloo 2","Mukta",system-ui,sans-serif;
+  --body:"Mukta",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#101714; --card:#17201c; --ink:#e5ede8; --muted:#9caaa3; --line:#2b3732;
+  --accent:#53c4a8; --accent-ink:#062019; --accent-soft:#183129;
+  --warn:#f2a882; --warn-bg:#2c1b12; --ok:#7fd193; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#101714; --card:#17201c; --ink:#e5ede8; --muted:#9caaa3; --line:#2b3732;
+  --accent:#53c4a8; --accent-ink:#062019; --accent-soft:#183129;
+  --warn:#f2a882; --warn-bg:#2c1b12; --ok:#7fd193; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--paper);color:var(--ink);font:17px/1.55 var(--body);margin:0}
+.wrap{max-width:640px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:22px}
+header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.crumb{color:var(--accent);text-decoration:none;font-weight:600;font-size:15px}
+.crumb:hover{text-decoration:underline}
+.lang{display:flex;align-items:center;gap:8px;font-size:15px;color:var(--muted)}
+select,input,textarea,button{font:inherit;color:inherit}
+select{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 10px}
+h1{font:700 clamp(28px,7vw,38px)/1.15 var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font:700 22px/1.25 var(--display);margin:0;text-wrap:balance}
+.lede{margin:0;color:var(--muted);font-size:18px}
+.facts{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+@media (max-width:520px){.facts{grid-template-columns:1fr}}
+.fact{min-width:0}
+.label{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 2px}
+.fact p{margin:0}
+section{display:flex;flex-direction:column;gap:14px}
+.step{display:flex;align-items:baseline;gap:10px}
+.step b{flex:none;display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font:700 15px/1 var(--display)}
+.note{margin:0;color:var(--muted);font-size:15px}
+.field{display:flex;flex-direction:column;gap:4px}
+.field label{font-weight:600}
+.field small{color:var(--muted);font-size:14px}
+input,textarea{width:100%;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-height:48px}
+textarea{min-height:88px;resize:vertical}
+input:focus,textarea:focus,select:focus,button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.keepout{background:var(--warn-bg);color:var(--ink);border-radius:12px;padding:12px 14px;font-size:15px}
+.keepout strong{color:var(--warn)}
+.scan{background:var(--warn-bg);border:1px solid var(--warn);border-radius:12px;padding:10px 14px;color:var(--ink);font-size:15px}
+.btn{appearance:none;border:0;border-radius:999px;padding:12px 22px;min-height:48px;font-weight:600;cursor:pointer;background:var(--accent);color:var(--accent-ink);text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.btn[disabled]{opacity:.55;cursor:default}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.helperbox{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.helperbox pre{margin:0;max-height:260px;overflow:auto;white-space:pre-wrap;word-wrap:break-word;font:14px/1.5 var(--mono);color:var(--ink)}
+ol.howto{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:4px}
+.status{font-size:15px;color:var(--ok);min-height:1.2em;margin:0}
+.out{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;white-space:pre-wrap;word-wrap:break-word;min-height:3em}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 14px}
+summary{cursor:pointer;font-weight:600}
+details[open] summary{margin-bottom:10px}
+.dl{display:flex;flex-direction:column;gap:8px;margin:10px 0 0;padding:0;list-style:none}
+.dl a{color:var(--accent);font-weight:600}
+code{font:14px/1.5 var(--mono);background:var(--accent-soft);border-radius:6px;padding:1px 6px;word-break:break-all}
+.tiles{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.tile{display:flex;flex-direction:column;gap:4px;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);text-decoration:none;min-width:0}
+.tile:hover{border-color:var(--accent)}
+.tile strong{font:700 20px/1.25 var(--display);color:var(--accent)}
+.tile span{color:var(--muted);font-size:15px}
+.tile.start{background:var(--accent-soft);border-color:transparent}
+footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;gap:4px}
+.draft{color:var(--warn);font-size:14px;margin:0}
+@media (prefers-reduced-motion:no-preference){.btn{transition:transform .08s ease}.btn:active{transform:scale(.98)}}
+</style>
+
+<div class="wrap" id="app">
+  <header>
+    <a class="crumb" id="crumb" href="{{HUB_HREF}}" hidden></a>
+    <span id="sitename" class="label"></span>
+    <label class="lang"><span id="langlabel"></span>
+      <select id="lang" aria-label="Language">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="mr">मराठी</option>
+        <option value="kok-deva">कोंकणी (देवनागरी)</option>
+        <option value="kok-latn">Konknni (Romi)</option>
+      </select>
+    </label>
+  </header>
+  <p class="draft" id="draftnote" hidden></p>
+  <main id="main" style="display:flex;flex-direction:column;gap:22px"></main>
+  <footer><span id="footer"></span><span>{{VERSION_LINE}}</span></footer>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+(function(){
+  "use strict";
+  const $ = (s, r=document) => r.querySelector(s);
+  const el = (tag, attrs={}, ...kids) => {
+    const n = document.createElement(tag);
+    for (const [k,v] of Object.entries(attrs)) {
+      if (k === "text") n.textContent = v;
+      else if (k === "hidden") n.hidden = !!v;
+      else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+      else n.setAttribute(k, v);
+    }
+    for (const k of kids) if (k != null) n.append(k);
+    return n;
+  };
+  const LANGS = ["en","hi","mr","kok-deva","kok-latn"];
+  let lang = "en";
+  try { const s = localStorage.getItem("sbh-lang"); if (LANGS.includes(s)) lang = s; } catch(e) {}
+  const t = (k) => (DATA.i18n[lang] && DATA.i18n[lang][k]) || DATA.i18n.en[k] || k;
+  const pt = (pid, k) => t("pkg." + pid + "." + k);
+
+  // Privacy scan: blocks contact, ID and payment details before a helper is made.
+  const luhn = (digits) => { let sum = 0, alt = false;
+    for (let i = digits.length - 1; i >= 0; i--) { let d = +digits[i]; if (alt) { d *= 2; if (d > 9) d -= 9; } sum += d; alt = !alt; }
+    return sum % 10 === 0; };
+  const SCANS = [
+    ["email", /[\w.+-]+@[\w-]+\.[\w.]+/],
+    ["upi", /\b[\w.-]{2,}@(ok[a-z]+|ybl|ibl|axl|paytm|upi|apl|[a-z]{3,})\b/i],
+    ["phone", /(?:\+?91[\s-]?)?(?<!\d)[6-9]\d{4}[\s-]?\d{5}(?!\d)/],
+    ["aadhaar", /(?<!\d)[2-9]\d{3}([\s-]?)\d{4}\1\d{4}(?!\d)/],
+    ["pan", /\b[A-Z]{5}\d{4}[A-Z]\b/],
+    ["card", { test: (s) => (s.match(/(?:\d[ -]?){13,19}/g) || []).some(m => { const d = m.replace(/\D/g, ""); return d.length >= 13 && d.length <= 19 && luhn(d); }) }],
+    ["secret", /\b(otp|password|passcode|pin)\b(?!\s*code)\s*(?:is|:|=|-)\s*\S{4,}/i]
+  ];
+  const scan = (text) => {
+    const hits = [];
+    for (const [kind, re] of SCANS) if (re.test(text) && !hits.includes(kind)) hits.push(kind);
+    if (hits.includes("email") && hits.includes("upi")) hits.splice(hits.indexOf("upi"), 1);
+    if (hits.includes("phone") && hits.includes("aadhaar")) hits.splice(hits.indexOf("aadhaar"), 1);
+    return hits;
+  };
+
+  async function copyText(text, statusEl) {
+    try { await navigator.clipboard.writeText(text); statusEl.textContent = t("copied"); }
+    catch (e) { statusEl.textContent = t("copy.fail"); }
+  }
+
+  function helperFor(pkg, answers) {
+    let h = pkg.helper;
+    for (const q of pkg.questions) {
+      const v = (answers[q.id] || "").trim();
+      const val = (!v || /^pass$/i.test(v)) ? "[blank: ask me]" : v;
+      h = h.split("{{" + q.id + "}}").join(val);
+    }
+    return h + "\n\n" + DATA.langLines[lang] + "\n" + DATA.closing;
+  }
+
+  function renderHub(main) {
+    main.append(
+      el("h1", {text: t("site.name")}),
+      el("p", {class: "lede", text: t("hub.lead")}),
+      el("h2", {text: t("hub.pick")})
+    );
+    const tiles = el("div", {class: "tiles"});
+    for (const p of DATA.packages) {
+      if (p.id === "start-here") continue;
+      tiles.append(el("a", {class: "tile", href: DATA.links[p.id]},
+        el("strong", {text: pt(p.id, "title")}), el("span", {text: pt(p.id, "short")})));
+    }
+    const s = DATA.packages.find(p => p.id === "start-here");
+    if (s) tiles.append(el("a", {class: "tile start", href: DATA.links[s.id]},
+      el("strong", {text: pt(s.id, "title")}), el("span", {text: pt(s.id, "short")})));
+    main.append(tiles);
+  }
+
+  const answers = {};
+  function renderPackage(main, pkg) {
+    main.append(
+      el("h1", {text: pt(pkg.id, "title")}),
+      el("div", {class: "facts"},
+        el("div", {class: "fact"}, el("p", {class: "label", text: t("problem")}), el("p", {text: pt(pkg.id, "problem")})),
+        el("div", {class: "fact"}, el("p", {class: "label", text: t("outcome")}), el("p", {text: pt(pkg.id, "outcome")})))
+    );
+    // Step 1: answers
+    const s1 = el("section", {"aria-labelledby": "s1h"},
+      el("div", {class: "step"}, el("b", {text: "1"}), el("h2", {id: "s1h", text: t("step.answer")})),
+      el("p", {class: "note", text: t("step.answer.note")}),
+      el("div", {class: "keepout"}, el("strong", {text: t("keepout.title") + ": "}), t("keepout.body")));
+    for (const q of pkg.questions) {
+      const id = "q-" + q.id;
+      const input = q.multiline ? el("textarea", {id, rows: "3"}) : el("input", {id, type: "text", autocomplete: "off"});
+      if (answers[q.id]) input.value = answers[q.id];
+      input.addEventListener("input", () => { answers[q.id] = input.value; });
+      s1.append(el("div", {class: "field"},
+        el("label", {for: id, text: pt(pkg.id, "q." + q.id)}),
+        el("small", {text: pt(pkg.id, "q." + q.id + ".hint")}), input));
+    }
+    const scanBox = el("div", {class: "scan", role: "alert", hidden: true});
+    const makeBtn = el("button", {class: "btn", type: "button", text: t("btn.make")});
+    s1.append(scanBox, el("div", {class: "row"}, makeBtn));
+    main.append(s1);
+
+    // Step 2: helper
+    const pre = el("pre", {id: "helpertext", tabindex: "0"});
+    const status = el("p", {class: "status", "aria-live": "polite"});
+    const copyBtn = el("button", {class: "btn", type: "button", text: t("btn.copy")});
+    const s2 = el("section", {hidden: true, "aria-labelledby": "s2h"},
+      el("div", {class: "step"}, el("b", {text: "2"}), el("h2", {id: "s2h", text: t("step.helper")})),
+      el("div", {class: "helperbox"}, el("p", {class: "note", text: t("helper.what")}), pre,
+        el("div", {class: "row"}, copyBtn,
+          el("a", {class: "btn ghost", href: "https://claude.ai/new", target: "_blank", rel: "noopener", text: t("btn.openclaude")}),
+          el("button", {class: "btn ghost", type: "button", text: t("edit"), onclick: () => { s1.scrollIntoView({behavior: "smooth"}); }})),
+        status),
+      el("h2", {text: t("use.title")}),
+      el("ol", {class: "howto"}, ...["use.1","use.2","use.3","use.4"].map(k => el("li", {text: t(k)}))),
+      el("details", {}, el("summary", {text: t("save.title")}),
+        el("p", {class: "note", text: t("save.body")}), el("p", {class: "note", text: t("save.project")})));
+    copyBtn.addEventListener("click", () => copyText(pre.textContent, status));
+    main.append(s2);
+
+    // Optional: try it inside Claude (only when this page runs as a Claude artifact).
+    const tryIn = el("textarea", {id: "try-in", rows: "3", placeholder: t("example") + ": " + pt(pkg.id, "try.placeholder")});
+    const tryBtn = el("button", {class: "btn", type: "button", text: t("btn.try")});
+    const stopBtn = el("button", {class: "btn ghost", type: "button", text: t("btn.stop"), hidden: true});
+    const out = el("div", {class: "out", "aria-live": "polite"});
+    const tryScan = el("div", {class: "scan", role: "alert", hidden: true});
+    const s3 = el("section", {hidden: true},
+      el("h2", {text: t("try.title")}), el("p", {class: "note", text: t("try.note")}),
+      el("div", {class: "field"}, el("label", {for: "try-in", text: pt(pkg.id, "try.label")}), tryIn),
+      tryScan, el("div", {class: "row"}, tryBtn, stopBtn), out);
+    main.append(s3);
+
+    // Laptop install
+    const dl = el("ul", {class: "dl"});
+    for (const sk of pkg.skills) dl.append(el("li", {}, el("a", {href: DATA.downloadBase + sk + ".zip", text: t("laptop.download") + ": " + sk + ".zip"})));
+    main.append(el("details", {}, el("summary", {text: t("laptop.title")}),
+      el("p", {class: "note", text: t("laptop.body")}), dl,
+      el("p", {class: "note", text: t("laptop.code")}),
+      el("p", {}, el("code", {text: "/plugin marketplace add " + DATA.repo})),
+      el("p", {}, el("code", {text: "/plugin install " + pkg.id + "@" + DATA.marketplace}))));
+
+    makeBtn.addEventListener("click", () => {
+      const all = pkg.questions.map(q => answers[q.id] || "").join("\n");
+      const hits = scan(all);
+      if (hits.length) {
+        scanBox.hidden = false;
+        scanBox.textContent = t("scan.found") + " " + hits.map(k => t("scan." + k)).join(", ") + ".";
+        scanBox.scrollIntoView({behavior: "smooth", block: "center"});
+        return;
+      }
+      scanBox.hidden = true;
+      pre.textContent = helperFor(pkg, answers);
+      status.textContent = all.trim() ? "" : t("empty.answers");
+      s2.hidden = false;
+      if (sampleFn) s3.hidden = false;
+      s2.scrollIntoView({behavior: "smooth"});
+    });
+
+    let sampleFn = null, ctl = null;
+    if (window.claude && typeof window.claude.use === "function") {
+      window.claude.use("sample").then(fn => { sampleFn = fn || null; if (sampleFn && !s2.hidden) s3.hidden = false; }).catch(() => {});
+    }
+    stopBtn.addEventListener("click", () => ctl && ctl.abort());
+    tryBtn.addEventListener("click", async () => {
+      if (!sampleFn) return;
+      const msg = tryIn.value.trim() || pt(pkg.id, "try.placeholder");
+      const hits = scan(msg);
+      if (hits.length) { tryScan.hidden = false; tryScan.textContent = t("scan.found") + " " + hits.map(k => t("scan." + k)).join(", ") + "."; return; }
+      tryScan.hidden = true;
+      ctl = new AbortController();
+      tryBtn.disabled = true; stopBtn.hidden = false; out.textContent = t("thinking");
+      try {
+        await sampleFn([{role: "user", content: pre.textContent + "\n\n---\n\n" + msg}], {
+          signal: ctl.signal, cache: false, onText: ({text}) => { out.textContent = text; }
+        });
+      } catch (e) {
+        out.textContent = (e && e.text) || "";
+        const code = e && e.code;
+        if (code !== "cancelled") {
+          const key = code === "not_granted" ? "err.declined" : code === "rate_limited" ? "err.busy" : "err.generic";
+          out.append(el("p", {class: "note", text: t(key)}));
+          if (code === "not_granted" || code === "sampling_disabled" || code === "capability_disabled") s3.hidden = true;
+        }
+      } finally { tryBtn.disabled = false; stopBtn.hidden = true; }
+    });
+  }
+
+  function render() {
+    document.documentElement.lang = lang === "kok-latn" ? "gom-Latn" : lang === "kok-deva" ? "gom" : lang;
+    $("#lang").value = lang;
+    $("#langlabel").textContent = t("lang.label");
+    $("#footer").textContent = t("footer");
+    const dn = $("#draftnote"); dn.hidden = lang === "en"; dn.textContent = t("draft.note");
+    const main = $("#main"); main.replaceChildren();
+    const crumb = $("#crumb"), name = $("#sitename");
+    if (DATA.page === "hub") { crumb.hidden = true; name.textContent = ""; renderHub(main); }
+    else {
+      crumb.hidden = false; crumb.textContent = "← " + t("back"); name.textContent = "";
+      renderPackage(main, DATA.packages.find(p => p.id === DATA.page));
+    }
+  }
+  $("#lang").addEventListener("change", (e) => {
+    lang = e.target.value;
+    try { localStorage.setItem("sbh-lang", lang); } catch(err) {}
+    render();
+  });
+  render();
+})();
+</script>

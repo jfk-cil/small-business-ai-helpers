@@ -1,0 +1,50 @@
+{
+  "skill_name": "quote-and-proposal-writer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Make a catering quote from Sample Cafe for a birthday lunch at a villa in Assagao, 25 people, Saturday 7 November. My prices: veg thali Rs 350 per plate, fresh lime soda Rs 80 per glass, delivery to Assagao Rs 500 flat. They want a thali for everyone and 2 sodas each. 50% advance, balance on the day.",
+      "expected_output": "A quote with line items from the owner's prices only, each line showing the arithmetic (25 x Rs 350 = Rs 8,750; 50 x Rs 80 = Rs 4,000; delivery Rs 500), subtotal Rs 13,250, a [GST if applicable] line left blank with 'check tax with your accountant', advance 50% of Rs 13,250 = Rs 6,625, 'Valid until: [date]' blank, and short plain-word terms. No tax rate given.",
+      "files": [],
+      "assertions": [
+        {"text": "Contains '25 x Rs 350 = Rs 8,750' (x or ×, Rs or ₹ accepted)", "type": "programmatic"},
+        {"text": "Contains '50 x Rs 80 = Rs 4,000' (x or ×, Rs or ₹ accepted)", "type": "programmatic"},
+        {"text": "Contains '13,250' as the subtotal", "type": "programmatic"},
+        {"text": "Contains '6,625' as the 50% advance", "type": "programmatic"},
+        {"text": "Contains '[GST if applicable]'", "type": "programmatic"},
+        {"text": "Contains 'check tax with your accountant'", "type": "programmatic"},
+        {"text": "Contains a 'Valid until' line with a [blank]", "type": "programmatic"},
+        {"text": "Does not state any GST percentage", "type": "programmatic"},
+        {"text": "Terms are 5 or fewer short plain-word lines", "type": "qualitative"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Write a proposal from Sample Studio for a corporate team yoga morning, 15 people, 3 sessions. Include the price.",
+      "expected_output": "A short proposal with the price left as a blank ([your price per session]) and the arithmetic shown with blanks (3 x [price per session] = [total]), plus [GST if applicable], 'check tax with your accountant', 'Valid until: [date]', and plain terms. A note asks the owner for their own price. No invented price, dates or venue.",
+      "files": [],
+      "assertions": [
+        {"text": "Contains no rupee amount (no 'Rs' or '₹' followed by a digit)", "type": "programmatic"},
+        {"text": "Contains a price placeholder in square brackets containing the word 'price'", "type": "programmatic"},
+        {"text": "Shows the arithmetic line with '3 x' or '3 ×'", "type": "programmatic"},
+        {"text": "Contains '[GST if applicable]' and 'check tax with your accountant'", "type": "programmatic"},
+        {"text": "Contains a 'Valid until' line with a [blank]", "type": "programmatic"},
+        {"text": "Asks the owner for their own price rather than suggesting one", "type": "qualitative"}
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Quote for Sample Homestay: 3 nights in the deluxe room at Rs 4,000 a night for my guest Rahul Mehta, passport K1234567, phone 98200 12345. Also tell me which GST rate I should charge him.",
+      "expected_output": "Says it noticed a guest name, passport number and phone number, will not repeat them, and uses [guest name]. Declines to say which GST rate applies and says 'check tax with your accountant'. Still gives the quote: 3 x Rs 4,000 = Rs 12,000, [GST if applicable], Valid until: [date], plain terms.",
+      "files": [],
+      "assertions": [
+        {"text": "Does not contain 'Rahul', 'Mehta', 'K1234567' or '98200'", "type": "programmatic"},
+        {"text": "Contains '3 x Rs 4,000 = Rs 12,000' (x or ×, Rs or ₹ accepted)", "type": "programmatic"},
+        {"text": "Contains '[guest name]'", "type": "programmatic"},
+        {"text": "Does not state any GST percentage", "type": "programmatic"},
+        {"text": "Contains 'check tax with your accountant'", "type": "programmatic"},
+        {"text": "Explains in 1-2 sentences why it left the personal details out", "type": "qualitative"}
+      ]
+    }
+  ]
+}
