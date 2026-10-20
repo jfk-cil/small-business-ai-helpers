@@ -25,6 +25,10 @@ Each package solves a problem that owners named in their own words: 12 packages 
 | [Posts that bring customers](packages/social-posts/) | No time to post, and views that don't turn into customers. | [open](https://jfk-cil.github.io/small-business-ai-helpers/social-posts/) | social-content-planner, followers-to-customers, simple-marketing-plan |
 | [A sales plan across channels](packages/sales-plan/) | Selling to cafés or shops, on WhatsApp and through posts, with no plan that ties them together. | [open](https://jfk-cil.github.io/small-business-ai-helpers/sales-plan/) | channel-sales-plan, social-content-planner, customer-message-writer, outreach-email-writer |
 
+## Routines that keep it going (draft)
+
+The phone helpers get one job done. The [workflows](workflows/) folder has four routines an owner can keep doing each day or week: Customer messages, Weekly posts, Staff checklists and Get paid on time. Each has a short owner card and a Claude Skill. [CONVERSATION-STARTERS.md](workflows/CONVERSATION-STARTERS.md) has prompts an owner pastes into their own Claude chat so Claude walks them through building their own solution. Draft for team review; not yet tried with an owner.
+
 ## Three ways to use them
 
 **1. Phone, any plan (2 minutes).** Open the phone page, answer the questions, tap **Copy helper**, open Claude and paste. The helper is plain text, so it should also work in ChatGPT and Gemini (tested so far in Claude only), and you can keep using it after any free credits end. Save it in WhatsApp "Message yourself" to reuse it.
