@@ -24,7 +24,9 @@ The second comes once you do post. Your reels and posts get views, even new foll
 The full version (Skills) also:
 - designs a simple engagement system: three kinds of posts (useful tips, behind the scenes, what's on offer), each a named weekly series; an honest path from a post to a free small thing you make, then to your WhatsApp list (only for people who say yes), then to your workshop or product; a weekly rhythm that fits your time; and a short weekly count;
 - writes a week of posts that convert, with 5 quick replies for comments and DMs;
-- plans an online workshop launch: an outline from your notes, a two-week launch plan with no fake rush, and sign-up, thank-you and feedback messages.
+- plans an online workshop launch: an outline from your notes, a two-week launch plan with no fake rush, and sign-up, thank-you and feedback messages;
+- sets up a small weekly habit with tools you already have (weekly-posts-routine): a phone album called "Photos for posts" and one 20-minute sitting a week that turns 3 described photos into 3 captions, plus a monthly Google profile check;
+- writes short video scripts you can film alone on your phone (reel-script-writer): a hook, 3 to 6 shots, on-screen text and a 30 to 60 second voice-over, with no trend or view promises.
 
 ## Use it in 2 minutes on your phone
 
@@ -41,7 +43,7 @@ Send the helper to yourself on WhatsApp ("Message yourself") so you can copy it 
 
 ## Install the full version
 
-The full version also plans a whole month, writes reel ideas shot by shot, builds a simple system for turning followers into customers, plans an online workshop launch, and makes a one-page marketing plan. It comes as three Skills.
+The full version also plans a whole month, writes reel ideas shot by shot, builds a simple system for turning followers into customers, plans an online workshop launch, makes a one-page marketing plan, sets up a weekly posting habit, and writes reel scripts. It comes as five Skills.
 
 **Claude on the web or desktop app** (paid plan, code execution turned on, as of October 2026)
 
@@ -50,6 +52,8 @@ Download each Skill:
 - [social-content-planner.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/social-content-planner.zip)
 - [followers-to-customers.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/followers-to-customers.zip)
 - [simple-marketing-plan.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/simple-marketing-plan.zip)
+- [weekly-posts-routine.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/weekly-posts-routine.zip)
+- [reel-script-writer.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/reel-script-writer.zip)
 
 Then in Claude open **Settings**, then **Capabilities**, then **Skills**, and upload each zip. Start a new chat and say "What should I post this week?" or "My reels get views but nobody buys."
 
@@ -71,10 +75,12 @@ Open **Customize**, then **Plugins**, then **Add marketplace** (as of October 20
 | social-content-planner | Plans a week (3 posts unless you ask for more) or a month (12 posts) with captions, photo and reel ideas, and local hashtags. | "What should I post this week?" "Write captions for my café." "Make a content calendar for November." |
 | followers-to-customers | Designs an engagement system (three pillars with a named weekly series each, a path from a post to an opt-in WhatsApp list to a sale, a weekly rhythm, and what to count), writes a week of posts that convert with quick replies, and plans an honest online workshop launch. | "My reels get views but nobody buys." "Write a week of posts that convert." "Launch my online workshop." |
 | simple-marketing-plan | Makes a one-page, 4-week plan: one goal, who to reach, what to offer, at most two free channels, weekly steps, and how to tell if it worked. | "How do I sell more?" "These items just sit on the shelf." "Plan a campaign for next month." |
+| weekly-posts-routine | Sets up a small weekly habit, tool first: a "Photos for posts" album, one caption posted today, a weekly reminder, then 3 captions a week from 3 described photos (post one, save two as drafts), and a monthly Google profile check. AI only writes captions. | "I never post." "I only post when I remember." "Write captions for my 3 photos." |
+| reel-script-writer | Writes 3 to 5 reel, short or status video scripts a week from what you really did: a hook of 12 words or fewer, 3 to 6 shots you can film alone, on-screen text, a 30 to 60 second voice-over and one next step. Paid or gifted collabs are labeled. | "Reel ideas for this week." "What should I film?" "A video for my status." |
 
 The phone helper and the full Skill both start at 3 posts a week so the plan is one you can keep. Ask either one for more or fewer.
 
-Owner cards (one page each, plain words): [social-content-planner](../../skills/social-content-planner/OWNER-CARD.md), [followers-to-customers](../../skills/followers-to-customers/OWNER-CARD.md), [simple-marketing-plan](../../skills/simple-marketing-plan/OWNER-CARD.md).
+Owner cards (one page each, plain words): [social-content-planner](../../skills/social-content-planner/OWNER-CARD.md), [followers-to-customers](../../skills/followers-to-customers/OWNER-CARD.md), [simple-marketing-plan](../../skills/simple-marketing-plan/OWNER-CARD.md), [weekly-posts-routine](../../skills/weekly-posts-routine/OWNER-CARD.md), [reel-script-writer](../../skills/reel-script-writer/OWNER-CARD.md).
 
 For the owner: [PLAYBOOK.md](PLAYBOOK.md). For a volunteer at the table: [BUILDER-NOTES.md](BUILDER-NOTES.md).
 
@@ -109,6 +115,6 @@ You don't need to upload your photos either. Describe the photo in words. If you
 
 ## Tested
 
-Each Skill has behavior cases with made-up businesses in [`evals/`](../../evals/) at the repo root: `evals/testbank/SCP.json` (social-content-planner), `evals/testbank/FTC.json` (followers-to-customers) and `evals/testbank/SMP.json` (simple-marketing-plan). The checker is in `evals/harness/`. Results are in [`evals/RESULTS.md`](../../evals/RESULTS.md).
+Each Skill has behavior cases with made-up businesses in [`evals/`](../../evals/) at the repo root: `evals/testbank/SCP.json` (social-content-planner), `evals/testbank/FTC.json` (followers-to-customers), `evals/testbank/SMP.json` (simple-marketing-plan), `evals/testbank/WPR.json` (weekly-posts-routine) and `evals/testbank/RSW.json` (reel-script-writer). The checker is in `evals/harness/`. Results are in [`evals/RESULTS.md`](../../evals/RESULTS.md).
 
 Free to use and adapt (CC0). It drafts; you check and post everything yourself.

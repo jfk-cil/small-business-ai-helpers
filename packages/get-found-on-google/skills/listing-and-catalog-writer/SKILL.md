@@ -21,6 +21,7 @@ Takes the owner's rough menu, product list, listing or page notes and turns them
 - A plan for who to reach and how over 4 weeks: use **simple-marketing-plan**.
 - Replies to guest questions: use **guest-inquiry-replies**.
 - A one-page shop or link page that brings all your offers together: use **storefront-page-builder**.
+- Matching several listings to one client's needs and writing a shortlist to send: use **listing-matcher**.
 - Building the website itself, domains, hosting or technical SEO: ask **a person** who builds websites.
 
 ## Ask first

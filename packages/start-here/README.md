@@ -22,11 +22,16 @@ Where the answer leads:
 | Replying to the same customer questions | [Reply to customer messages](../customer-replies/) |
 | Confirming bookings, people forgetting or not coming | [Bookings and reminders](../booking-reminders/) |
 | Following up with many people who don't reply | [Follow-ups that get replies](../follow-ups/) |
+| Chasing people who pay late | [Get paid on time](../get-paid/) |
 | Not knowing who to sell to or how to reach them | [Find new clients](../find-clients/) |
+| One place online to buy, book or ask | [Your shop on one page](../one-page-shop/) |
 | Not showing up when people search nearby | [Get found on Google](../get-found-on-google/) |
 | Staff doing jobs differently when you're away | [Staff checklists](../staff-checklists/) |
+| Expiry checks and supplier returns | [Stock checks and returns](../stock-and-returns/) |
 | Finding and welcoming new staff | [Hire and welcome staff](../hire-and-onboard/) |
 | Posts and captions | [Posts that bring customers](../social-posts/) |
+| Selling in several ways with no plan | [A sales plan across channels](../sales-plan/) |
+| A job none of these fit | [Make your own helper](../make-your-own/) |
 
 ## Use it in 2 minutes on your phone
 

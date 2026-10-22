@@ -1,6 +1,6 @@
 {
   "name": "stock-and-returns",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "A monthly routine for expiry checks and supplier returns, with each step assigned and timed.",
   "author": {
     "name": "Small business AI helpers (CC0)"

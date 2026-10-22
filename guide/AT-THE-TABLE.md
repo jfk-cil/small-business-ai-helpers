@@ -31,6 +31,10 @@ At a public-face table: Nothing posted lately: Posts. No one place to buy or boo
 
 ## Table scripts
 
-[Start here](../packages/start-here/BUILDER-NOTES.md) · [Customer replies](../packages/customer-replies/BUILDER-NOTES.md) · [Bookings](../packages/booking-reminders/BUILDER-NOTES.md) · [Follow-ups](../packages/follow-ups/BUILDER-NOTES.md) · [Find clients](../packages/find-clients/BUILDER-NOTES.md) · [One page](../packages/one-page-shop/BUILDER-NOTES.md) · [Google](../packages/get-found-on-google/BUILDER-NOTES.md) · [Staff checklists](../packages/staff-checklists/BUILDER-NOTES.md) · [Stock and returns](../packages/stock-and-returns/BUILDER-NOTES.md) · [Hiring](../packages/hire-and-onboard/BUILDER-NOTES.md) · [Posts](../packages/social-posts/BUILDER-NOTES.md) · [Sales plan](../packages/sales-plan/BUILDER-NOTES.md)
+[Start here](../packages/start-here/BUILDER-NOTES.md) · [Customer replies](../packages/customer-replies/BUILDER-NOTES.md) · [Bookings](../packages/booking-reminders/BUILDER-NOTES.md) · [Follow-ups](../packages/follow-ups/BUILDER-NOTES.md) · [Get paid](../packages/get-paid/BUILDER-NOTES.md) · [Find clients](../packages/find-clients/BUILDER-NOTES.md) · [One page](../packages/one-page-shop/BUILDER-NOTES.md) · [Google](../packages/get-found-on-google/BUILDER-NOTES.md) · [Staff checklists](../packages/staff-checklists/BUILDER-NOTES.md) · [Stock and returns](../packages/stock-and-returns/BUILDER-NOTES.md) · [Hiring](../packages/hire-and-onboard/BUILDER-NOTES.md) · [Posts](../packages/social-posts/BUILDER-NOTES.md) · [Sales plan](../packages/sales-plan/BUILDER-NOTES.md) · [Make your own](../packages/make-your-own/BUILDER-NOTES.md)
+
+## Going further
+
+[Coaching](COACHING.md) · [Make your own](MAKE-YOUR-OWN.md) · [Solution types](SOLUTION-TYPES.md) · [No-AI setups](NO-AI-SETUPS.md)
 
 Full rules: [PRIVACY.md](PRIVACY.md).

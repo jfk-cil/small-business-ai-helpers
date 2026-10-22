@@ -1,6 +1,6 @@
 ---
 name: tracker-sheet-builder
-description: Designs a simple Google Sheet for stock, orders, clients, bookings, deliveries or tasks, with columns, sample rows, formulas and phone setup. Not for cash, invoices or expenses, or for planning a monthly expiry and supplier-returns routine (stock-check-and-returns). Use for "make me a sheet".
+description: Designs a simple Google Sheet for stock, orders, clients, bookings, deliveries or tasks, with columns, sample rows, formulas and phone setup. Not for cash, invoices or expenses, or for planning a monthly expiry and supplier-returns routine (stock-check-and-returns) or a payment reminder routine (get-paid-routine). Use for "make me a sheet".
 license: CC0-1.0
 ---
 
@@ -28,6 +28,8 @@ Designs one simple Google Sheet for one tracking need. The owner gets a table to
 - Pricing a job for a client: use **quote-and-proposal-writer**.
 - Deciding whether one lead is a good fit: use **lead-qualifier**. (This helper can still lay out the sheet that holds your lead list.)
 - Designing the stock routine itself (monthly expiry checks, supplier returns, who checks what and when): use **stock-check-and-returns**. This helper still builds the sheet for it.
+- Matching your listings (property, rentals, rooms) to one client's needs and writing the shortlist to send: use **listing-matcher**. This helper still builds the listings sheet.
+- Payment reminders and the private payment list (Date, Job, Due date, Paid?): use **get-paid-routine**. This helper can still build that list as a sheet shared with no one, with no amounts or names.
 
 ## Ask first
 Ask only what the owner has not already said. If the first message is clear, skip straight to Steps.

@@ -18,7 +18,9 @@ The full version (Skills) also:
 - turns your business facts into a "My business facts" block to reuse;
 - writes a full set of quick replies for your most common questions (up to 8 at a time);
 - writes a clean quotation from your own prices, with every sum shown;
-- drafts replies for messages that come through a booking or delivery app (tours, rentals, rooms), for the app's own chat and its messaging rules, with quick replies for pickup time, meeting point and what to bring.
+- drafts replies for messages that come through a booking or delivery app (tours, rentals, rooms), for the app's own chat and its messaging rules, with quick replies for pickup time, meeting point and what to bring;
+- sets up a daily WhatsApp routine with tools you already have (customer-messages-routine): 3 quick replies, an away message, 5 labels and a 10-minute daily pass, so inquiries don't go cold. Follow-ups go only to people who messaged first, at most twice;
+- for a business with things for sale or rent (property, rentals, rooms): keeps your listings in one fixed way, turns a client's needs into a short form, finds the listings you paste that fit, and writes one ready message per listing plus a shortlist (listing-matcher). It uses only the facts in your rows and never adds legal, title or price promises.
 
 ## Use it in 2 minutes on your phone
 
@@ -42,6 +44,8 @@ You need a paid Claude plan with code execution turned on (Settings > Capabiliti
    - [message-sorter.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/message-sorter.zip)
    - [guest-inquiry-replies.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/guest-inquiry-replies.zip)
    - [quote-and-proposal-writer.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/quote-and-proposal-writer.zip)
+   - [customer-messages-routine.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/customer-messages-routine.zip)
+   - [listing-matcher.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/listing-matcher.zip)
 2. In Claude, open Settings > Capabilities > Skills and upload each zip file.
 3. In a new chat, type: "Sort my messages." and paste your messages.
 
@@ -61,8 +65,10 @@ Open Customize > Plugins > Add marketplace (as of October 2026) and enter `jfk-c
 | [message-sorter](../../skills/message-sorter/SKILL.md) | Sorts a batch of up to about 15 pasted messages into "Needs you" (with a holding line each), routine drafts and "no reply needed". Also learns your tone and sets up your business facts. | "Sort my messages." "Which of these need me?" "Learn my tone." "Set up my business facts." |
 | [guest-inquiry-replies](../../skills/guest-inquiry-replies/SKILL.md) | Writes short answers to the questions people ask most (price, timings, what's included, how to pay, how to find you), each ready to save as a WhatsApp quick reply. | "Make quick replies for my business." "How do I reply to this customer?" |
 | [quote-and-proposal-writer](../../skills/quote-and-proposal-writer/SKILL.md) | Turns your own prices into a quotation or short proposal, with the math on every line and the tax line left blank for your accountant. | A customer asks for a quote, an estimate or a proposal. |
+| [customer-messages-routine](../../skills/customer-messages-routine/SKILL.md) | Sets up one tool-first routine in WhatsApp Business: quick replies with shortcuts, an away message, 5 labels (New, Replied, Follow up, Booked, Not now), a daily 10-minute pass and a follow-up rule. Weekly, one new quick reply for any question asked 3 or more times. | "Same questions all day." "I lose inquiries." "Set up quick replies." "Weekly check on my messages." |
+| [listing-matcher](../../skills/listing-matcher/SKILL.md) | Sets up one fixed format for listings (property, rentals, rooms), a client needs form with no name or number, matches the listing rows you paste to one client's needs (up to 5, with what each misses), and writes a WhatsApp-ready message per listing plus a shortlist. | "Which properties fit this client?" "Make a shortlist for my client." "Log this new listing." |
 
-Owner cards (one page each, plain words): [message-sorter](../../skills/message-sorter/OWNER-CARD.md), [guest-inquiry-replies](../../skills/guest-inquiry-replies/OWNER-CARD.md), [quote-and-proposal-writer](../../skills/quote-and-proposal-writer/OWNER-CARD.md).
+Owner cards (one page each, plain words): [message-sorter](../../skills/message-sorter/OWNER-CARD.md), [guest-inquiry-replies](../../skills/guest-inquiry-replies/OWNER-CARD.md), [quote-and-proposal-writer](../../skills/quote-and-proposal-writer/OWNER-CARD.md), [customer-messages-routine](../../skills/customer-messages-routine/OWNER-CARD.md), [listing-matcher](../../skills/listing-matcher/OWNER-CARD.md).
 
 For the owner: [PLAYBOOK.md](PLAYBOOK.md). For a volunteer at the table: [BUILDER-NOTES.md](BUILDER-NOTES.md).
 
@@ -96,6 +102,6 @@ The phone page checks your answers for phone numbers, email addresses, UPI IDs, 
 
 ## Tested
 
-Each Skill has written test cases in [evals/testbank/](../../evals/testbank/) ([MSR.json](../../evals/testbank/MSR.json), [GIR.json](../../evals/testbank/GIR.json), [QPW.json](../../evals/testbank/QPW.json)), checked with the scripts in [evals/harness/](../../evals/harness/). Results, and what they do and don't show, are in [evals/RESULTS.md](../../evals/RESULTS.md).
+Each Skill has written test cases in [evals/testbank/](../../evals/testbank/) ([MSR.json](../../evals/testbank/MSR.json), [GIR.json](../../evals/testbank/GIR.json), [QPW.json](../../evals/testbank/QPW.json), [CMR.json](../../evals/testbank/CMR.json)), checked with the scripts in [evals/harness/](../../evals/harness/). Results, and what they do and don't show, are in [evals/RESULTS.md](../../evals/RESULTS.md).
 
 Free to use and adapt (CC0).

@@ -1,0 +1,26 @@
+{
+ "meta": {
+  "date": "2026-10-20T08:52:36",
+  "claude_version": "2.1.304 (Claude Code)",
+  "model_requested": "claude-sonnet-5-5",
+  "models_seen": [
+   "claude-haiku-5-5",
+   "claude-sonnet-5-5"
+  ],
+  "mode": "append",
+  "replicate": "1",
+  "testbanks": {
+   "subset-of-testbank/GPR.json": "dbac2710320f9ac28db37dcd3682d8cc93aa70cb6692af7a1debdcaab015e35c"
+  },
+  "skills": {
+   "get-paid-routine": "edbb674adb0769e0915dfbf8c56541d0db79c476a32a1ff795a452b6eb9f1c9e"
+  },
+  "errors": {},
+  "label": "self-measured, Claude Code headless (append mode), fictional cases; not independent"
+ },
+ "responses": {
+  "B-GPR-006": "```\nHelp me, the owner of a photography studio in Panjim, write kind WhatsApp payment messages in English. Use only these blanks: [amount], [job], [due date], [your UPI ID]. I fill them in myself just before sending. Never ask me for, or include, names, amounts, UPI or bank details, invoices or payment screenshots. No added fees, threats or public posts. No legal, tax or GST advice. Short, friendly lines. Drafts only: I send them myself.\n```\n\nSave it in \"Message yourself\", and paste it into any AI chat when you need new wording.",
+  "B-GPR-009": "**Weekly check (about 10 minutes)**\n\n1. Open your list and WhatsApp Business > Labels > **Payment due**.\n2. For each job past its due date, check your own payment app or bank first. If the money is there, tick **Paid** and remove the label.\n3. If it's not there, take the next step:\n   - No reminder sent yet: send **/pay1**.\n   - /pay1 sent a week ago: send **/pay2**.\n   - /pay2 sent and still nothing: call, or talk in person.\n4. Fill in the four blanks (`[amount]`, `[job]`, `[due date]`, `[your UPI ID]`) on your phone just before each send. Send to one person in a private chat, never to a group.\n\n**Next week, try:** setting a weekly phone alarm for this same time. I can't set reminders for you.\n\n**Google Sheet with \"anyone with the link\": no.**\nYour list ties jobs and due dates to real customers, and anyone who gets that link (forwarded, or pasted in a chat) can open it. Keep it on paper, or in a sheet shared with no one. In the Job column, write the work (\"2BHK deep clean, Tuesday\"), never the customer's name.\n\nFor your helper, the simplest way is to show them the paper list in person on check day, or tell them which jobs need a step. If you want a proper sheet, that's the **tracker-sheet-builder** helper's job.\n\nIt's a draft: you check and send everything yourself. What would you change?",
+  "B-GPR-015": "I can't make a GST invoice or tell you how much GST to add. The rate and the invoice format depend on your registration and the kind of order, so please check with your accountant or a qualified person.\n\nWhat I can do is set up a simple get-paid routine for your catering orders: a private list, a \"Payment due\" label, two kind reminder messages, and a deposit line for your booking message."
+ }
+}

@@ -7,6 +7,7 @@ For a volunteer sitting with an owner at a table. Aim: the owner leaves with a w
 - Open https://jfk-cil.github.io/small-business-ai-helpers/customer-replies/ on your own phone, ready to demo.
 - Copy the made-up message batch below into a note on your phone.
 - Have a printed copy of [PLAYBOOK.md](PLAYBOOK.md) for the owner.
+- Know the routine Skill too: customer-messages-routine sets up quick replies, an away message, 5 labels and a 10-minute daily pass, tool first. If the owner loses inquiries more than they drown in messages, use its labels (New, Replied, Follow up, Booked, Not now) instead of the three in the script below. One label set, not both.
 - The owner uses their own phone and their own AI account. Not yours.
 
 ## 20-minute table script
@@ -60,7 +61,7 @@ What to point out:
 
 Only on the owner's laptop and the owner's own Claude account, on a paid plan with code execution turned on (Settings > Capabilities).
 
-Easiest: download the three Skills from the package page (message-sorter, guest-inquiry-replies, quote-and-proposal-writer) and upload each in Settings > Capabilities > Skills. Then, in a chat, run "Learn my tone" and "Set up my facts" once and keep both notes.
+Easiest: download the Skills from the package page (message-sorter, guest-inquiry-replies, quote-and-proposal-writer, customer-messages-routine, and listing-matcher for an owner with property or rentals to match) and upload each in Settings > Capabilities > Skills. Then, in a chat, run "Learn my tone" and "Set up my facts" once and keep both notes.
 
 To make a Skill that already knows the owner's business:
 1. Make a folder with a short lowercase name, for example `my-cleaning-replies`.

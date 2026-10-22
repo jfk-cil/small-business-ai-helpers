@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Quote Worksheet</title>
+<style>
+:root{
+  --bg:#f7f6f2;--card:#ffffff;--text:#1d1d1b;--muted:#5b5a55;--line:#d9d6cc;
+  --accent:#1f5f8b;--accent-text:#ffffff;--field:#ffffff;--focus:#0b57d0;--warn:#8a4b00;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#141413;--card:#1f1f1d;--text:#f1efe8;--muted:#b4b1a7;--line:#3a3935;
+    --accent:#8cc4ef;--accent-text:#0b1c29;--field:#262624;--focus:#8ab4f8;--warn:#f2b66d;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141413;--card:#1f1f1d;--text:#f1efe8;--muted:#b4b1a7;--line:#3a3935;
+  --accent:#8cc4ef;--accent-text:#0b1c29;--field:#262624;--focus:#8ab4f8;--warn:#f2b66d;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:17px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif}
+main{max-width:640px;margin:0 auto;padding:16px 16px 40px}
+h1{font-size:1.45rem;line-height:1.2;margin:4px 0 4px}
+p{margin:0 0 12px}
+.muted{color:var(--muted);font-size:.95rem}
+.row{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 10px}
+.row-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
+.row-head strong{font-size:1rem}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fields .wide{grid-column:1 / -1}
+label{display:block;font-size:.9rem;color:var(--muted);margin-bottom:4px}
+input{font:inherit;width:100%;min-height:44px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;
+  background:var(--field);color:var(--text)}
+.line-total{margin-top:8px;text-align:right;font-variant-numeric:tabular-nums}
+button{font:inherit;min-height:44px;min-width:44px;padding:8px 16px;border-radius:10px;border:1px solid var(--line);
+  background:var(--card);color:var(--text);cursor:pointer}
+button.primary{background:var(--accent);color:var(--accent-text);border-color:var(--accent)}
+button.remove{padding:8px 12px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 20px}
+.totals{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.totals div{display:flex;justify-content:space-between;gap:12px;padding:6px 0;font-variant-numeric:tabular-nums}
+.totals .grand{border-top:1px solid var(--line);font-weight:700;font-size:1.1rem}
+.err{color:var(--warn);font-size:.9rem;margin-top:4px;min-height:0}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.note{margin-top:24px;padding:12px 14px;border:1px dashed var(--line);border-radius:12px}
+textarea.copy-fallback{width:100%;min-height:140px;font:inherit;margin-top:10px;background:var(--field);color:var(--text);
+  border:1px solid var(--line);border-radius:8px;padding:8px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+</style>
+</head>
+<body>
+<main>
+  <h1>Quote worksheet</h1>
+  <p class="muted">Type each item, how many, and your price for one. The page adds it up. Your own prices only. No customer names. Nothing is saved: closing the page clears it.</p>
+
+  <div id="rows"></div>
+
+  <div class="actions">
+    <button type="button" class="primary" id="add">Add an item</button>
+    <button type="button" id="clear">Clear all</button>
+  </div>
+
+  <div class="totals" aria-labelledby="totals-h">
+    <h2 id="totals-h" class="sr-only">Totals</h2>
+    <div><span>Items</span><span id="item-count">0</span></div>
+    <div class="grand"><span>Total before tax</span><span id="total" aria-live="polite">Rs 0</span></div>
+    <div><span>Tax</span><span>[blank: ask your accountant]</span></div>
+  </div>
+
+  <div class="actions">
+    <button type="button" id="copy">Copy as text</button>
+  </div>
+  <p class="muted" id="copy-status" aria-live="polite"></p>
+  <textarea class="copy-fallback" id="copy-fallback" aria-label="Quote text to copy" hidden readonly></textarea>
+
+  <div class="note">
+    <p><strong>How this page works</strong></p>
+    <p class="muted">It only adds up what you type. It doesn't know your prices, taxes or discounts, and it keeps nothing. Check every line before you send a quote. For tax or GST, ask your accountant.</p>
+  </div>
+</main>
+
+<script>
+(function () {
+  var CURRENCY = "Rs";
+  var rowsEl = document.getElementById("rows");
+  var nextId = 1;
+
+  function parseNum(v) {
+    var s = String(v || "").replace(/,/g, "").trim();
+    if (s === "") return { ok: true, value: 0, empty: true };
+    if (!/^\d*\.?\d+$|^\d+\.$/.test(s)) return { ok: false, value: 0 };
+    return { ok: true, value: parseFloat(s) };
+  }
+  function fmt(paise) {
+    var neg = paise < 0; paise = Math.abs(paise);
+    var whole = Math.floor(paise / 100), part = paise % 100;
+    var s = whole.toLocaleString("en-IN");
+    if (part) s += "." + String(part).padStart(2, "0");
+    return (neg ? "-" : "") + CURRENCY + " " + s;
+  }
+  function el(tag, attrs, text) {
+    var e = document.createElement(tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  function addRow(focus) {
+    var id = nextId++;
+    var row = el("div", { "class": "row", "data-row": id, role: "group", "aria-labelledby": "rh-" + id });
+    var head = el("div", { "class": "row-head" });
+    var title = el("strong", { id: "rh-" + id }, "Item");
+    var remove = el("button", { type: "button", "class": "remove", "aria-label": "Remove this item" }, "Remove");
+    head.appendChild(title); head.appendChild(remove);
+
+    var fields = el("div", { "class": "fields" });
+    function field(name, label, mode, wide, placeholder) {
+      var wrap = el("div", wide ? { "class": "wide" } : {});
+      var inputId = name + "-" + id;
+      wrap.appendChild(el("label", { "for": inputId }, label));
+      var attrs = { id: inputId, name: name, autocomplete: "off", type: "text" };
+      if (mode) attrs.inputmode = mode;
+      if (placeholder) attrs.placeholder = placeholder;
+      var input = el("input", attrs);
+      wrap.appendChild(input);
+      var err = el("div", { "class": "err", id: inputId + "-err", "aria-live": "polite" });
+      wrap.appendChild(err);
+      fields.appendChild(wrap);
+      return input;
+    }
+    var item = field("item", "What (the work or product, no names)", null, true, "For example: 2BHK deep clean");
+    var qty = field("qty", "How many", "decimal", false, "1");
+    var rate = field("rate", "Price for one (" + CURRENCY + ")", "decimal", false, "0");
+    var line = el("div", { "class": "line-total", "aria-live": "polite" }, "Line total: " + fmt(0));
+
+    row.appendChild(head); row.appendChild(fields); row.appendChild(line);
+    rowsEl.appendChild(row);
+
+    [item, qty, rate].forEach(function (i) { i.addEventListener("input", recalc); });
+    remove.addEventListener("click", function () {
+      row.remove();
+      if (!rowsEl.children.length) addRow(false);
+      renumber(); recalc();
+      document.getElementById("add").focus();
+    });
+    renumber(); recalc();
+    if (focus) item.focus();
+  }
+
+  function renumber() {
+    Array.prototype.forEach.call(rowsEl.children, function (row, i) {
+      row.querySelector(".row-head strong").textContent = "Item " + (i + 1);
+    });
+  }
+
+  function readRows() {
+    var out = [];
+    Array.prototype.forEach.call(rowsEl.children, function (row) {
+      var item = row.querySelector('input[name="item"]');
+      var qty = row.querySelector('input[name="qty"]');
+      var rate = row.querySelector('input[name="rate"]');
+      var q = parseNum(qty.value), r = parseNum(rate.value);
+      if (q.empty && qty.value.trim() === "") q = { ok: true, value: 1, empty: true };
+      setErr(qty, q.ok ? "" : "Numbers only, for example 2 or 1.5");
+      setErr(rate, r.ok ? "" : "Numbers only, for example 4500");
+      var paise = (q.ok && r.ok) ? Math.round(q.value * r.value * 100) : 0;
+      out.push({ row: row, name: item.value.trim(), qty: q.ok ? q.value : 0, rate: r.ok ? r.value : 0, paise: paise, filled: item.value.trim() !== "" || rate.value.trim() !== "" });
+    });
+    return out;
+  }
+  function setErr(input, msg) {
+    var e = document.getElementById(input.id + "-err");
+    e.textContent = msg;
+    if (msg) input.setAttribute("aria-invalid", "true"); else input.removeAttribute("aria-invalid");
+    input.setAttribute("aria-describedby", e.id);
+  }
+
+  function recalc() {
+    var rows = readRows(), total = 0, count = 0;
+    rows.forEach(function (r) {
+      r.row.querySelector(".line-total").textContent = "Line total: " + fmt(r.paise);
+      total += r.paise;
+      if (r.filled) count++;
+    });
+    document.getElementById("item-count").textContent = String(count);
+    document.getElementById("total").textContent = fmt(total);
+    return { rows: rows, total: total };
+  }
+
+  function asText() {
+    var res = recalc(), lines = ["Quote"];
+    res.rows.forEach(function (r) {
+      if (!r.filled) return;
+      lines.push((r.name || "[item]") + ": " + r.qty + " x " + fmt(Math.round(r.rate * 100)) + " = " + fmt(r.paise));
+    });
+    lines.push("Total before tax: " + fmt(res.total));
+    lines.push("Tax: [blank]");
+    return lines.join("\n");
+  }
+
+  document.getElementById("add").addEventListener("click", function () { addRow(true); });
+  document.getElementById("clear").addEventListener("click", function () {
+    if (!window.confirm("Clear every item?")) return;
+    rowsEl.innerHTML = ""; nextId = 1; addRow(true);
+    document.getElementById("copy-status").textContent = "";
+    document.getElementById("copy-fallback").hidden = true;
+  });
+  document.getElementById("copy").addEventListener("click", function () {
+    var text = asText(), status = document.getElementById("copy-status"), fb = document.getElementById("copy-fallback");
+    function fallback() {
+      fb.value = text; fb.hidden = false; fb.focus(); fb.select();
+      var ok = false;
+      try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+      status.textContent = ok ? "Copied. Check it before you send." : "Copy was blocked. The text is selected below: tap Copy.";
+    }
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () {
+          fb.value = text; fb.hidden = true;
+          status.textContent = "Copied. Check it before you send.";
+        }, fallback);
+      } else { fallback(); }
+    } catch (e) { fallback(); }
+  });
+
+  addRow(false);
+})();
+</script>
+</body>
+</html>

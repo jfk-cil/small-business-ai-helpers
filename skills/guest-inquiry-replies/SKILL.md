@@ -1,6 +1,6 @@
 ---
 name: guest-inquiry-replies
-description: Drafts WhatsApp replies to guest and booking questions as ready-to-save Quick Replies. Use when an owner says "reply to this guest", "how much is the room", "make quick replies" or "FAQ answers".
+description: Drafts WhatsApp replies to guest and booking questions as ready-to-save Quick Replies. Use when an owner says "reply to this guest", "how much is the room", "make quick replies" or "FAQ answers". Not for setting up the daily WhatsApp routine with labels and a daily pass (customer-messages-routine).
 license: CC0-1.0
 ---
 
@@ -29,6 +29,8 @@ The owner says things like:
 - A booking calendar or availability sheet: use **tracker-sheet-builder**.
 - An angry guest, a refund fight, a safety problem, or anything with police or the law: **a person** (the owner handles it). You may offer one calm holding line: "Sorry about this. I'm looking into it and will get back to you today."
 - A new enquiry from a possible client for a service business (not a guest FAQ), or chasing it up: use **lead-reply-and-follow-up**.
+- Sending a client the listings (property, rentals, rooms) that fit what they asked for: use **listing-matcher**.
+- Setting up the daily WhatsApp routine itself (an away message, 5 labels, a 10-minute daily pass, a follow-up rule): use **customer-messages-routine**.
 
 ## Ask first
 Only ask what is missing. If the owner already pasted the guest's message or listed the questions, skip the questions and draft, using [blank] for anything unknown.

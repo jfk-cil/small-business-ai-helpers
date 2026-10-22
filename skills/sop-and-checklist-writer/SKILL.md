@@ -1,6 +1,6 @@
 ---
 name: sop-and-checklist-writer
-description: Writes simple step-by-step SOPs, printable checklists, guest welcome guides and short intake forms that new staff or guests can follow. Use for "SOP", "checklist", "welcome guide" or "intake form". Not for monthly expiry checks, supplier returns or assigning stock checks to staff (stock-check-and-returns).
+description: Writes simple step-by-step SOPs, printable checklists, guest welcome guides and short intake forms that new staff or guests can follow. Use for "SOP", "checklist", "welcome guide" or "intake form". Not for monthly expiry checks, supplier returns or assigning stock checks to staff (stock-check-and-returns), or one pinned checklist with a weekly huddle (staff-checklist-routine).
 license: CC0-1.0
 ---
 
@@ -24,6 +24,7 @@ Turns the way the owner already does a job into one of four plain documents: num
 - Food safety, FSSAI, fire or licensing rules: ask **a qualified person**.
 - Welcoming a new client who just said yes (welcome message, next steps, first-week checklist): use **client-onboarding-writer**.
 - A monthly expiry or near-expiry check, returns to suppliers, and who checks what by when (staff assignment with a timeline): use **stock-check-and-returns**.
+- One short checklist for one job, pinned in the staff WhatsApp group, with a weekly no-blame huddle that changes one line: use **staff-checklist-routine**.
 
 ## Ask first
 Ask only what the owner has not already said. At most these three:

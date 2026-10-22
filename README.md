@@ -1,6 +1,6 @@
 # Small business AI helpers
 
-Free, ready-to-use AI helpers for small businesses: replying to customers, bookings and reminders, follow-ups, finding clients, a one-page shop, getting found on Google, posts, a sales plan across channels, staff checklists, stock checks and returns, and hiring. Written with owners in Goa, India, and usable anywhere.
+Free, ready-to-use AI helpers for small businesses: replying to customers, bookings and reminders, follow-ups, getting paid on time, finding clients, a one-page shop, getting found on Google, posts and reels, a sales plan across channels, staff checklists, stock checks and returns, hiring, and making your own helper. Written with owners in Goa, India, and usable anywhere.
 
 **On a phone? Open the helpers:** https://jfk-cil.github.io/small-business-ai-helpers/
 
@@ -8,26 +8,24 @@ Pick a job, answer a few short questions in English, Hindi, Marathi or Konkani, 
 
 ## The helpers
 
-Each package solves a problem that owners named in their own words: 12 packages and 24 Skills, answering owner problems C1 to C13.
+Each package solves a problem that owners named in their own words: 14 packages and 31 Skills. Most answer one or more of the owner problems C1 to C21; Start here, Get paid on time and Make your own helper serve needs that many owners share.
 
 | Package | The problem | Phone page | Skills inside |
 |---|---|---|---|
 | [Start here](packages/start-here/) | "I'm not sure which job to hand to AI first." | [open](https://jfk-cil.github.io/small-business-ai-helpers/start-here/) | first-task-finder |
-| [Reply to customer messages](packages/customer-replies/) | Dozens of messages a day on WhatsApp or booking apps, most asking the same things. | [open](https://jfk-cil.github.io/small-business-ai-helpers/customer-replies/) | message-sorter, guest-inquiry-replies, quote-and-proposal-writer |
+| [Reply to customer messages](packages/customer-replies/) | Dozens of messages a day on WhatsApp or booking apps, most asking the same things. | [open](https://jfk-cil.github.io/small-business-ai-helpers/customer-replies/) | message-sorter, guest-inquiry-replies, quote-and-proposal-writer, customer-messages-routine, listing-matcher |
 | [Bookings and reminders](packages/booking-reminders/) | Customers book, then forget what to bring or don't turn up. | [open](https://jfk-cil.github.io/small-business-ai-helpers/booking-reminders/) | booking-confirmations, tracker-sheet-builder |
 | [Follow-ups that get replies](packages/follow-ups/) | No time to follow up each call or unanswered message. | [open](https://jfk-cil.github.io/small-business-ai-helpers/follow-ups/) | follow-up-planner, lead-reply-and-follow-up, tracker-sheet-builder, customer-message-writer |
+| [Get paid on time](packages/get-paid/) | People pay late, you forget who still owes you, and chasing feels awkward. | [open](https://jfk-cil.github.io/small-business-ai-helpers/get-paid/) | get-paid-routine, customer-message-writer, tracker-sheet-builder |
 | [Find new clients](packages/find-clients/) | Not sure who to look for or how to reach out. | [open](https://jfk-cil.github.io/small-business-ai-helpers/find-clients/) | target-customer-finder, outreach-email-writer, lead-qualifier, client-onboarding-writer |
 | [Your shop on one page](packages/one-page-shop/) | People find you online, but there's no single place to buy, book or ask. | [open](https://jfk-cil.github.io/small-business-ai-helpers/one-page-shop/) | storefront-page-builder, listing-and-catalog-writer, target-customer-finder |
 | [Get found on Google](packages/get-found-on-google/) | People search for what you sell nearby, and you don't show up. | [open](https://jfk-cil.github.io/small-business-ai-helpers/get-found-on-google/) | google-profile-builder, listing-and-catalog-writer, review-replies |
-| [Staff checklists](packages/staff-checklists/) | Things slip when you're not there. | [open](https://jfk-cil.github.io/small-business-ai-helpers/staff-checklists/) | sop-and-checklist-writer, tracker-sheet-builder |
+| [Staff checklists](packages/staff-checklists/) | Things slip when you're not there. | [open](https://jfk-cil.github.io/small-business-ai-helpers/staff-checklists/) | sop-and-checklist-writer, tracker-sheet-builder, staff-checklist-routine |
 | [Stock checks and returns](packages/stock-and-returns/) | Expired stock has to be found, returned and chased every month, and staff need hand-holding. | [open](https://jfk-cil.github.io/small-business-ai-helpers/stock-and-returns/) | stock-check-and-returns, sop-and-checklist-writer, tracker-sheet-builder |
 | [Hire and welcome staff](packages/hire-and-onboard/) | Skilled people don't reach out, or stop halfway through signing up. | [open](https://jfk-cil.github.io/small-business-ai-helpers/hire-and-onboard/) | staff-hiring-and-onboarding, sop-and-checklist-writer |
-| [Posts that bring customers](packages/social-posts/) | No time to post, and views that don't turn into customers. | [open](https://jfk-cil.github.io/small-business-ai-helpers/social-posts/) | social-content-planner, followers-to-customers, simple-marketing-plan |
+| [Posts that bring customers](packages/social-posts/) | No time to post, and views that don't turn into customers. | [open](https://jfk-cil.github.io/small-business-ai-helpers/social-posts/) | social-content-planner, followers-to-customers, simple-marketing-plan, weekly-posts-routine, reel-script-writer |
 | [A sales plan across channels](packages/sales-plan/) | Selling to cafés or shops, on WhatsApp and through posts, with no plan that ties them together. | [open](https://jfk-cil.github.io/small-business-ai-helpers/sales-plan/) | channel-sales-plan, social-content-planner, customer-message-writer, outreach-email-writer |
-
-## Routines that keep it going (draft)
-
-The phone helpers get one job done. The [workflows](workflows/) folder has four routines an owner can keep doing each day or week: Customer messages, Weekly posts, Staff checklists and Get paid on time. Each has a short owner card and a Claude Skill. [CONVERSATION-STARTERS.md](workflows/CONVERSATION-STARTERS.md) has prompts an owner pastes into their own Claude chat so Claude walks them through building their own solution. Draft for team review; not yet tried with an owner.
+| [Make your own helper](packages/make-your-own/) | The ready helpers don't quite fit your job, or you want one in your own words. | [open](https://jfk-cil.github.io/small-business-ai-helpers/make-your-own/) | helper-builder, first-task-finder |
 
 ## Three ways to use them
 
@@ -46,6 +44,17 @@ In Cowork: **Customize**, then **Plugins**, then **Add marketplace**, and enter 
 
 If you install several packages, shared Skills (like tracker-sheet-builder) come with each one. That's expected.
 
+## Make your own, and other ways to use AI
+
+The ready helpers are one way in. Often the best fix uses less AI, not more.
+
+- [Make your own helper](guide/MAKE-YOUR-OWN.md): turn one weekly job into your own helper and test it with five messages.
+- [Solution types](guide/SOLUTION-TYPES.md): seven levels, from tools you already have to automation. Use the lowest one that does the job.
+- [Setups with no AI](guide/NO-AI-SETUPS.md): quick replies, labels, a form, a sheet and reminders that do most of the daily work.
+- [Project recipes](guide/PROJECT-RECIPES.md): save a helper and your business facts as a Claude Project (paid plan).
+- [Page recipes](guide/PAGE-RECIPES.md): small pages for staff that hold no customer data, with [example pages](examples/pages/).
+- [Automation](guide/AUTOMATION.md): what automatic sending involves, and why a qualified person reviews it first.
+
 ## What these helpers will and won't do
 
 - They draft. You check and send everything yourself. Nothing here sends a message, posts, or books anything on its own.
@@ -56,11 +65,12 @@ If you install several packages, shared Skills (like tracker-sheet-builder) come
 
 ## What these helpers don't do
 
-Money records, invoices, GST, licenses, registrations, contracts, and labor or consumer law. These need your accountant, a lawyer or the official government portal for that rule. An AI draft from these helpers never replaces them.
+Money records, invoices, GST, licenses, registrations, contracts, and labor or consumer law. These need your accountant, a lawyer or the official government portal for that rule. An AI draft from these helpers never replaces them. Get paid on time writes kind reminder words and an empty list layout; amounts, names and payment details stay with you.
 
 ## For builders and contributors
 
 - [At the table](guide/AT-THE-TABLE.md): one screen for a volunteer sitting with an owner.
+- [Coaching](guide/COACHING.md): helping an owner make, test and save a helper of their own.
 - [How it works](guide/HOW-IT-WORKS.md): sources, what is generated, and why.
 - [Deploying and publishing](guide/DEPLOY.md): GitHub Pages, Claude pages, Skill uploads, plugin installs.
 - [Privacy and safety rules](guide/PRIVACY.md).

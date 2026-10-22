@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.3 (October 20, 2026)
+- "Not for" and the description point to get-paid-routine for payment reminders saved as quick replies, a deposit line and the private payment list. This helper still writes a one-off reminder with [amount].
+
 ## v0.2.2 (October 20, 2026)
 - The WhatsApp monthly-limit line is dated: "(as of October 2026; check WhatsApp's help pages)" (SKILL.md and example).
 - Older changelog lines now describe the change only; no change to how the helper works.

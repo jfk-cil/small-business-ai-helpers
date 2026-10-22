@@ -30,7 +30,7 @@ Each page must be published with the `sample` capability declared, `{"sample": {
 Steps, from a Claude Code session in the repo (or any Claude session that can publish pages from a file):
 
 1. Run `python3 scripts/build.py`.
-2. Publish `artifacts/hub.html`, then each of the twelve package fragments (`start-here`, `customer-replies`, `booking-reminders`, `follow-ups`, `find-clients`, `one-page-shop`, `get-found-on-google`, `staff-checklists`, `stock-and-returns`, `hire-and-onboard`, `social-posts`, `sales-plan`). For each, ask Claude for exactly this: "Publish `artifacts/<page>.html` as a Claude page with capabilities `{"sample": {}}`." The page title comes from the fragment's own `<title>`.
+2. Publish `artifacts/hub.html`, then each of the fourteen package fragments (`start-here`, `customer-replies`, `booking-reminders`, `follow-ups`, `get-paid`, `find-clients`, `one-page-shop`, `get-found-on-google`, `staff-checklists`, `stock-and-returns`, `hire-and-onboard`, `social-posts`, `sales-plan`, `make-your-own`). For each, ask Claude for exactly this: "Publish `artifacts/<page>.html` as a Claude page with capabilities `{"sample": {}}`." The page title comes from the fragment's own `<title>`.
 3. Write each page's link into `artifacts/urls.json`. Keys are `hub` and the package ids:
 
    ```json
@@ -40,6 +40,7 @@ Steps, from a Claude Code session in the repo (or any Claude session that can pu
      "customer-replies": "https://claude.ai/...",
      "booking-reminders": "https://claude.ai/...",
      "follow-ups": "https://claude.ai/...",
+     "get-paid": "https://claude.ai/...",
      "find-clients": "https://claude.ai/...",
      "one-page-shop": "https://claude.ai/...",
      "get-found-on-google": "https://claude.ai/...",
@@ -47,7 +48,8 @@ Steps, from a Claude Code session in the repo (or any Claude session that can pu
      "stock-and-returns": "https://claude.ai/...",
      "hire-and-onboard": "https://claude.ai/...",
      "social-posts": "https://claude.ai/...",
-     "sales-plan": "https://claude.ai/..."
+     "sales-plan": "https://claude.ai/...",
+     "make-your-own": "https://claude.ai/..."
    }
    ```
 
@@ -67,7 +69,7 @@ Each Skill is a zip in `docs/downloads/<skill>.zip`, also linked from its packag
 
 Requirements: a paid Claude plan, with code execution turned on (as of October 2026).
 
-1. Download the zip for each Skill in the package (one zip per Skill; customer-replies needs three).
+1. Download the zip for each Skill in the package (one zip per Skill; customer-replies needs five).
 2. In Claude, open **Settings**, then **Capabilities** (as of October 2026). Make sure code execution is on.
 3. In the **Skills** section, choose **Upload**, pick the zip, and make sure the Skill is turned on.
 4. Repeat for each zip.
@@ -131,7 +133,7 @@ A group that runs table sessions with owners can use the GitHub Pages links as t
 Publishing your own Claude pages:
 
 1. Clone the repo and run `python3 scripts/build.py`.
-2. From your group's own Claude account, follow path (b): publish the hub and the twelve package fragments with `{"sample": {}}`, put the links in `artifacts/urls.json`, rebuild, and republish to the same links. Replace every link in `artifacts/urls.json` with your own, or delete any you do not republish. The shipped file holds the publisher's own Claude page links; any id you delete falls back to its GitHub Pages address.
+2. From your group's own Claude account, follow path (b): publish the hub and the fourteen package fragments with `{"sample": {}}`, put the links in `artifacts/urls.json`, rebuild, and republish to the same links. Replace every link in `artifacts/urls.json` with your own, or delete any you do not republish. The shipped file holds the publisher's own Claude page links; any id you delete falls back to its GitHub Pages address.
 3. Share the pages by link. Try it here still runs on each viewer's own Claude account, never on the group's.
 4. If your sessions should send owners to your Claude pages instead of GitHub Pages, change the links in `packages/<id>/PLAYBOOK.md` and `packages/<id>/BUILDER-NOTES.md` (they name the GitHub Pages address), and reprint any handouts that carry the old links.
 

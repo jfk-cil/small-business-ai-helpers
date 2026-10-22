@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.1.4 (October 21, 2026)
+- Routing table adds listing-matcher (properties or rentals kept in chats and notes, and sending clients the ones that fit). No new test cases yet.
+
+## v1.1.3 (October 20, 2026)
+- Routing table adds get-paid-routine (late payments and deposits, replacing customer-message-writer for this row), helper-builder (a job no helper fits, or a helper in the owner's own words) and the routines customer-messages-routine, weekly-posts-routine, reel-script-writer and staff-checklist-routine.
+- The money line now says payment reminders with blanks, a deposit line and a private list with no amounts are fine.
+
 ## v1.1.2 (October 20, 2026)
 - Routing table adds stock-check-and-returns (expiry checks, supplier returns, who checks the stock) and channel-sales-plan (a sales plan across channels over several months).
 

@@ -6,7 +6,8 @@ For a volunteer sitting with an owner at a table. You help the owner do it on th
 
 - Open the phone page on your own phone: https://jfk-cil.github.io/small-business-ai-helpers/staff-checklists/
 - Have the made-up example below ready to show.
-- Know the two Skills: sop-and-checklist-writer (steps, wall checklists, welcome guides, short forms) and tracker-sheet-builder (one simple Google Sheet).
+- Know the three Skills: sop-and-checklist-writer (steps, wall checklists, welcome guides, short forms), tracker-sheet-builder (one simple Google Sheet) and staff-checklist-routine (one pinned checklist in the staff WhatsApp group, with a weekly no-blame huddle that changes one line).
+- If the owner says "they keep missing the same things" on one job, staff-checklist-routine is often the quicker start: pin it today, fix one line a week.
 - Bring a pen and a few blank cards. Owners often think best by writing the steps by hand first.
 
 ## 20-minute table script

@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.4 (October 20, 2026)
+- "Not for" and the description point to staff-checklist-routine for one checklist pinned in the staff WhatsApp group with a weekly no-blame huddle.
+
 ## v0.2.3 (October 20, 2026)
 - "Not for" and the description hand off monthly expiry checks, supplier returns and staff assignment with a timeline to stock-check-and-returns.
 

@@ -1,6 +1,6 @@
 ---
 name: message-sorter
-description: Sorts a batch of pasted customer WhatsApp messages into the few that need the owner (complaints, discounts, disputes, site visits, bookings to confirm, unusual or emotional ones), each with a calm holding line, and drafts the routine replies in the owner's own tone using only the owner's facts, plus quick replies for questions that repeat. Also learns the owner's tone from 3 to 5 past replies and turns their business facts into a reusable block. Built for busy service businesses such as real estate and cleaning. Use when an owner says "sort my messages", "too many WhatsApp messages", "reply to these for me", "which ones need me", "learn my tone", "write like me" or "set up my business facts". Not for one message to many customers (customer-message-writer), chasing new enquiries (lead-reply-and-follow-up), reviews (review-replies), quotes with totals (quote-and-proposal-writer) or FAQ quick-reply sets only (guest-inquiry-replies).
+description: Sorts a batch of pasted customer WhatsApp messages into the few that need the owner (complaints, discounts, disputes, site visits, bookings to confirm, unusual or emotional ones), each with a calm holding line, and drafts the routine replies in the owner's own tone using only the owner's facts, plus quick replies for questions that repeat. Also learns the owner's tone from 3 to 5 past replies and turns their business facts into a reusable block. Built for busy service businesses such as real estate and cleaning. Use when an owner says "sort my messages", "too many WhatsApp messages", "reply to these for me", "which ones need me", "learn my tone", "write like me" or "set up my business facts". Not for one message to many customers (customer-message-writer), chasing new enquiries (lead-reply-and-follow-up), reviews (review-replies), quotes with totals (quote-and-proposal-writer) FAQ quick-reply sets only (guest-inquiry-replies) or setting up a daily WhatsApp routine (customer-messages-routine).
 license: CC0-1.0
 ---
 
@@ -26,6 +26,7 @@ Three jobs:
 - A quote or proposal with totals: use **quote-and-proposal-writer**.
 - Only a set of FAQ quick replies, with no messages to sort: use **guest-inquiry-replies**.
 - Confirming one booking and its reminders: use **booking-confirmations**.
+- Setting up the daily WhatsApp routine itself (quick replies, an away message, labels, a 10-minute daily pass, a follow-up rule): use **customer-messages-routine**.
 
 ## Ask first
 Only ask what is missing. If the owner pasted messages, sort them now and use [blank] for missing facts.

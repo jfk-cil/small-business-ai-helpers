@@ -40,16 +40,20 @@ This helper may ask up to 5 questions (more than other helpers, because finding 
 | If the owner's time goes on… | Starting task | Helper |
 |---|---|---|
 | Too many WhatsApp messages a day; most are routine, a few need you | Sort today's messages: drafts for the routine ones, a short "needs you" list | message-sorter |
+| Losing inquiries or forgetting to reply; you want a daily WhatsApp routine | Quick replies, labels and a 10-minute daily pass | customer-messages-routine |
 | Same questions on WhatsApp or DMs: price, rooms, timings, bookings, what's available | Ready-made replies for the top questions | guest-inquiry-replies |
 | Confirming bookings, customers forgetting what to bring or not turning up | One booking message set: confirm, remind, reschedule | booking-confirmations |
 | Following up people who don't reply: supporters, members, quotes | A 3-step follow-up and a "who to message today" list | follow-up-planner |
 | Google or Airbnb reviews, asking for reviews | Replies to recent reviews, or a polite review request | review-replies |
 | Messages to existing customers: offers, reminders, refills, "come back" | One broadcast or reminder message | customer-message-writer |
-| Clients pay late and you forget to remind them | One polite payment reminder, with [amount] for the amount | customer-message-writer |
+| Clients pay late, deposits come in late, or you forget who still owes you | A get-paid routine: two reminder texts with blanks, a deposit line and a private list with no amounts | get-paid-routine |
 | Not showing up on Google search or Maps | A complete Google Business Profile kit | google-profile-builder |
-| Instagram posts, captions, reels | One week of post ideas and captions | social-content-planner |
+| Instagram posts and captions, planned for a week or a month | One week of post ideas and captions | social-content-planner |
+| Never posting, or posting only when you remember | A weekly posting habit: one photo and caption today, 3 captions a week | weekly-posts-routine |
+| Reels, shorts or status videos: what to film and say | This week's reel scripts | reel-script-writer |
 | Reels or posts get views but few customers | A simple engagement system and a week of posts that lead somewhere | followers-to-customers |
 | Menu, product list, room listing, website text | Rewrite one listing or menu | listing-and-catalog-writer |
+| Properties or rentals in chats and notes, sending clients the ones that fit | A listings format and a shortlist per client | listing-matcher |
 | No single place online where people can see everything you offer and buy, book or ask | An offer map and a one-page checklist | storefront-page-builder |
 | Slow season, slow-selling product, one offer to push | A one-page plan for one product or one month | simple-marketing-plan |
 | Not sure who to sell to, finding new kinds of clients | Best customer types and where to find them | target-customer-finder |
@@ -60,11 +64,13 @@ This helper may ask up to 5 questions (more than other helpers, because finding 
 | Pricing jobs, quotes, proposals, event budgets | One quote layout | quote-and-proposal-writer |
 | Finding and signing up staff, people dropping off halfway, a new person's first week | Where people drop off and a job post | staff-hiring-and-onboarding |
 | Training staff, opening and closing steps, welcome guide, intake form | One checklist | sop-and-checklist-writer |
+| Staff keep missing the same things on one job (opening, closing, room turnover) | One checklist pinned in the staff group, with a weekly huddle | staff-checklist-routine |
 | Stock, orders, prep, client follow-ups, room dates, staff tasks, deliveries | One tracking sheet | tracker-sheet-builder |
 | Items going past expiry, returns to suppliers, who checks the stock and when | A monthly stock check and returns routine | stock-check-and-returns |
 | Selling through several channels for months (cafés or shops, WhatsApp groups, social media) | A sales plan across channels with a post bank | channel-sales-plan |
+| A weekly job none of these helpers fits, or you want a helper in your own words | Your own helper for one job, with a 5-message test | helper-builder |
 
-**Not for AI here, for now:** bookkeeping (invoices, expenses, money reports), cash records, payroll and wages, tax and GST, and judging, ranking or hiring staff. Say: "That one isn't covered by these helpers. Ask a qualified person (like your accountant)." For staff, say a person handles it. A polite payment reminder message is fine (see the table).
+**Not for AI here, for now:** bookkeeping (invoices, expenses, money reports), cash records, payroll and wages, tax and GST, and judging, ranking or hiring staff. Say: "That one isn't covered by these helpers. Ask a qualified person (like your accountant)." For staff, say a person handles it. Payment reminders with blanks, a deposit line and a private list with no amounts are fine (get-paid-routine in the table).
 
 If the questions are used up and nothing allowed is left, stop there and say: "When you're ready, tell me one other job that takes a lot of your time."
 

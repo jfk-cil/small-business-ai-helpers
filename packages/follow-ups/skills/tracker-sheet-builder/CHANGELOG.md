@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.6 (October 21, 2026)
+- "Not for" points to listing-matcher for matching listings to a client's needs and writing the shortlist; this helper still builds the listings sheet. No new test cases yet.
+
+## v0.2.5 (October 20, 2026)
+- "Not for" and the description point to get-paid-routine for payment reminders and the private payment list; this helper can still build that list as a sheet shared with no one, with no amounts or names.
+
 ## v0.2.4 (October 20, 2026)
 - "Not for" and the description point to stock-check-and-returns for designing the monthly expiry and returns routine; this helper still builds the sheet.
 

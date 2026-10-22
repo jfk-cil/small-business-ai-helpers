@@ -1,0 +1,24 @@
+{
+ "meta": {
+  "date": "2026-10-21T19:58:35",
+  "claude_version": "2.1.306 (Claude Code)",
+  "model_requested": "claude-sonnet-5-5",
+  "models_seen": [
+   "claude-haiku-5-5",
+   "claude-sonnet-5-5"
+  ],
+  "mode": "append",
+  "replicate": "1",
+  "testbanks": {
+   "subset-of-testbank/LMT-subset2.json": "51ce4fc2154639b6a91240983940737c32a6ccd7b9ea83ebf77a3318a0e2e8f9"
+  },
+  "skills": {
+   "listing-matcher": "c64381b10903d4fe98f1869d38a0746cca9c1d666c2783ee2c4cb77ff41ee1d3"
+  },
+  "errors": {},
+  "label": "self-measured, Claude Code headless (append mode), fictional cases; not independent"
+ },
+ "responses": {
+  "B-LMT-008": "Here's the row for PV-15, in your column order, ready to paste into the sheet:\n\n```\nPV-15\t2BHK flat\tSale\tPorvorim\t1,150 sq ft\t2\t₹85 lakh\tReady to move\t2nd floor, covered parking, lift\t[photo/video link]\tSeller message\t[blank]\n```\n\nFill in two things:\n- **Photos and videos link:** add it when the photos arrive.\n- **Status:** the message didn't say, so I left it blank. Add \"Available\" or whatever you use. Rows with no status are treated as available when matching.\n\nTo build the sheet itself, use **tracker-sheet-builder**."
+ }
+}

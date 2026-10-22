@@ -15,6 +15,8 @@ A café owner has staff in a few different roles. The owner wants each person's 
 - A weekly 15-minute check: a quick look at the checklists with your team to fix steps that don't work.
 - If you want it: a simple Google Sheet to note daily tasks, stock or deliveries, with setup steps for your phone.
 
+The full version adds a routine for one job (staff-checklist-routine): one short checklist pinned in your staff WhatsApp group, re-pinned each month, and a weekly 10-minute no-blame huddle that changes one line. Staff send one photo of the finished space, never of people.
+
 ## Use it in 2 minutes on your phone
 
 Open the phone page: https://jfk-cil.github.io/small-business-ai-helpers/staff-checklists/
@@ -30,7 +32,7 @@ Send the helper to yourself on WhatsApp ("Message yourself") so you can copy it 
 
 ## Install the full version
 
-The full version also writes step-by-step guides for new staff, guest welcome guides and short intake forms, and designs tracker sheets with formulas and color rules. It comes as two Skills.
+The full version also writes step-by-step guides for new staff, guest welcome guides and short intake forms, designs tracker sheets with formulas and color rules, and sets up a pinned checklist with a weekly huddle. It comes as three Skills.
 
 **Claude on the web or desktop app** (paid plan, code execution turned on, as of October 2026)
 
@@ -38,6 +40,7 @@ Download each Skill:
 
 - [sop-and-checklist-writer.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/sop-and-checklist-writer.zip)
 - [tracker-sheet-builder.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/tracker-sheet-builder.zip)
+- [staff-checklist-routine.zip](https://jfk-cil.github.io/small-business-ai-helpers/downloads/staff-checklist-routine.zip)
 
 Then in Claude open **Settings**, then **Capabilities**, then **Skills**, and upload each zip. Start a new chat and say "Write a closing checklist for my café counter."
 
@@ -58,6 +61,7 @@ Open **Customize**, then **Plugins**, then **Add marketplace** (as of October 20
 |---|---|---|
 | sop-and-checklist-writer | Turns how you do a job into numbered steps for a new person, a checklist to print and tick, a guest welcome guide or a short intake form. | "Write the opening steps for the kitchen." "Make a closing checklist for the wall." |
 | tracker-sheet-builder | Designs one simple Google Sheet (stock, orders, deliveries, daily tasks) with sample rows, formulas, color rules and 5 phone setup steps. | "We keep running out of butter." "A daily job sheet for my staff." |
+| staff-checklist-routine | Turns one job (opening, closing, room turnover, kitchen prep) into 8 to 12 short lines in your staff's language, a pinned message for the staff group, and a weekly no-blame huddle. Weekly, it rewrites only the line you name. | "Staff keep missing the same things." "Pin a closing checklist." "Line 4 keeps getting missed." |
 
 ## Limits
 
@@ -85,6 +89,6 @@ Your real lists stay in your own sheet or notebook. If you paste something by mi
 
 ## Tested
 
-Each Skill has behavior cases with made-up businesses in [`evals/`](../../evals/) at the repo root: `evals/testbank/SOP.json` (sop-and-checklist-writer) and `evals/testbank/TSB.json` (tracker-sheet-builder). The checker is in `evals/harness/`. Results are in [`evals/RESULTS.md`](../../evals/RESULTS.md).
+Each Skill has behavior cases with made-up businesses in [`evals/`](../../evals/) at the repo root: `evals/testbank/SOP.json` (sop-and-checklist-writer), `evals/testbank/TSB.json` (tracker-sheet-builder) and `evals/testbank/SCL.json` (staff-checklist-routine). The checker is in `evals/harness/`. Results are in [`evals/RESULTS.md`](../../evals/RESULTS.md).
 
 Free to use and adapt (CC0). It drafts; you check and share everything yourself.

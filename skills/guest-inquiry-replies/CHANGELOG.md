@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.5 (October 21, 2026)
+- "Not for" points to listing-matcher for sending a client the listings that fit their needs. No new test cases yet.
+
+## v0.2.4 (October 20, 2026)
+- "Not for" and the description point to customer-messages-routine for setting up the daily WhatsApp routine (an away message, labels, a daily pass, a follow-up rule).
+
 ## v0.2.3 (October 20, 2026)
 - New references/booking-apps.md for messages that come through a booking or delivery app: reply in the app's own chat, follow its messaging rules (no phone numbers, outside links or payment outside the app unless allowed), quick replies for pickup time, meeting point and what to bring, and sending your own activity list only where the app allows it and the customer asked.
 - SKILL.md links to it from Steps and Rules, with one new "Use it when" line.

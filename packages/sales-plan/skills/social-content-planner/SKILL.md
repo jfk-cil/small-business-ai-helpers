@@ -1,6 +1,6 @@
 ---
 name: social-content-planner
-description: Plans a week or month of social posts for a small business, with captions, reel ideas and local hashtags. Use when an owner asks "what should I post?" or "write my captions." Not for turning followers into customers, posts that convert, or a workshop launch (use followers-to-customers), or a sales plan over several months across channels (use channel-sales-plan).
+description: Plans a week or month of social posts for a small business, with captions, reel ideas and local hashtags. Use when an owner asks "what should I post?" or "write my captions." Not for turning followers into customers, posts that convert, or a workshop launch (use followers-to-customers), a sales plan over several months across channels (use channel-sales-plan), a small weekly posting habit (use weekly-posts-routine) or full video scripts (use reel-script-writer).
 license: CC0-1.0
 ---
 
@@ -25,6 +25,8 @@ Turns what the owner tells you about their business into a short posting plan th
 - Setting up paid ads, boosting posts or logging into accounts: ask **a person** (someone who runs ads).
 - Turning followers into customers, a content system or a workshop launch: use **followers-to-customers**.
 - A sales plan over several months across channels (social media, WhatsApp groups, selling to other businesses) with a post bank: use **channel-sales-plan**.
+- A small weekly posting habit for an owner who never posts (a phone album, a weekly 20-minute sitting, 3 captions from 3 photos): use **weekly-posts-routine**.
+- Full scripts for reels, shorts or status videos (a hook, shots, on-screen text, a voice-over): use **reel-script-writer**.
 
 ## Ask first
 Ask only what is missing, in one message, at most 3 questions:

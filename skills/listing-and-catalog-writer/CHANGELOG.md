@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.6 (October 21, 2026)
+- "Not for" points to listing-matcher for matching several listings to one client and writing the shortlist. No new test cases yet.
+
 ## v0.2.5 (October 20, 2026)
 - Registration and license numbers: included exactly if the owner gives one; never added, asked about or judged as needed. If a site asks and the owner has none to give, write [number, if the site asks] and say "Check with a qualified person what applies." The Goa stay listing no longer gets a registration line by default (SKILL.md and owner card).
 

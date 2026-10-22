@@ -6,7 +6,8 @@ For a volunteer sitting with an owner at a table. You help the owner do it on th
 
 - Open the phone page on your own phone: https://jfk-cil.github.io/small-business-ai-helpers/social-posts/
 - Have the made-up example below ready to show.
-- Know the three Skills: social-content-planner (posts, captions, hashtags, photo and reel ideas), followers-to-customers (an engagement system, a week of posts that convert, and an online workshop launch) and simple-marketing-plan (a one-page 4-week plan).
+- Know the five Skills: social-content-planner (posts, captions, hashtags, photo and reel ideas), followers-to-customers (an engagement system, a week of posts that convert, and an online workshop launch), simple-marketing-plan (a one-page 4-week plan), weekly-posts-routine (the habit: a "Photos for posts" album and a 20-minute weekly sitting) and reel-script-writer (short video scripts the owner films alone).
+- An owner who never posts often needs the habit more than a plan. Start them on weekly-posts-routine: one photo and one caption posted today, and a weekly reminder.
 - Listen for which problem the owner has: no time to post, or posts that get views but few customers. The script below works for both; the section after it shows what changes for the second.
 
 ## 20-minute table script

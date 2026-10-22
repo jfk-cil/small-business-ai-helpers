@@ -1,6 +1,6 @@
 ---
 name: customer-message-writer
-description: Writes WhatsApp broadcasts, refill reminders and follow-ups for customers who agreed to hear from a business. Use when an owner says "message my customers", "send an offer" or "reorder reminder". Not for chasing people who haven't replied (follow-up-planner).
+description: Writes WhatsApp broadcasts, refill reminders and follow-ups for customers who agreed to hear from a business. Use when an owner says "message my customers", "send an offer" or "reorder reminder". Not for chasing people who haven't replied (follow-up-planner) or a payment reminder routine with a private payment list (get-paid-routine).
 license: CC0-1.0
 ---
 
@@ -32,6 +32,7 @@ The owner says things like:
 - Messaging people who never agreed (bought, copied or scraped numbers; people from groups): nobody. This helper refuses.
 - A new enquiry from someone who isn't a customer yet: use **lead-reply-and-follow-up**.
 - Welcoming a client who just said yes: use **client-onboarding-writer**.
+- A get-paid routine (payment reminders saved as quick replies, a deposit line, the private payment list and a weekly check): use **get-paid-routine**. This helper still writes a one-off reminder with [amount].
 
 ## Ask first
 Only ask what is missing. If the owner already said what the message is about, draft it and use [blank] for missing facts.

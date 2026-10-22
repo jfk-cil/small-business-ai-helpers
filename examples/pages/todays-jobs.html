@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Today's Jobs</title>
+<style>
+:root{
+  --bg:#f7f6f2;--card:#ffffff;--text:#1d1d1b;--muted:#5b5a55;--line:#d9d6cc;
+  --accent:#7a3e9d;--accent-text:#ffffff;--done:#efe9f3;--next:#fff4d6;--next-line:#c99a1c;--field:#ffffff;--focus:#0b57d0;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#141413;--card:#1f1f1d;--text:#f1efe8;--muted:#b4b1a7;--line:#3a3935;
+    --accent:#d4a8ef;--accent-text:#22102e;--done:#2a2230;--next:#33290f;--next-line:#e0b84a;--field:#262624;--focus:#8ab4f8;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141413;--card:#1f1f1d;--text:#f1efe8;--muted:#b4b1a7;--line:#3a3935;
+  --accent:#d4a8ef;--accent-text:#22102e;--done:#2a2230;--next:#33290f;--next-line:#e0b84a;--field:#262624;--focus:#8ab4f8;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:17px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif}
+main{max-width:640px;margin:0 auto;padding:16px 16px 40px}
+h1{font-size:1.45rem;line-height:1.2;margin:4px 0 4px}
+h2{font-size:1.1rem;margin:24px 0 8px}
+p{margin:0 0 12px}
+.muted{color:var(--muted);font-size:.95rem}
+.bar{position:sticky;top:0;z-index:1;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line)}
+ul{list-style:none;margin:0;padding:0}
+li{margin:0 0 8px}
+.job{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px 8px 6px 12px}
+.job.is-next{background:var(--next);border-color:var(--next-line)}
+.job.is-done{background:var(--done)}
+.job label{display:flex;align-items:center;gap:12px;flex:1 1 auto;min-width:0;min-height:48px;cursor:pointer}
+.job button{flex:0 0 auto;padding:8px 10px}
+.what{min-width:0;overflow-wrap:anywhere}
+.job input[type=checkbox]{width:28px;height:28px;flex:0 0 28px;margin:0;accent-color:var(--accent)}
+.time{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap;flex:0 0 auto}
+.job.is-done .what{text-decoration:line-through;color:var(--muted)}
+.tag{font-size:.8rem;border:1px solid var(--line);border-radius:999px;padding:2px 8px;margin-left:6px;white-space:nowrap}
+button,select,input[type=time]{font:inherit;min-height:44px;min-width:44px;border-radius:10px;border:1px solid var(--line);
+  background:var(--field);color:var(--text)}
+button{padding:8px 16px;cursor:pointer;background:var(--card)}
+button.primary{background:var(--accent);color:var(--accent-text);border-color:var(--accent)}
+.add{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.add .fields{display:grid;grid-template-columns:1fr 1.6fr;gap:10px;margin-bottom:10px}
+.add label{display:block;font-size:.9rem;color:var(--muted);margin-bottom:4px}
+.add select,.add input{width:100%;padding:6px 10px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.note{margin-top:28px;padding:12px 14px;border:1px dashed var(--line);border-radius:12px}
+.warn{display:none}
+.warn.show{display:block}
+.empty{color:var(--muted);padding:8px 0}
+</style>
+</head>
+<body>
+<main>
+  <h1 id="title">Today's jobs</h1>
+  <p class="muted" id="date"></p>
+
+  <div class="bar"><strong id="count" aria-live="polite">0 of 0 done</strong></div>
+
+  <h2 id="list-h">Jobs</h2>
+  <ul id="jobs" aria-labelledby="list-h"></ul>
+
+  <h2 id="add-h">Add a job for today</h2>
+  <div class="add" role="group" aria-labelledby="add-h">
+    <p class="muted">Added jobs show on this phone only and are gone when you close the page.</p>
+    <div class="fields">
+      <div><label for="new-time">Time</label><input type="time" id="new-time" value="12:00"></div>
+      <div><label for="new-type">Job</label><select id="new-type"></select></div>
+    </div>
+    <button type="button" class="primary" id="add">Add job</button>
+  </div>
+
+  <p class="note warn" id="nostore">This phone isn't keeping ticks. They will clear when you close the page.</p>
+
+  <div class="note">
+    <p><strong>How this page works</strong></p>
+    <p class="muted">Job types and times only: never names, phone numbers, addresses or payments. Ticks are kept only on this phone and clear each new day. Nothing is sent anywhere. Each phone has its own ticks, so this page can't show who did what, and should never be used to check on anyone.</p>
+  </div>
+</main>
+
+<script>
+/* Edit these. Job types and times only: no names, phone numbers, addresses or money amounts. */
+var BOARD_TITLE = "Sample Sparkle Cleaning: today's jobs";
+var JOB_TYPES = ["2BHK deep clean", "3BHK deep clean", "Kitchen clean", "Bathroom clean", "Sofa clean", "Pick up supplies"];
+var JOBS = [
+  { time: "09:00", type: "2BHK deep clean" },
+  { time: "11:30", type: "Kitchen clean" },
+  { time: "14:00", type: "3BHK deep clean" },
+  { time: "17:30", type: "Pick up supplies" }
+];
+
+(function () {
+  var KEY = "sample-todays-jobs-ticks-v1";
+  var storageOK = true;
+  var added = [];
+  var addedSeq = 0;
+
+  function today() {
+    var d = new Date();
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  }
+  function load() {
+    try {
+      var raw = window.localStorage.getItem(KEY);
+      if (!raw) return { date: today(), done: [] };
+      var s = JSON.parse(raw);
+      if (!s || s.date !== today() || !Array.isArray(s.done)) return { date: today(), done: [] };
+      return s;
+    } catch (e) { storageOK = false; return { date: today(), done: [] }; }
+  }
+  function save() {
+    try { window.localStorage.setItem(KEY, JSON.stringify(state)); }
+    catch (e) { storageOK = false; }
+    document.getElementById("nostore").classList.toggle("show", !storageOK);
+  }
+  function label12(t) {
+    var p = t.split(":"), h = parseInt(p[0], 10), m = p[1];
+    var ap = h >= 12 ? "pm" : "am", h12 = h % 12 || 12;
+    return h12 + ":" + m + " " + ap;
+  }
+  function nowHM() {
+    var d = new Date();
+    return String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0");
+  }
+
+  var state = load();
+  var addedDone = {};
+  var listEl = document.getElementById("jobs");
+
+  document.getElementById("title").textContent = BOARD_TITLE;
+  document.title = BOARD_TITLE;
+  var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  function showDate() {
+    var d = new Date();
+    document.getElementById("date").textContent = days[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+  }
+  showDate();
+
+  var sel = document.getElementById("new-type");
+  JOB_TYPES.forEach(function (t) { var o = document.createElement("option"); o.value = t; o.textContent = t; sel.appendChild(o); });
+
+  function allJobs() {
+    var base = JOBS.map(function (j, i) { return { key: "b" + i + "|" + j.time + "|" + j.type, time: j.time, type: j.type, added: false }; });
+    return base.concat(added).sort(function (a, b) { return a.time < b.time ? -1 : a.time > b.time ? 1 : 0; });
+  }
+  function isDone(job) { return job.added ? !!addedDone[job.key] : state.done.indexOf(job.key) !== -1; }
+  function setDone(job, on) {
+    if (job.added) { addedDone[job.key] = on; return; }
+    if (state.date !== today()) state = { date: today(), done: [] };
+    var i = state.done.indexOf(job.key);
+    if (on && i === -1) state.done.push(job.key);
+    if (!on && i !== -1) state.done.splice(i, 1);
+    save();
+  }
+
+  function render() {
+    var active = document.activeElement && document.activeElement.id;
+    var jobs = allJobs(), now = nowHM(), nextKey = null, doneCount = 0;
+    jobs.forEach(function (j) { if (!nextKey && !isDone(j) && j.time >= now) nextKey = j.key; });
+    if (!nextKey) jobs.forEach(function (j) { if (!nextKey && !isDone(j)) nextKey = j.key; });
+    listEl.innerHTML = "";
+    if (!jobs.length) { var e = document.createElement("li"); e.className = "empty"; e.textContent = "No jobs today."; listEl.appendChild(e); }
+    jobs.forEach(function (j, idx) {
+      var done = isDone(j); if (done) doneCount++;
+      var li = document.createElement("li");
+      var row = document.createElement("div");
+      row.className = "job" + (done ? " is-done" : "") + (j.key === nextKey ? " is-next" : "");
+      var lab = document.createElement("label");
+      var box = document.createElement("input");
+      box.type = "checkbox"; box.checked = done; box.id = "job-" + idx;
+      box.addEventListener("change", function () { setDone(j, box.checked); render(); });
+      var time = document.createElement("span"); time.className = "time"; time.textContent = label12(j.time);
+      var what = document.createElement("span"); what.className = "what"; what.textContent = j.type;
+      if (j.key === nextKey) { var t = document.createElement("span"); t.className = "tag"; t.textContent = "Next"; what.appendChild(t); }
+      if (j.added) { var t2 = document.createElement("span"); t2.className = "tag"; t2.textContent = "Added"; what.appendChild(t2); }
+      lab.appendChild(box); lab.appendChild(time); lab.appendChild(what);
+      row.appendChild(lab);
+      if (j.added) {
+        var rm = document.createElement("button");
+        rm.type = "button"; rm.textContent = "Remove";
+        rm.setAttribute("aria-label", "Remove " + label12(j.time) + " " + j.type);
+        rm.addEventListener("click", function () {
+          added = added.filter(function (a) { return a.key !== j.key; });
+          delete addedDone[j.key];
+          render(); document.getElementById("add").focus();
+        });
+        row.appendChild(rm);
+      }
+      li.appendChild(row); listEl.appendChild(li);
+    });
+    var c = document.getElementById("count");
+    var msg = jobs.length && doneCount === jobs.length ? "All " + doneCount + " done for today" : doneCount + " of " + jobs.length + " done";
+    if (c.textContent !== msg) c.textContent = msg;
+    if (active && active.indexOf("job-") === 0) { var f = document.getElementById(active); if (f) f.focus(); }
+  }
+
+  document.getElementById("add").addEventListener("click", function () {
+    var t = document.getElementById("new-time").value || "12:00";
+    if (!/^\d{2}:\d{2}$/.test(t)) t = "12:00";
+    added.push({ key: "a" + (addedSeq++) + "|" + t + "|" + sel.value, time: t, type: sel.value, added: true });
+    render();
+  });
+  function checkNewDay() {
+    if (state.date !== today()) { state = { date: today(), done: [] }; save(); }
+    showDate();
+    render();
+  }
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) checkNewDay(); });
+  setInterval(checkNewDay, 60000);
+
+  try { window.localStorage.getItem(KEY); } catch (e) { storageOK = false; }
+  document.getElementById("nostore").classList.toggle("show", !storageOK);
+  render();
+})();
+</script>
+</body>
+</html>

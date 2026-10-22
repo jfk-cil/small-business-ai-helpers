@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Daily Staff Checklist</title>
+<style>
+:root{
+  --bg:#f7f6f2;--card:#ffffff;--text:#1d1d1b;--muted:#5b5a55;--line:#d9d6cc;
+  --accent:#1f6f50;--accent-text:#ffffff;--done:#e7f2ec;--focus:#0b57d0;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#141413;--card:#1f1f1d;--text:#f1efe8;--muted:#b4b1a7;--line:#3a3935;
+    --accent:#6fcf9f;--accent-text:#0d1f16;--done:#1d3328;--focus:#8ab4f8;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141413;--card:#1f1f1d;--text:#f1efe8;--muted:#b4b1a7;--line:#3a3935;
+  --accent:#6fcf9f;--accent-text:#0d1f16;--done:#1d3328;--focus:#8ab4f8;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:17px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif}
+main{max-width:640px;margin:0 auto;padding:16px 16px 40px}
+h1{font-size:1.45rem;line-height:1.2;margin:4px 0 4px}
+h2{font-size:1.1rem;margin:24px 0 8px}
+p{margin:0 0 12px}
+.muted{color:var(--muted);font-size:.95rem}
+.progress{position:sticky;top:0;z-index:1;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.progress strong{font-size:1.05rem}
+ul{list-style:none;margin:0;padding:0}
+li{margin:0 0 8px}
+label.item{display:flex;align-items:center;gap:14px;min-height:56px;padding:10px 14px;background:var(--card);
+  border:1px solid var(--line);border-radius:12px;cursor:pointer}
+label.item input{width:28px;height:28px;flex:0 0 28px;margin:0;accent-color:var(--accent)}
+label.item:has(input:checked){background:var(--done)}
+label.item:has(input:checked) span{text-decoration:line-through;text-decoration-thickness:1px;color:var(--muted)}
+button{font:inherit;min-height:44px;min-width:44px;padding:8px 16px;border-radius:10px;border:1px solid var(--line);
+  background:var(--card);color:var(--text);cursor:pointer}
+button.primary{background:var(--accent);color:var(--accent-text);border-color:var(--accent)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.note{margin-top:28px;padding:12px 14px;border:1px dashed var(--line);border-radius:12px}
+.warn{display:none}
+.warn.show{display:block}
+</style>
+</head>
+<body>
+<main>
+  <h1 id="title">Daily checklist</h1>
+  <p class="muted" id="subtitle"></p>
+
+  <div class="progress">
+    <strong id="count" aria-live="polite">0 of 0 done</strong>
+    <button type="button" id="reset">Start again</button>
+  </div>
+
+  <div id="lists"></div>
+
+  <p class="note warn" id="nostore">This phone isn't keeping ticks. They will clear when you close the page.</p>
+
+  <div class="note">
+    <p><strong>How this page works</strong></p>
+    <p class="muted">Ticks are kept only on this phone, and they clear at the start of each new day. Nothing is sent anywhere. Each person's phone has its own ticks, so this page can't show who did what, and should never be used to check on anyone.</p>
+    <p class="muted">Never add names, phone numbers or money amounts to this list.</p>
+  </div>
+</main>
+
+<script>
+/* Edit this list. Job steps only: no names, phone numbers or money amounts. */
+var CHECKLIST = {
+  title: "Sample Café: daily checklist",
+  subtitle: "Tick each step as you finish it.",
+  sections: [
+    { name: "Opening", items: [
+      "Switch on lights, fans and the coffee machine",
+      "Check the fridge thermometer and write it in the book",
+      "Wipe all tables and chairs",
+      "Fill water jugs and napkin holders",
+      "Put out today's cakes with labels"
+    ]},
+    { name: "During the day", items: [
+      "Clear and wipe each table after guests leave",
+      "Check the washroom every 2 hours",
+      "Tell the manager when any item runs low"
+    ]},
+    { name: "Closing", items: [
+      "Cover and put away all food",
+      "Count the till and write it in the book",
+      "Switch off the coffee machine and fans",
+      "Take out the rubbish",
+      "Lock the back door and the front shutter"
+    ]}
+  ]
+};
+
+(function () {
+  var KEY = "sample-checklist-ticks-v1";
+  var storageOK = true;
+
+  function today() {
+    var d = new Date();
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  }
+  function load() {
+    try {
+      var raw = window.localStorage.getItem(KEY);
+      if (!raw) return { date: today(), done: [] };
+      var s = JSON.parse(raw);
+      if (!s || s.date !== today() || !Array.isArray(s.done)) return { date: today(), done: [] };
+      return s;
+    } catch (e) { storageOK = false; return { date: today(), done: [] }; }
+  }
+  function save(state) {
+    try { window.localStorage.setItem(KEY, JSON.stringify(state)); }
+    catch (e) { storageOK = false; showStorageNote(); }
+  }
+  function showStorageNote() {
+    document.getElementById("nostore").classList.toggle("show", !storageOK);
+  }
+
+  var state = load();
+  var lists = document.getElementById("lists");
+  var countEl = document.getElementById("count");
+  var boxes = [];
+
+  document.getElementById("title").textContent = CHECKLIST.title;
+  document.getElementById("subtitle").textContent = CHECKLIST.subtitle;
+  document.title = CHECKLIST.title;
+
+  CHECKLIST.sections.forEach(function (sec, si) {
+    var h = document.createElement("h2");
+    h.id = "sec-" + si;
+    h.textContent = sec.name;
+    var ul = document.createElement("ul");
+    ul.setAttribute("aria-labelledby", h.id);
+    sec.items.forEach(function (text, ii) {
+      var id = si + "-" + ii;
+      var li = document.createElement("li");
+      var label = document.createElement("label");
+      label.className = "item";
+      var box = document.createElement("input");
+      box.type = "checkbox";
+      box.dataset.id = id;
+      box.checked = state.done.indexOf(id) !== -1;
+      var span = document.createElement("span");
+      span.textContent = text;
+      label.appendChild(box);
+      label.appendChild(span);
+      li.appendChild(label);
+      ul.appendChild(li);
+      boxes.push(box);
+      box.addEventListener("change", onChange);
+    });
+    lists.appendChild(h);
+    lists.appendChild(ul);
+  });
+
+  function update() {
+    var n = boxes.filter(function (b) { return b.checked; }).length;
+    countEl.textContent = n === boxes.length ? "All " + n + " done for today" : n + " of " + boxes.length + " done";
+  }
+  function onChange() {
+    if (state.date !== today()) state = { date: today(), done: [] };
+    state.done = boxes.filter(function (b) { return b.checked; }).map(function (b) { return b.dataset.id; });
+    save(state);
+    update();
+  }
+  function clearAll() {
+    boxes.forEach(function (b) { b.checked = false; });
+    state = { date: today(), done: [] };
+    save(state);
+    update();
+  }
+  function checkNewDay() {
+    if (state.date !== today()) clearAll();
+  }
+
+  document.getElementById("reset").addEventListener("click", function () {
+    if (window.confirm("Clear all ticks on this phone?")) clearAll();
+  });
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) checkNewDay(); });
+  setInterval(checkNewDay, 60000);
+
+  try { window.localStorage.getItem(KEY); } catch (e) { storageOK = false; }
+  showStorageNote();
+  update();
+})();
+</script>
+</body>
+</html>

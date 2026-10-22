@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.7 (October 20, 2026)
+- "Not for" and the description point to weekly-posts-routine for a small weekly posting habit and to reel-script-writer for full video scripts.
+
 ## v0.2.6 (October 20, 2026)
 - "Not for" and the description point to channel-sales-plan for a sales plan over several months across channels.
 
